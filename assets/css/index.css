@@ -5,10 +5,10 @@ body {
     text-align: center;
     color:rgb(42, 45, 69);
     position: absolute;
-    top: 8%; width: 100%;
+    top: 2%; width: 100%;
     font-family: Fredoka One;
     zoom: 0.7;
-    bottom: 8%;
+    bottom: 10px;
 }
 
 button:hover {
@@ -63,5 +63,5 @@ ul {
 
 .contact {
     text-align:left;
-    margin-left:40%; 
+    margin-left:42%; 
 }
