@@ -49,5 +49,9 @@ button {
 .projectsBody {
     zoom: 0.8;
     margin-bottom: 8%;
+    text-align:left;
+    margin-left: 35%;
 }
 
+.leftSide {
+}
