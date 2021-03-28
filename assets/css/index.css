@@ -1,14 +1,13 @@
 body {
     margin: 0 auto;
     background-color: white;
-    
-    background-image: url("cloud.png");
-    font-family: 'Chango', sans-serif;
     font-size:25px;
     text-align: center;
     color:rgb(42, 45, 69);
     position: absolute;
     top: 8%; width: 100%;
+    font-family: Fredoka One;
+    zoom: 0.7;
 }
 
 button:hover {
@@ -44,6 +43,5 @@ button {
 }
 
 .home {
-    zoom: 0.7;
 }
 
