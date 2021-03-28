@@ -6,7 +6,7 @@ body {
     font-family: 'Chango', sans-serif;
     font-size:25px;
     text-align: center;
-    color:rgb(5, 127, 5);
+    color:rgb(42, 45, 69);
     position: absolute;
     top: 8%; width: 100%;
 }
@@ -14,6 +14,17 @@ body {
 button:hover {
     transition-duration: 0.4s;
     background-color:lightgray;
+}
+
+a:link {
+    color:rgb(42, 45, 69);
+    text-decoration: bold;
+
+}
+
+a:visited {
+    color:rgb(42, 45, 69);
+    text-decoration: bold;
 }
 
 button {
@@ -27,118 +38,8 @@ button {
     text-align: center;
 }
 
-ul {
-    margin:0;
+.logo {
+    max-height: 300px;
+    max-width: 500px;
 }
 
-.gameOver {
-    color: white;
-    top: 45%; 
-    text-align: center;
-    
-    height:fit-content;
-    width:fit-content;
-    
-    border-radius: 50%; 
-    background-color:orangered;
-
-    display: table;
-    margin: 0 auto;
-
-    /*block-size: fit-content */
-}
-
-.superdead {
-  background-color:orangered;
-}
-
-.score {
-    left: 300px;
-}
-
-.centerRules{
-    text-align: center;
-    padding-left:160px;
-}
-
-.start {
-    text-align: center;
-    max-width:600px; 
-    height: fit-content;
-    display: inline-block;
-    color: lightskyblue;
-    background-color: white;
-    height:fit-content;
-    width: fit-content;
-    border-radius: 20px;
-    opacity: 0.9;
-}
-
-.caption {
-    font-weight: 100;
-    font-size: 20px;
-    text-align:left;
-}
-.helpbtn {
-    text-align:left;
-    width: fit-content;
-    padding-left: 6px;
-}
-.xIcon {
-    background-color: green;
-}
-.board {
-    width: 600px;
-    height: 300px;
-    margin: auto;
-    background-color:lightskyblue;
-    border-radius: 12px;
-    /*box-shadow: -5px 0 olive, 0 5px olive, 5px 0 olive, 0 -5px olive; */
-    box-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white; 
-
-    /* use flexbox to create wrap around boc */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.redbtn{
-    background-color: orangered;
-   /*put in hell theme here */
-}
-
-.grid-item {
-    /*background-color:cornsilk; */
-    width:30px;
-    height:30px;
-    /*box-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; */
-}
-
-.filled {
-    /*background-color:lightskyblue;*/
-}
-.apple {
-    /* display: inline-block;  */
-    top: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 12px;
-    /*border-radius: 50%; */
-    width: 30px;
-    height: 30px;
-    /*background-image:url('apple_icon.png'); */
-    background-color:orangered; 
-    /*box-shadow: 0px 0px 20px 20px red; */
-}
-
-.snake {
-    top: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 12px;
-    /*border-radius: 50%; */
-    width: 30px;
-    height: 30px;
-    background-color:white;
-    /*box-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; */
-}
