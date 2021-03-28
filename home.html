@@ -8,30 +8,35 @@
     </header>
 
     <body>
-        <nav>
-            <div>
-                <img 
-                    class="logo"
-                    src = "/assets/img/logo.png"
+        <div class="home">
+            <nav>
+                <div>
+                    <img 
+                        class="logo"
+                        src="/assets/img/logo.png"
+                    >
+                </div>
+                <a href = "/contact.html"> contact </a>
+                <a href = "/projects.html"> projects </a>
+            </nav>
+
+
+            <div title="rotating gif">
+                <video
+                    autoPlay
+                    loop
+                    muted 
+                    width="500" height="700"
+                    id ="rotater"
                 >
+                <source src="/assets/vid/rotateGreen.mp4" type="video/mp4">
+                </video>
+
+                <script>
+                    var vid = document.getElementById("rotater");
+                    vid.play();
+                </script>
             </div>
-            <a href = "/contact.html"> contact </a>
-            <a href = "/projects.html"> projects </a>
-        </nav>
-
-
-        <div title="rotating gif">
-            <video
-                autoPlay
-                loop
-                width="500" height="700"
-            >
-            <source src="/assets/vid/rotateGreen.mp4" type="video/mp4">
-            </video>
-
-            <fab github
-            Hello! 
-            Welcome to my webpage!
         </div>
     </body>
 </html>
