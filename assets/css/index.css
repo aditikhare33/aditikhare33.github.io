@@ -8,6 +8,7 @@ body {
     top: 8%; width: 100%;
     font-family: Fredoka One;
     zoom: 0.7;
+    bottom: 8%
 }
 
 button:hover {
@@ -43,5 +44,10 @@ button {
 }
 
 .home {
+}
+
+.projectsBody {
+    zoom: 0.8;
+    margin-bottom: 8%;
 }
 
