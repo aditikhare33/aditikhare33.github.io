@@ -51,6 +51,7 @@ button {
     margin-bottom: 50px;
     text-align:left;
     margin-left: 35%;
+    margin-right:35%; 
 }
 
 .leftSide {
@@ -64,4 +65,5 @@ ul {
 .contact {
     text-align:left;
     margin-left:42%; 
+    margin-right:42%; 
 }
