@@ -5,9 +5,10 @@ body {
     text-align: center;
     color:rgb(42, 45, 69);
     position: absolute;
-    top: 2%; width: 100%;
+    top: 1%; 
+    width: 100%;
     font-family: Fredoka One;
-    zoom: 0.7;
+    zoom: 0.6;
     bottom: 10px;
 }
 
@@ -19,7 +20,6 @@ button:hover {
 a:link {
     color:rgb(42, 45, 69);
     text-decoration: bold;
-
 }
 
 a:visited {
@@ -44,8 +44,8 @@ ul {
 }
 
 .logo {
-    max-height: 390px;
-    max-width: 650px;
+    max-height: 350px;
+    max-width: 600px;
 }
 
 .navContainer {
