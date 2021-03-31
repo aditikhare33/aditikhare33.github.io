@@ -91,3 +91,8 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+.contactEmailBody {
+    height: 200px;
+    resize: none;
+}
