@@ -5,11 +5,16 @@ body {
     text-align: center;
     color:rgb(42, 45, 69);
     position: absolute;
-    top: 1%; 
+    top: 0%; 
     width: 100%;
     font-family: Fredoka One;
     zoom: 0.6;
     bottom: 10px;
+}
+
+nav {
+    width: 95%;
+   /* position: sticky; */
 }
 
 button {
