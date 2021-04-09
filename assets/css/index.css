@@ -17,16 +17,52 @@ nav {
    /* position: sticky; */
 }
 
+ul {
+  list-style-position: outside;
+}
+
 button {
     background-color: white;
     border: 2px solid rgb(42, 45, 69);
     border-radius: 7px;
     font-family: Fredoka One;
     font-size: 30px;
+    color:rgb(42, 45, 69);
 }
 
 i {
     font-size: 50px;
+}
+
+.projectsBox {
+    margin: 0 auto;
+    text-align: center;
+    display:flex;
+    max-width: 1700px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.photoItem {
+    width: 1100px;
+    height: 720px;
+    border-radius: 32px;
+    border: 15px solid rgb(229, 228, 228);
+}
+
+.photoItem img {
+    width: 1100px;
+    height: 720px;
+    border-radius: 15px;
+}
+
+.projectsButton {
+    border-radius: 30px;
+    max-width: 1200px;
+    min-width: 1200px;
+    border: 5px solid rgb(57, 201, 107);
+    padding: 10px;
+    font-size: 20px;
 }
 
 .rotaterAnimation {
@@ -108,15 +144,21 @@ ul {
 
 .projectsContainer {
     text-align: center;
-    max-width: 1200px;
+    max-width: 1100px;
+    min-width: 1100px;
     margin: 0 auto;
+    zoom: 0.9;
 }
 
 .projectsBody {
+    text-align:left;
     margin-bottom: 50px;
     font-size: 30px;
-    text-align:left;
     margin: 0 auto;
+}
+
+.projectElement {
+    margin-bottom: 75px;
 }
 
 .contactContainer {
@@ -135,7 +177,7 @@ ul {
     margin: 0 auto;
     text-align: center;
     display:flex;
-    max-width: 1100px;
+    max-width: 1200px;
     flex-direction: row;
     flex-wrap: wrap;
 }
