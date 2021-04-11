@@ -10,6 +10,7 @@ body {
     font-family: Fredoka One;
     zoom: 0.6;
     bottom: 10px;
+    padding: 10px;
 }
 
 nav {
@@ -149,12 +150,14 @@ ul {
 
 .projectsContainer {
     text-align: center;
-    max-width: 1100px;
-    min-width: 1100px;
+    display:flex;
+    max-width: 2300px;
     margin: 0 auto;
 }
 
 .projectsBody {
+    max-width: 1100px;
+    min-width: 1100px;
     text-align:left;
     margin-bottom: 50px;
     font-size: 30px;
@@ -170,6 +173,7 @@ ul {
     padding-bottom: 0px;
     padding-bottom: 5px;
     margin:13px;
+    margin-left:0px;
     font-weight: 40;
     color:rgb(255, 255, 255);
     margin-bottom: 75px;
