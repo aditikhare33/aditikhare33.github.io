@@ -52,7 +52,7 @@ i {
 
 .photoItem img {
     width: 1100px;
-    height: 680px;
+    max-height: 680px;
     border-radius: 15px;
 }
 
