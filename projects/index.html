@@ -12,42 +12,47 @@
     </header>
 
     <body>
-        <div class="projects">
-            <nav>
-                <div class="navContainer">
-                    <div class="navItems">
-                        <h2> 
-                            <a href = "/">home</a>
-                            &emsp;
-                            <a href = "/contact">contact</a>
-                            &emsp; 
-                            <a href = "/projects">projects</a>
-                        </h2>
-                    </div>
+        <nav>
+            <div class="navContainer">
+                <div class="navItems">
+                    <h2> 
+                        <a href = "/">home</a>
+                        &emsp; 
+                        <a href = "/projects">projects</a>
+                        &emsp;
+                        <a href = "/contact">contact</a>
+                    </h2>
                 </div>
-            </nav>
-
-            <div>
-                <a href="/">
-                    <img 
-                    class="logo"
-                    src="/assets/img/logo.png"
-                    >
-                </a>
             </div>
+        </nav>
+
+        <div>
+            <a href="/">
+                <img 
+                class="logo"
+                src="/assets/img/logo.png"
+                >
+            </a>
+        </div>
+
+        <div class="projects">
 
             <h1 style="zoom:1.3;"> PROJECTS </h1>
 
             <div style="align:left">
                 <h3>
-                    below are selected programming projects: <br>
-                    ( for more of my personal projects, see  <u> <a href="https://github.com/aditikhare33/">my github</a></u> )
+                    ( see more projects <u><a href="https://github.com/aditikhare33/">here</a></u> )
                 </h3>
             </div>
-            <h1> PROFESSIONAL PROJECTS </h1>
+
+
+
+           
             <div class= "projectsContainer">
+                <br>
+                <h1> PROFESSIONAL PROJECTS </h1>
                 <div class="projectsBody">
-                    <div>
+                    <div class="project">
                         <h2> OLS and Naive Bayes Classifier, 2020 - 2021 </h2> 
                         <div class="projectElement">
                             this is a python script I'm writing in order to classify & sentiment predict tweets to make our data analysis process more efficient. <br> 
@@ -55,29 +60,30 @@
                             this is part of a larger research project with the ISR @ UMich that aims to analyze political and behavioral changes after climate change events <br>
                             <br>
                             tools used: python (sklearn, numPy) <br>
-                        <br>
                         </div>
                     </div>
+
+                    <br>
                     
-                    <div>
+                    <div class="project">
                         <h2> Human Rights Org Database Website, 2021 </h2>
                         <div class="projectElement">
                             beginning to work on back-end for a website to make historical human rights data, from various worldwide organizations, publically accessible. <br>
                             <br>
                             this is part of a larger research project with the ISR @ UMich.
-                        <br>
                     </div>
-
-                    <br>
-                    <br>
                 </div>
                 </div>
             </div>
 
-            <h1> PERSONAL PROJECTS </h1>
+            <br>
+
+           
             <div class="projectsContainer">
+                <br>
+                <h1> PERSONAL PROJECTS </h1>
                 <div class="projectsBody">
-                    <div>
+                    <div class="project">
                         <h2> Game: You are Dead, but Hungry, 2021 </h2> 
                         <div> <img class="photoItem" src="/assets/img/projects/superdead/gameplayScreen.png"> </div>
                         <div class="projectElement">
@@ -88,13 +94,11 @@
                             tools used: Javascript (REACT), CSS3, HTML5 <br>
                             <u> <a href="https://github.com/aditikhare33/superdead-src">github repository</a> </u> 
                             <br>
-                            <br>
                         </div>
                     </div>
 
-                    <br>
 
-                    <div>
+                    <div class="project">
                         <h2> Game: Mr. TumbleWeed, 2021 </h2>
                         <div> <img class="photoItem" src="/assets/img/projects/tumbleweed/tumbleweedGameOver.png"> </div>
                         <div class="projectElement">
@@ -104,13 +108,10 @@
                             <br>
                             tools used: python (pygame) <br>
                             <u> <a href="https://github.com/aditikhare33/tumbleweed">github repository</a>  </u> <br>
-                        <br>
                         </div>
                     </div>
 
-                    <br>
-
-                    <div>
+                    <div class="project">
                         <h2> Flickr Meme Generator, 2021 </h2> 
                         <div> <img class="photoItem" src="/assets/img/projects/flickrmeme/search.png"> </div>
                         <div class="projectElement">
@@ -125,9 +126,8 @@
                         </div>
                     </div>
 
-                    <br>
 
-                    <div>
+                    <div class="project">
                     <h2> aditikhare.com, 2021  </h2>
                         <div class="projectElement">
                             I wrote this website from scratch! <br>
@@ -137,16 +137,16 @@
                         </div>
                     </div>
 
-                    <br>
-                    <br>
                 </div>
             </div>
 
-            <h1> ACADEMIC PROJECTS </h1>
+           
             <div class="projectsContainer">
+                <br> 
+                <h1> ACADEMIC PROJECTS </h1>
                 <div class="projectsBody">
 
-                    <div>
+                    <div class="project">
                         <h2> Insta485 (Instagram Clone), Jan - Mar 2021 </h2> 
                         <div> <img class="photoItem" src="/assets/img/projects/insta485/profile2.png"> </div>
                             <div class='projectElement'> 
@@ -175,15 +175,15 @@
                                             </li>
 
                                             <li>
-                                                creates separate profile, homepage, following, followers, and explore &nbsp;&nbsp;&nbsp;&nbsp;pages for each user using Flask templating and rendering <br> 
+                                                creates separate profile, homepage, following, followers, and explore pages for each user using Flask templating and rendering <br> 
                                             </li>
 
                                             <li>
-                                                queries database to create JSONs for the REST API interface, also in &nbsp;&nbsp;&nbsp;&nbsp;Flask <br> 
+                                                queries database to create JSONs for the REST API interface, also in Flask <br> 
                                             </li>
 
                                             <li>
-                                                supports requests for creating and deleting posts, accounts, likes, & &nbsp;&nbsp;&nbsp;&nbsp;comments <br>
+                                                supports requests for creating and deleting posts, accounts, likes, & comments <br>
                                             </li>
 
                                             <li>
@@ -196,9 +196,8 @@
                             </div> 
                     </div>
 
-                    <br>
 
-                    <div>
+                    <div class="project">
                         <h2> Map-Reduce Implementation, Apr 2021 </h2>
                         <div class='projectElement'> 
                             this was another group project. <br>
@@ -208,14 +207,11 @@
 
                             <br>
                             tools used: python (threading, socket, processes) <br> 
-                            concepts: TCP & UDP sockets, multi-threading, distributed systems 
+                            concepts: back-end web programming, TCP & UDP sockets, multi-threading, distributed systems 
                         </div>
                     </div>
 
-                    <br>
-                    <br>
-
-                    <div>
+                    <div class="project">
                         <h2> MotivBot Quote Generator, Nov - Dec 2019 </h2>
                         <div> <img class="photoItem" src="/assets/img/projects/motivBot/motivBot1.png"> </div>
                         <div class="projectElement">
@@ -233,8 +229,6 @@
                 </div>
             </div> 
             
-            <br>
-            <br>
 
         </div>
             <!--
