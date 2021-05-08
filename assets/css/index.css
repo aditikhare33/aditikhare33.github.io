@@ -1,3 +1,6 @@
+@import url(//db.onlinewebfonts.com/c/4633d82b666bc288aaca2e58aeb89690?family=Helvetica+Rounded+LT);
+@font-face {font-family: "Helvetica Rounded LT"; src: url("//db.onlinewebfonts.com/t/4633d82b666bc288aaca2e58aeb89690.eot"); src: url("//db.onlinewebfonts.com/t/4633d82b666bc288aaca2e58aeb89690.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4633d82b666bc288aaca2e58aeb89690.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4633d82b666bc288aaca2e58aeb89690.woff") format("woff"), url("//db.onlinewebfonts.com/t/4633d82b666bc288aaca2e58aeb89690.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/4633d82b666bc288aaca2e58aeb89690.svg#Helvetica Rounded LT") format("svg"); }
+
 body {
     margin: 0 auto;
     background-color: white;
@@ -7,7 +10,7 @@ body {
     position: absolute;
     top: 0%; 
     width: 100%;
-    font-family: Fredoka One;
+    font-family: Helvetica Rounded LT;
     zoom: 0.6;
     bottom: 10px;
     padding: 10px;
@@ -30,7 +33,7 @@ button {
     background-color: white;
     border: 2px solid rgb(42, 45, 69);
     border-radius: 7px;
-    font-family: Fredoka One;
+    font-family: Helvetica Rounded LT;
     font-size: 30px;
     color:rgb(42, 45, 69);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.19);
@@ -44,7 +47,7 @@ i {
     margin: 0 auto;
     text-align: center;
     display:flex;
-    max-width: 1700px;
+    max-width: 1000px;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -87,7 +90,7 @@ input {
     border-radius: 7px;
     border: 2px solid lightgray;
     font-size: 20px;
-    font-family: Fredoka One;
+    font-family: Helvetica Rounded LT;
     color: rgb(168, 168, 168);
     height: 30px;
     width: 100%;
@@ -98,7 +101,7 @@ textArea {
     border: 2px solid lightgray;
     font-size: 20px;
     height: 300px;
-    font-family: Fredoka One;
+    font-family: Helvetica Rounded LT;
     color: rgb(168, 168, 168);
     width: 100%;
 }
@@ -156,12 +159,15 @@ ul {
 }
 
 .projectsBody {
-    max-width: 1100px;
-    min-width: 1100px;
+    min-width: 1700px;
     text-align:left;
     margin-bottom: 50px;
     font-size: 30px;
     margin: 0 auto;
+    display:flex;
+    max-width: 1700px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .project {
