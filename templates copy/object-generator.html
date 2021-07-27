@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+{% include 'config.html' %}
+{% include 'nav.html' %}
+
+<html>
+<body>
+    <div class="basic-margins">
+    {% for key, value in animations.items %}
+        {{key}}
+        {% if value.isNotScript %}
+        {% block load-video %}
+        <video><source src="{% static value.video %}" type="{{value.video_type}}"></video>
+        {% endblock load-video %}
+        {% else %}
+        {% block load-script %}
+        <script type="text/javascript" src={{value.script}}> </script>
+        {% endblock load-script %}
+        {% endif %}
+        <br/>
+    {% endfor %}
+    </div>
+</body>
+</html>
+
+<header>
+    <title> Aditi Khare </title>
+</header>

@@ -1,0 +1,240 @@
+@import url(//db.onlinewebfonts.com/c/4633d82b666bc288aaca2e58aeb89690?family=Helvetica+Rounded+LT);
+@font-face {font-family: "Helvetica Rounded LT"; src: url("//db.onlinewebfonts.com/t/4633d82b666bc288aaca2e58aeb89690.eot"); src: url("//db.onlinewebfonts.com/t/4633d82b666bc288aaca2e58aeb89690.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4633d82b666bc288aaca2e58aeb89690.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4633d82b666bc288aaca2e58aeb89690.woff") format("woff"), url("//db.onlinewebfonts.com/t/4633d82b666bc288aaca2e58aeb89690.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/4633d82b666bc288aaca2e58aeb89690.svg#Helvetica Rounded LT") format("svg"); }
+
+body {
+    /*margin: 0 auto;*/
+    background-color: white;
+    font-size:25px;
+    color:rgb(42, 45, 69);
+    /*position: absolute;*/
+    top: 0%; 
+    width: 100%;
+    font-family: Helvetica Rounded LT;
+    zoom: 0.6;
+    bottom: 10px;
+    /*max-width: 100%;*/
+    /*overflow-x: hidden; */
+}
+
+.center {
+    text-align: center;
+}
+
+.top {
+    margin-top: 1.5%;
+    margin-bottom: 0%;
+}
+
+.left {
+    text-align: left;
+    margin-left: 1.5%;
+}
+
+.right {
+    text-align: right;
+    margin-right: 2.5%;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-child {
+    flex: 1;
+}
+
+.nav-items {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.name {
+    font-size: 150px;
+    margin-left: 1.5%;
+}
+
+.browse-button {
+    font-size: 60px;
+    margin-bottom: 1.5%;
+}
+
+.browse-button:hover {
+    background-color: rgb(116, 253, 116);
+}
+
+.full-width {
+    padding-left: 0px;
+    margin-left: 0%;
+    width: 100%;
+    z-index: 0;
+}
+
+.proj-source {
+  position: absolute;
+  top: 27%;
+  left: 80%;
+  zoom: 1.1;
+  z-index: 9999;
+}
+
+.front-carousel-pic {
+    display: block;
+    width: 100%;
+    height:100%;
+    height: auto;
+}
+
+.carousel-control-next {
+    position: absolute;
+    top: 23%;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease;
+}
+
+.carousel-control-prev {
+    top: 23%;
+}
+
+.carousel-control-next:hover {
+    background-color:rgba(255, 255, 255, 0);
+}
+
+.carousel-control-prev:hover {
+    background-color:rgba(255, 255, 255, 0);
+}
+
+.projects {
+    margin: 1.5%;
+}
+
+.project-overview-container {
+    display: block;
+    max-width: 90%;
+    height: 800px;
+}
+
+
+.project-overview-title {
+    /* text-align: center; */
+    padding: 5%;
+    font-size: 50;
+}
+
+.project-overview-body {
+    padding: 5%;
+    padding-top: 0%;
+    padding-bottom: 15px;
+    font-family: Helvetica;
+}
+
+.project-overview-tags {
+    bottom: 0%;
+    background-color: white;
+}
+
+.project-overview-card a:hover {
+    color: rgb(22, 26, 83);
+}
+
+.project-overview-card {
+    flex: 1 1 0px;
+    margin: 1.5%;
+    min-width: 30%;
+    max-width: 30%;
+    min-height: 40%;
+    border-radius: 25px;
+    background-color: white;
+    color: rgb(22, 26, 83);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.116);
+}
+
+.no-hover:hover {
+    background: transparent;
+}
+
+.hidden {
+    display: none;
+}
+
+.project-overview-img {
+    width: 100%;
+    height: 70%;
+    border-radius: 25px 25px 0px 0px;
+    height: auto;
+}
+
+.basic-margins {
+    margin: 1.5%;
+}
+
+.project-overview-filter-tags {
+    margin: 0.5%;
+    font-size: 45px;
+}
+
+.project-overview-filter-tags button {
+    border: none;
+    margin: 1.5%;
+}
+
+.green {
+    background-color: rgb(116, 253, 116);
+}
+
+.project-overview-tags button {
+    margin: 0.5%;
+    padding: 5px;
+    font-size: 25px;
+    border: none;
+}
+
+.see-more button {
+    font-size: 20px;
+    border: 4px; 
+}
+
+button {
+    background-color: white;
+    border: 6px solid rgb(116, 253, 116);
+    padding: 6px 10px 6px 10px;
+    border-radius: 15px;
+    font-family: Helvetica Rounded LT;
+    font-size: 30px;
+    color:rgb(42, 45, 69);
+    /*box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.19); */
+}
+
+button:hover {
+    background-color: rgb(116, 253, 116);
+}
+
+i {
+    font-size: 50px;
+}
+
+a:link {
+    color:rgb(42, 45, 69);
+    text-decoration: none;
+}
+
+a:visited {
+    color:rgb(42, 45, 69);
+    text-decoration: none;
+}
+
+a:hover {
+    color:silver;
+    text-decoration: bold;
+}

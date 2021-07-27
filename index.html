@@ -1,85 +1,379 @@
-<!DOCTYPE html>
-
 <html>
 
-    <head>
-        <link rel="icon" href= "/assets/img/icon.png"  type = "image/x-icon">
-        <link rel="stylesheet" href="/assets/css/index.css">
-        <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Fredoka+One">
-          <link href="//db.onlinewebfonts.com/c/4633d82b666bc288aaca2e58aeb89690?family=Helvetica+Rounded+LT" rel="stylesheet" type="text/css"/>
 
-          
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-G7X3MWKENT"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+<!-- CONFIG -->
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link href="//db.onlinewebfonts.com/c/4633d82b666bc288aaca2e58aeb89690?family=Helvetica+Rounded+LT" rel="stylesheet" type="text/css"/>
+        
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f6bbad65d6.js" crossorigin="anonymous"></script>
+    <script language="javascript" type="text/javascript" src="/static/js/object/libraries/p5.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G7X3MWKENT"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-        gtag('config', 'G-G7X3MWKENT');
-        </script>
-          
-    </head>
-    <header>
-        <title> Aditi Khare | Home </title>
-    </header>
+    gtag('config', 'G-G7X3MWKENT');
+    </script>
+</head>
+<!-- END CONFIG -->
 
-    <body>
-        under construction!
-    </body>
-     <!-- 
-    <body>
-        <div class="home">
-            
-            <nav>
-                <div class="navContainer">
-                    <div class="navItems">
-                        <h2> 
-                            <a href = "/">home</a>
-                            &emsp; 
-                            <a href = "/projects">projects</a>
-                            &emsp;
-                            <a href = "/contact">contact</a>
-                        </h2>
-                    </div>
+
+<!-- NAV -->
+<nav class="flex top left">
+    <div class="flex-child">
+        <a href="mailto:aditikh@umich.edu"> <i class="fas fa-envelope-square"></i> </a>
+        <a href="https://github.com/aditikhare33/">  <i class="fab fa-github-square"></i> </a> 
+        <a href="https://www.linkedin.com/in/aditi-khare-71b093199/">  <i class="fab fa-linkedin"> </i> </a> 
+    </div>
+    <div class="right nav-items flex-child" style="float:right;">
+        <a href ="/">home</a>
+        &emsp; 
+        <a href = "/#projects">projects</a>
+        &emsp; 
+        <a href = "/#about">about</a>  
+    </div>   
+</nav>
+<!-- END NAV -->
+
+
+<!-- NAME -->
+<div name="name">
+    <div class="name" style="vertical-align: bottom; margin-bottom:1.5%;">
+        Aditi Khare. 
+        <a href="/#projects">
+            <button class="browse-button" style="vertical-align: bottom;"> browse software portfolio </button>
+        </a>
+    </div>
+</div> 
+<!-- END NAME -->
+  
+
+<!-- START FRONT CAROUSEL -->
+<div class="carousel-holder">
+
+<a class="proj-source-container" href="/Projects/">
+    <button class="proj-source right"> view project demo  > </button> 
+</a>
+
+<div id="front-carousel" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-inner">
+    <div class="carousel-item carousel-pic-activator" id="/Projects/SentientSlinkie/">
+        <img class="full-width front-carousel-pic" src="/static/img/carousel/sentient-slinkie.png">
+    </div>
+    <div class="carousel-item carousel-pic-activator" id="/Projects/ObjectGenerator/">
+        <a name="project-link" href="" style="visibility:hidden;"></a>
+        <img class="full-width front-carousel-pic" src="/static/img/carousel/object-generator.png">
+    </div>
+    <div class="carousel-item carousel-pic-activator" id="/Projects/OceanSimulator/">
+        <a name="project-link" href="" style="visibility:hidden;"></a>
+        <img class="full-width front-carousel-pic" src="/static/img/carousel/ocean-wave.png">
+    </div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#front-carousel" data-bs-slide="prev"></button>
+    <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#front-carousel" data-bs-slide="next">
+    <span class="visually-hidden">Next</span>
+</button>
+</div>
+
+</div>
+
+<script type="text/javascript">
+$( document ).ready(function() {
+
+    pics = $(".carousel-pic-activator").get();
+    indicators = $(".carousel-indicator").get();
+    active_pic = Math.floor((Math.random() - 0.01) * (pics.length));
+    $(pics[active_pic]).addClass("active");
+    $(indicators[active_pic]).addClass("active");
+    for (let i = 0; i < pics.length; i++) {
+        if (i !== active_pic) {
+            $(pics[i]).removeClass("active");
+            $(indicators[i]).removeClass("active");
+        }
+    }
+    let original_link = $(".active").attr("id");
+    $(".proj-source-container").attr("href", original_link);
+
+    $("#front-carousel").on('slide.bs.carousel', function() {
+        let link = $(".active").attr("id");
+        $(".proj-source-container").attr("href", link);
+    });
+});
+</script>
+<!-- END FRONT CAROUSEL -->
+
+<!-- START PROJECTS OVERVIEW -->
+<div class="projects">
+<div id="projects" class="name">
+    Projects
+</div>
+
+<div class="project-overview-filter-tags" style="text-align:center;">
+    <button class="no-hover"> filters: </button>
+    <button class="green filter-tag-button" id="featured">featured</button>
+    <button class="filter-tag-button" id="web-development">web development</button>
+    <button class="filter-tag-button" id="computer-graphics">computer graphics / generative</button>
+    <button class="filter-tag-button" id="games">games</button>
+    <button class="filter-tag-button" id="machine-learning">machine learning</button>
+    <button class="filter-tag-button" id="all">all</button>
+</div>
+
+<div class="flex">
+    <div class="project-overview-card hidden" >
+        <a href="/Projects/OceanSimulator/">
+            <img class="project-overview-img full-width" src="/static/img/ocean-wave.png">
+            <h1><div class="project-overview-title"> Ocean Simulator </div></h1>
+            <div class="project-overview-body" >
+                A sinusoidally changing triangular mesh.
+                <div class="project-overview-tags">
+                    <button class="featured"> featured </button>
+                    <button class="computer-graphics"> computer graphics </button>
                 </div>
-            </nav>
 
-            <div>
-                <img 
-                    class="logo"
-                    src="/assets/img/logo.png"
-                >
+                <div class="see-more" style="text-align:right; bottom:0;" >
+                <a href="/Projects/OceanSimulator/"> 
+                    <button>
+                        learn more > 
+                    </button>
+                </a>
+                </div>
             </div>
+        </a>
+    </div>
 
-            <div>
-
-                <h1>
-                    <br>
-                    <u> <a href="/projects/">projects</a></u>
-                    &emsp;
-                    <u> <a href="/contact/">contact</a></u>
-                    <br>
-                </h1>
-            </div>
-
-            <img class="rotaterAnimation" src="assets/img/rotaterGreen2.gif" alt="animationByMe">
-
-            <footer>
-
-                <div>
-                    <a href="mailto:aditikh@umich.edu"> <i class="fas fa-envelope-square"></i> </a>
-                    <a href="https://github.com/aditikhare33/">  <i class="fab fa-github-square"></i> </a> 
-                    <a href="https://www.linkedin.com/in/aditi-khare-71b093199/">  <i class="fab fa-linkedin"> </i> </a>
+    <div class="project-overview-card hidden" >
+        <a href="/Projects/SentientSlinkie/">
+            <img class="project-overview-img full-width" src="/static/img/sentient-slinkie.png">
+            <h1><div class="project-overview-title"> Sentient Slinkie </div></h1>
+            <div class="project-overview-body" >
+                A rainbow line that draws itself.
+                <div class="project-overview-tags">
+                    <button class="featured"> featured </button>
+                    <button class="web-development"> web </button>
+                    <button class="computer-graphics"> generative animation </button>
                 </div>
 
-                <br>
-                <br>
-            </footer>
+                <div class="see-more" style="text-align:right; bottom:0;" >
+                <a href="/Projects/SentientSlinkie/"> 
+                    <button>
+                        learn more > 
+                    </button>
+                </a>
+                </div>
+            </div>
+        </a>
+    </div>
 
-        </div>
+    <div class="project-overview-card hidden" >
+        <a href="/Projects/ObjectGenerator/">
+            <img class="project-overview-img full-width" src="/static/img/object-generator.png">
+            <h1><div class="project-overview-title"> Object Generator </div></h1>
+            <div class="project-overview-body" >
+                Psuedo-Real Objects generated through a random noise function and symmetry.
+                <div class="project-overview-tags">
+                    <button class="featured"> featured </button>
+                    <button class="web-development"> web </button>
+                    <button class="computer-graphics"> generative animation </button>
+                </div>
 
-        <script src="https://kit.fontawesome.com/f6bbad65d6.js" crossorigin="anonymous"></script>
-    </body>
-    -->
+                <div class="see-more" style="text-align:right; bottom:0;" >
+                <a href="/Projects/ObjectGenerator/"> 
+                     <button>
+                        learn more > 
+                    </button>
+                </a>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="project-overview-card hidden" >
+        <a href="/Projects/MotivBot/">
+            <img class="project-overview-img full-width" src="/static/img/motivbot-front.png">
+            <h1><div class="project-overview-title"> MotivBot </div></h1>
+            <div class="project-overview-body" >
+                AI that generates motivational quotes on scenic backgrounds.
+                <div class="project-overview-tags">
+                    <button class="featured"> featured </button>
+                    <button class="machine-learning"> machine learning </button>
+                </div>
+
+                <div class="see-more" style="text-align:right; bottom:0;" >
+                <a href="/Projects/MotivBot/"> 
+                    <button>
+                        learn more > 
+                    </button>
+                </a>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="project-overview-card hidden" >
+        <a href="/Projects/PersonalWebsite/">
+            <img class="project-overview-img full-width" src="/static/img/personal-website.png">
+            <h1><div class="project-overview-title"> aditikhare.com </div></h1>
+            <div class="project-overview-body" >
+                This website! 
+                <div class="project-overview-tags">
+                    <button class="featured"> featured </button> 
+                    <button class="web-development"> web development </button> 
+                </div>
+
+                <div class="see-more" style="text-align:right; bottom:0;" >
+                <a href="/Projects/PersonalWebsite/"> 
+                    <button>
+                        learn more > 
+                    </button>
+                </a>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="project-overview-card hidden" >
+        <a href="/Projects/HarveyClassifier/">
+            <img class="project-overview-img full-width" src="/static/img/harvey.png">
+            <h1><div class="project-overview-title"> Hurricane Harvey Tweet Classifier </div></h1>
+            <div class="project-overview-body" >
+                A natural language processing classifier used to research behavioral responses to climate change.
+                (Part of a larger research project with the UMich ISR.)
+                <div class="project-overview-tags">
+                    <button class="featured"> featured </button> 
+                    <button class="machine-learning"> machine learning </button> 
+                </div>
+
+                <div class="see-more" style="text-align:right; bottom:0;" >
+                <a href="/Projects/HarveyClassifier/"> 
+                    <button>
+                        learn more > 
+                    </button>
+                </a>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="project-overview-card hidden" >
+        <a href="/Projects/FanAndBall/">
+            <img class="project-overview-img full-width" src="/static/img/fan-and-ball.png">
+            <h1><div class="project-overview-title"> The Fan and The Ball </div></h1>
+            <div class="project-overview-body" >
+                Fans generated from parametric functions look like they are trying to catch a moving ball.
+                <div class="project-overview-tags">
+                    <button class="web-development"> web </button>
+                    <button class="computer-graphics"> generative animation </button>
+                </div>
+
+                <div class="see-more" style="text-align:right; bottom:0;" >
+                <a href="/Projects/FanAndBall/"> 
+                    <button>
+                        learn more > 
+                    </button>
+                </a>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="project-overview-card hidden" >
+        <a href="/Projects/PhysicsSimulator/">
+            <img class="project-overview-img full-width" src="/static/img/gravity.png">
+            <h1><div class="project-overview-title"> Gravity Wins! </div></h1>
+            <div class="project-overview-body" >
+                A basic particle physics simulator.
+                <div class="project-overview-tags">
+                    <button class="web-development"> web </button>
+                    <button class="computer-graphics"> generative animation </button>
+                </div>
+
+                <div class="see-more" style="text-align:right; bottom:0;" >
+                <a href="/Projects/PhysicsSimulator/"> 
+                    <button>
+                        learn more > 
+                    </button>
+                </a>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="project-overview-card hidden" >
+        <a href="/Projects/MrTumbleWeed/">
+            <img class="project-overview-img full-width" src="/static/img/tumbleweed.png">
+            <h1><div class="project-overview-title"> Mr. Tumbleweed </div></h1>
+            <div class="project-overview-body" >
+                Mr.Tumbleweed has to jump over tumbleweeds!
+                <div class="project-overview-tags">
+                    <button class="games"> game </button> 
+                </div>
+
+                <div class="see-more" style="text-align:right; bottom:0;" >
+                <a href="/Projects/MrTumbleWeed/"> 
+                    <button>
+                        learn more > 
+                    </button>
+                </a>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="project-overview-card hidden" >
+        <a href="/Projects/SkyDot/">
+            <img class="project-overview-img full-width" src="/static/img/skydot.png">
+            <h1><div class="project-overview-title"> You are Dead, but Hungry! </div></h1>
+            <div class="project-overview-body" >
+                Try not to fall off the edges of the board and try to eat as many red dots as possible!
+                <div class="project-overview-tags">
+                    <button class="web-development"> web </button> 
+                    <button class="games"> game </button> 
+                </div>
+
+                <div class="see-more" style="text-align:right; bottom:0;" >
+                <a href="/Projects/SkyDot/"> 
+                    <button>
+                        learn more > 
+                    </button>
+                </a>
+                </div>
+            </div>
+        </a>
+    </div> 
+</div>
+</div>
+
+<script>
+$( document ).ready(function() {
+    $(".featured").parent().parent().parent().parent().removeClass("hidden");
+    $(".filter-tag-button").click(function() {
+        $(".filter-tag-button").removeClass("green");
+        $(".project-overview-card").addClass("hidden");
+        let tag = $(this).attr("id");
+        $(this).addClass("green");
+        if (tag === "all") {
+            $(".project-overview-card").removeClass("hidden");
+        } else {
+            $("."+tag).parent().parent().parent().parent().removeClass("hidden");
+        }
+    });
+});
+</script>
+<!-- END PROJECTS OVERVIEW -->
+
+<!-- START ABOUT -->
+<div class="about">
+<div id="about" class="name">
+    About
+</div>
+</div>
+<!-- END ABOUT-->
 </html>
