@@ -16,6 +16,7 @@ body {
     /*overflow-x: hidden; */
 }
 
+
 .center {
     text-align: center;
 }
@@ -30,11 +31,19 @@ body {
     margin-left: 1.5%;
 }
 
+.more-left {
+    text-align: left;
+    margin-left: 2.5%;
+}
+
 .right {
     text-align: right;
     margin-right: 2.5%;
 }
 
+.bottom {
+    margin-bottom: 1.5%;
+}
 .flex {
     display: flex;
     flex-wrap: wrap;
@@ -45,8 +54,11 @@ body {
 }
 
 .nav-items {
-    font-weight: bold;
     font-size: 50px;
+}
+
+.nav-item {
+    margin-left: 7.5%;
 }
 
 .name {
@@ -129,6 +141,7 @@ body {
 .project-overview-title {
     /* text-align: center; */
     padding: 5%;
+    padding-bottom: 13px;
     font-size: 50;
 }
 
@@ -139,9 +152,8 @@ body {
     font-family: Helvetica;
 }
 
-.project-overview-tags {
-    bottom: 0%;
-    background-color: white;
+.project-overview-description {
+    margin-bottom: 10px;
 }
 
 .project-overview-card a:hover {
@@ -181,7 +193,7 @@ body {
 
 .project-overview-filter-tags {
     margin: 0.5%;
-    font-size: 45px;
+    font-size: 55px;
 }
 
 .project-overview-filter-tags button {
@@ -197,16 +209,31 @@ body {
     margin: 0.5%;
     padding: 5px;
     font-size: 25px;
-    border: none;
+    border: 3px solid rgb(116, 253, 116);
+}
+
+.project-overview-tags button:hover {
+    background: transparent;
 }
 
 .see-more button {
-    font-size: 20px;
-    border: 4px; 
+    text-align: right;
+    vertical-align: text-bottom;
+    font-size: 35px;
+    border: none;
+    margin: 0 auto;
+    margin-top: .75;
+    position: relative;
+    bottom: 5%;
+    padding: 5px;
+}
+
+.resume {
+    margin: 2.5%;
 }
 
 button {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.685);
     border: 6px solid rgb(116, 253, 116);
     padding: 6px 10px 6px 10px;
     border-radius: 15px;
