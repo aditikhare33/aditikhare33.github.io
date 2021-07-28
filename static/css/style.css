@@ -103,11 +103,11 @@ nav {
 
 .proj-source {
   position: absolute;
-  top: 27%;
+  top: 30%;
   left: 85%;
-  zoom: 1.1;
+  zoom: 0.9;
   z-index: 9999;
-  background-color: rgba(255, 255, 255, 0.836);
+  background-color: rgba(255, 255, 255, 0.76);
 }
 
 .front-carousel-pic {
