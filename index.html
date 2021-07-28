@@ -1,11 +1,12 @@
+<!DOCTYPE html>
 <html>
 
 <!-- CONFIG -->
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="/static/css/style.css" />
     <link href="//db.onlinewebfonts.com/c/4633d82b666bc288aaca2e58aeb89690?family=Helvetica+Rounded+LT" rel="stylesheet" type="text/css"/>
-        
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="icon" href="/static/img/icon.png">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -19,6 +20,8 @@
 
     gtag('config', 'G-G7X3MWKENT');
     </script>
+
+    <title> Aditi Khare </title>
 </head>
 <!-- END CONFIG -->
 
@@ -41,10 +44,10 @@
 
 <!-- NAME -->
 <div name="name">
-    <div class="name" style="vertical-align: bottom; margin-bottom:1.5%;">
+    <div class="name aditikhare">
         Aditi Khare. 
         <a href="/#projects">
-            <button class="browse-button" style="vertical-align: bottom;"> browse software portfolio </button>
+            <button class="browse-button"> browse software portfolio </button>
         </a>
     </div>
 </div> 
@@ -60,14 +63,14 @@
 
 <div id="front-carousel" class="carousel slide" data-bs-ride="carousel">
 <div class="carousel-inner">
-    <div class="carousel-item carousel-pic-activator" id="/Projects/SentientSlinkie/">
+    <div class="carousel-item carousel-pic-activator" id="/projects/sentient-slinkie/">
         <img class="full-width front-carousel-pic" src="/static/img/carousel/sentient-slinkie.png">
     </div>
-    <div class="carousel-item carousel-pic-activator" id="/Projects/ObjectGenerator/">
+    <div class="carousel-item carousel-pic-activator" id="/projects/object-generator/">
         <a name="project-link" href="" style="visibility:hidden;"></a>
         <img class="full-width front-carousel-pic" src="/static/img/carousel/object-generator.png">
     </div>
-    <div class="carousel-item carousel-pic-activator" id="/Projects/OceanSimulator/">
+    <div class="carousel-item carousel-pic-activator" id="/projects/wave-simulator/">
         <a name="project-link" href="" style="visibility:hidden;"></a>
         <img class="full-width front-carousel-pic" src="/static/img/carousel/ocean-wave.png">
     </div>
@@ -113,7 +116,7 @@ $( document ).ready(function() {
     Projects
 </div>
 
-<div class="project-overview-filter-tags" style="text-align:center;">
+<div class="project-overview-filter-tags">
     <button class="no-hover"> filters: </button>
     <button class="green filter-tag-button" id="featured">featured</button>
     <button class="filter-tag-button" id="web-development">web development</button>
@@ -126,19 +129,19 @@ $( document ).ready(function() {
 <div class="flex">
 
     <div class="project-overview-card hidden" >
-        <a href="/Projects/ObjectGenerator/">
+        <a href="/projects/object-generator/">
             <img class="project-overview-img full-width" src="/static/img/object-generator.png">
             <h1><div class="project-overview-title"> Object Generator </div></h1>
             <div class="project-overview-body" ><div class="project-overview-description">
-                Psuedo-Real Objects generated through a random noise function and symmetry.
+                Computer generated drawings resembling man-made objects.
                 </div><div class="project-overview-tags">
                     <button class="featured"> featured </button>
                     <button class="web-development"> web </button>
                     <button class="computer-graphics"> generative animation </button>
                 </div>
 
-                <div class="see-more" style="text-align:right; bottom:0;" >
-                <a href="/Projects/ObjectGenerator/"> 
+                <div class="see-more" >
+                <a href="/projects/object-generator/"> 
                      <button>
                         learn more > 
                     </button>
@@ -149,19 +152,21 @@ $( document ).ready(function() {
     </div>
 
     <div class="project-overview-card hidden" >
-        <a href="/Projects/SentientSlinkie/">
+        <a href="/projects/sentient-slinkie/">
             <img class="project-overview-img full-width" src="/static/img/sentient-slinkie.png">
             <h1><div class="project-overview-title"> Sentient Slinkie </div></h1>
             <div class="project-overview-body" ><div class="project-overview-description">
                 A rainbow line that draws itself.
-                </div><div class="project-overview-tags">
+                </div>
+                <br/>
+                <div class="project-overview-tags">
                     <button class="featured"> featured </button>
                     <button class="web-development"> web </button>
                     <button class="computer-graphics"> generative animation </button>
                 </div>
 
-                <div class="see-more" style="text-align:right; bottom:0;" >
-                <a href="/Projects/SentientSlinkie/"> 
+                <div class="see-more">
+                <a href="/Projects/sentient-slinkie/"> 
                     <button>
                         learn more > 
                     </button>
@@ -172,20 +177,20 @@ $( document ).ready(function() {
     </div>
 
     <div class="project-overview-card hidden" >
-        <a href="/Projects/OceanSimulator/">
+        <a href="/projects/wave-simulator/">
             <img class="project-overview-img full-width" src="/static/img/ocean-wave.png">
             <h1><div class="project-overview-title"> Ocean Wave Simulator </div></h1>
             <div class="project-overview-body" >
                 <div class="project-overview-description">
-                    A sinusoidally changing 3D mesh.
+                    Unique 3D meshes generated with noise and sin functions move like waves.
                 </div>
                 <div class="project-overview-tags">
                     <button class="featured"> featured </button>
                     <button class="computer-graphics"> computer graphics </button>
                 </div>
 
-                <div class="see-more" style="text-align:right; bottom:0;" >
-                <a href="/Projects/OceanSimulator/"> 
+                <div class="see-more"  >
+                <a href="/projects/wave-simulator/"> 
                     <button>
                         learn more > 
                     </button>
@@ -196,7 +201,7 @@ $( document ).ready(function() {
     </div>
 
     <div class="project-overview-card hidden" >
-        <a href="/Projects/MotivBot/">
+        <a href="/projects/motiv-bot/">
             <img class="project-overview-img full-width" src="/static/img/motivbot-front.png">
             <h1><div class="project-overview-title"> MotivBot </div></h1>
             <div class="project-overview-body" >
@@ -208,8 +213,8 @@ $( document ).ready(function() {
                     <button class="machine-learning"> machine learning </button>
                 </div>
 
-                <div class="see-more" style="text-align:right; bottom:0;" >
-                <a href="/Projects/MotivBot/"> 
+                <div class="see-more"  >
+                <a href="/projects/motiv-bot/"> 
                     <button>
                         learn more > 
                     </button>
@@ -220,20 +225,21 @@ $( document ).ready(function() {
     </div>
 
     <div class="project-overview-card hidden" >
-        <a href="/Projects/PersonalWebsite/">
+        <a href="/projects/personal-website/">
             <img class="project-overview-img full-width" src="/static/img/personal-website.png">
             <h1><div class="project-overview-title"> aditikhare.com </div></h1>
             <div class="project-overview-body" >
                 <div class="project-overview-description">
                     This website! 
                 </div>
+                <br/>
                 <div class="project-overview-tags">
                     <button class="featured"> featured </button> 
                     <button class="web-development"> web development </button> 
                 </div>
 
-                <div class="see-more" style="text-align:right; bottom:0;" >
-                <a href="/Projects/PersonalWebsite/"> 
+                <div class="see-more"  >
+                <a href="/projects/personal-website/"> 
                     <button>
                         learn more > 
                     </button>
@@ -244,7 +250,7 @@ $( document ).ready(function() {
     </div>
 
     <div class="project-overview-card hidden" >
-        <a href="/Projects/HarveyClassifier/">
+        <a href="/projects/harvey-classifier/">
             <img class="project-overview-img full-width" src="/static/img/harvey.png">
             <h1><div class="project-overview-title"> Hurricane Harvey Tweet Classifier </div></h1>
             <div class="project-overview-body" >
@@ -257,8 +263,8 @@ $( document ).ready(function() {
                     <button class="machine-learning"> machine learning </button> 
                 </div>
 
-                <div class="see-more" style="text-align:right; bottom:0;" >
-                <a href="/Projects/HarveyClassifier/"> 
+                <div class="see-more"  >
+                <a href="/projects/harvey-classifier/"> 
                     <button>
                         learn more > 
                     </button>
@@ -269,7 +275,7 @@ $( document ).ready(function() {
     </div>
 
     <div class="project-overview-card hidden" >
-        <a href="/Projects/FanAndBall/">
+        <a href="/projects/fan-and-ball/">
             <img class="project-overview-img full-width" src="/static/img/fan-and-ball.png">
             <h1><div class="project-overview-title"> The Fan and The Ball </div></h1>
             <div class="project-overview-body" >
@@ -281,8 +287,8 @@ $( document ).ready(function() {
                     <button class="computer-graphics"> generative animation </button>
                 </div>
 
-                <div class="see-more" style="text-align:right; bottom:0;" >
-                <a href="/Projects/FanAndBall/"> 
+                <div class="see-more"  >
+                <a href="/projects/fan-and-ball/"> 
                     <button>
                         learn more > 
                     </button>
@@ -293,20 +299,21 @@ $( document ).ready(function() {
     </div>
 
     <div class="project-overview-card hidden" >
-        <a href="/Projects/PhysicsSimulator/">
+        <a href="/projects/physics-simulator/">
             <img class="project-overview-img full-width" src="/static/img/gravity.png">
             <h1><div class="project-overview-title"> Gravity Wins! </div></h1>
             <div class="project-overview-body" >
                 <div class="project-overview-description">
                     A basic particle physics simulator.
                 </div>
+                <br/>
                 <div class="project-overview-tags">
                     <button class="web-development"> web </button>
                     <button class="computer-graphics"> generative animation </button>
                 </div>
 
-                <div class="see-more" style="text-align:right; bottom:0;" >
-                <a href="/Projects/PhysicsSimulator/"> 
+                <div class="see-more"  >
+                <a href="/projects/physics-simulator/"> 
                     <button>
                         learn more > 
                     </button>
@@ -317,19 +324,20 @@ $( document ).ready(function() {
     </div>
 
     <div class="project-overview-card hidden" >
-        <a href="/Projects/MrTumbleWeed/">
+        <a href="/projects/tumbleweed/">
             <img class="project-overview-img full-width" src="/static/img/tumbleweed.png">
             <h1><div class="project-overview-title"> Mr. Tumbleweed </div></h1>
             <div class="project-overview-body" >
                 <div class="project-overview-description">
                     Mr.Tumbleweed has to jump over tumbleweeds!
                 </div>
+                <br/>
                 <div class="project-overview-tags">
                     <button class="games"> game </button> 
                 </div>
 
-                <div class="see-more" style="text-align:right; bottom:0;" >
-                <a href="/Projects/MrTumbleWeed/"> 
+                <div class="see-more"  >
+                <a href="/projects/tumbleweed/"> 
                     <button>
                         learn more > 
                     </button>
@@ -340,7 +348,7 @@ $( document ).ready(function() {
     </div>
 
     <div class="project-overview-card hidden" >
-        <a href="/Projects/SkyDot/">
+        <a href="/projects/eat-apples/">
             <img class="project-overview-img full-width" src="/static/img/skydot.png">
             <h1><div class="project-overview-title"> Eat Apples </div></h1>
             <div class="project-overview-body" >
@@ -352,8 +360,8 @@ $( document ).ready(function() {
                     <button class="games"> game </button> 
                 </div>
 
-                <div class="see-more" style="text-align:right; bottom:0;" >
-                <a href="/Projects/SkyDot/"> 
+                <div class="see-more"  >
+                <a href="/projects/eat-apples/"> 
                     <button>
                         learn more > 
                     </button>
@@ -402,9 +410,10 @@ $( document ).ready(function() {
     </button>
     </a>
 </div>
-</body>
+</div>
 <!-- END ABOUT-->
 
+</body>
 
 <!-- FOOTER START -->
 <footer>
@@ -419,5 +428,4 @@ $( document ).ready(function() {
     </div>
 </footer>
 <!-- FOOTER END -->
-
 </html>

@@ -16,6 +16,20 @@ body {
     /*overflow-x: hidden; */
 }
 
+.coming-soon {
+    margin-right: 0%;
+    margin-top: 15%;
+    margin-bottom: 15%; 
+    text-align: center; 
+    border-radius: 5%;
+    text-decoration: underline rgb(116, 253, 116);
+}
+
+.aditikhare {
+    vertical-align: bottom; 
+    margin-bottom:1.5%;
+}
+
 
 .center {
     text-align: center;
@@ -69,6 +83,7 @@ body {
 .browse-button {
     font-size: 60px;
     margin-bottom: 1.5%;
+    vertical-align: bottom;
 }
 
 .browse-button:hover {
@@ -133,6 +148,7 @@ body {
 
 .project-overview-container {
     display: block;
+    min-width: 90%;
     max-width: 90%;
     height: 800px;
 }
@@ -198,6 +214,7 @@ body {
 .project-overview-filter-tags {
     margin: 0.5%;
     font-size: 55px;
+    text-align: center;
 }
 
 .project-overview-filter-tags button {
@@ -221,18 +238,20 @@ body {
     background: transparent;
 }
 
-.see-more button {
+.see-more {
     text-align: right;
-    vertical-align: text-bottom;
-    font-size: 35px;
+}
+
+.see-more button {
     border: none;
-    margin: 0 auto;
-    margin-top: 2.5%;
-    position: relative;
-    bottom: 5%;
-    padding: 5px 
+    right: 20px;
+    bottom: 20px;
+
+
+    padding: 5px;
     padding-top: 2px;
     padding-bottom: 2px;
+    margin-top: 2%;
 }
 
 .resume {
