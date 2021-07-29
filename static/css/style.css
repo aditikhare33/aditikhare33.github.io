@@ -15,7 +15,7 @@ body {
     zoom: 0.6;
     bottom: 10px;
     /*max-width: 100%;*/
-    /*overflow-x: hidden; */
+    overflow-x: hidden; 
 }
 
 .coming-soon {
@@ -82,12 +82,16 @@ nav {
 }
 
 .name {
-    font-size: 100px;
+    font-size: 90px;
     margin-left: 1%;
 }
 
 .browse-button {
-    font-size: 40px;
+    font-size: 30px;
+}
+
+.about {
+    margin-bottom: 0%;
 }
 
 .browse-button:hover {
@@ -103,7 +107,7 @@ nav {
 
 .proj-source {
   position: absolute;
-  top: 30%;
+  top: 18%;
   left: 85%;
   zoom: 0.9;
   z-index: 9999;
@@ -117,7 +121,7 @@ nav {
 .front-carousel-pic {
     margin-top: 0px;
     padding-top: 0px;
-    width: 2500px;
+    width: 100%;
     height: 100%;
     object-fit: contain;
     vertical-align: top 100;
@@ -131,7 +135,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 15%;
+    width: 45%;
     padding: 0;
     color: #fff;
     text-align: center;
@@ -143,6 +147,7 @@ nav {
 
 .carousel-control-prev {
     top: 23%;
+    width: 45%;
 }
 
 .carousel-control-next:hover {
@@ -181,7 +186,7 @@ nav {
 .project-overview-description {
     margin-bottom: 10px;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color:rgb(133, 138, 134);
+    color:rgb(136, 136, 136);
 }
 
 @media only screen and (max-width: 800px) {
@@ -199,7 +204,7 @@ nav {
     min-width: 30%;
     max-width: 30%;
     min-height: 40%;
-    border-radius: 25px;
+    border-radius: 18px;
     background-color: white;
     color: rgb(42,45, 69);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.116);
@@ -220,7 +225,7 @@ nav {
 .project-overview-img {
     width: 100%;
     height: 70%;
-    border-radius: 25px 25px 0px 0px;
+    border-radius: 18px 18px 0px 0px;
     height: auto;
 }
 

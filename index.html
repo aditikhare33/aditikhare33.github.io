@@ -34,6 +34,7 @@
         <a href="https://www.linkedin.com/in/aditi-khare-71b093199/">  <i class="fab fa-linkedin"> </i> </a> 
     </div>
     <div class="right nav-items flex-child">
+        <a class="nav-item" href = "">home</a>
         <a class="nav-item" href = "/#projects">projects</a>
         <a class="nav-item" href = "/#about">about</a>  
     </div>   
@@ -44,7 +45,7 @@
 <!-- NAME -->
 <div name="name">
     <div class="name aditikhare">
-        Aditi Khare. 
+        Aditi Khare
         <a href="/#projects">
             <button class="browse-button"> browse software portfolio </button>
         </a>
@@ -62,6 +63,7 @@
 
 <div id="front-carousel" class="carousel slide" data-bs-ride="carousel">
 <div class="carousel-inner">
+    <div class="dummy" id="/projects/wave-simulator"></div>
     <div class="carousel-item carousel-pic-activator" id="/projects/sentient-slinkie/">
         <img class="full-width front-carousel-pic" src="/static/img/carousel/sentient-slinkie.png">
     </div>
@@ -73,6 +75,7 @@
         <a name="project-link" href="" style="visibility:hidden;"></a>
         <img class="full-width front-carousel-pic" src="/static/img/carousel/ocean-wave.png">
     </div>
+    <div class="dummy" id="/projects/sentient-slinkie/"></div>
 </div>
 <button class="carousel-control-prev" type="button" data-bs-target="#front-carousel" data-bs-slide="prev"></button>
     <span class="visually-hidden">Previous</span>
@@ -102,7 +105,20 @@ $( document ).ready(function() {
     $(".proj-source-container").attr("href", original_link);
 
     $("#front-carousel").on('slide.bs.carousel', function() {
-        let link = $(".active").attr("id");
+        let link = $(".active").next().attr("id");
+        console.log(link, "slid!");
+        $(".proj-source-container").attr("href", link);
+    });
+
+    $(".carousel-control-next").click(function() {
+        let link = $(".active").next().attr("id");
+        console.log(link, "clicked next!");
+        $(".proj-source-container").attr("href", link);
+    });
+
+    $(".carousel-control-prev").click(function() {
+        let link = $(".active").prev().attr("id");
+        console.log(link, "clicked prev!");
         $(".proj-source-container").attr("href", link);
     });
 });
@@ -392,15 +408,14 @@ $( document ).ready(function() {
 
 <!-- START ABOUT -->
 <div class="about">
-<div id="about" class="name">
+<div id="about" class="name about">
     About 
-    
 </div>
 
 <div class="more-left">
     <h1> Hi, I'm Aditi! </h1> <br>
     I'm currently an incoming junior in Computer Science at the University of Michigan. <br/>
-    I love creating things that other people can interact with! <br/>
+    I love creating things that other people can interact with! <br/><br/>
 </div>
 </div>
 <!-- END ABOUT-->

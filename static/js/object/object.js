@@ -1,8 +1,9 @@
-let w = 1300;
-let h = 1000;
+let w = 1000;
+let h = 500;
 
 let blue = "#1380FF";
 let yellow = "#FFFA66"; //"#F8E500"
+let dark_yellow = "#F1E83C";
 let red = "#F40000";
 let green = "#49d93d";
 let white = 255;
@@ -10,17 +11,20 @@ let colors = [blue, red, green]; // white]; // #yellow]
 //let curr_color = colors[int(random(0, len(colors)))]
 let curr_color = 255;
 let incr = 0.1;
-let recent_window = 3.0/incr;
-let bgColor = yellow; //#255;
+let recent_window = 2.0/incr;
+let bgColor =  yellow;//yellow; //#255;
 let t_x = 0;
 let t_y = 0;
+let scl_x = 5.0;
+let scl_y = 5.0;
 
 function setup() {
     t_x = random(0, 100);
     t_y = random(0, 100);  
-    w = windowHeight; 
-    h = windowHeight;      
-    createCanvas(w, h);
+    w = windowHeight;
+    h = windowHeight;     
+    cnv = createCanvas(w, h);
+    cnv.parent("object-container");
     background(bgColor);
 }
 
@@ -28,7 +32,7 @@ let recents = [];
 
 function draw() {
 
-    let thickness = map(noise(t_x, t_y), 0, 1, 6, 6);
+    let thickness = map(noise(t_x, t_y), 0, 1, 10, 10);
     strokeWeight(thickness);
     
     let x = map(noise(t_x), 0, 1, 0, w);
@@ -40,7 +44,7 @@ function draw() {
         point(x, y);
         point(y, x);
     } else {
-        if (recents.length > recent_window*25) {
+        if (recents.length > recent_window*scl_x*scl_y) {
             recents.shift();
         }
         else {
@@ -53,11 +57,6 @@ function draw() {
     //change_color()
 }
 
-function keyPressed() {
-    if (keyCode == 32) {
-        show_recents();
-    }
-}
     
 function change_color() {
     let chance = int(random(0, 100));
@@ -66,19 +65,25 @@ function change_color() {
     }
 }
 
+function keyPressed() {
+    if (key == 'n' || key == 'N') {
+        show_recents()
+    }
+}
+
 function show_recents() {
     background(bgColor);
-    let scl = 5.0;
-    for(let row = 0; row < int(scl); row++) {
-        for(let col = 0; col < int(scl); col++) {
+    let scl = scl_x;
+    for(let row = 0; row < int(scl_y); row++) {
+        for(let col = 0; col < int(scl_x); col++) {
             push();
-            translate(w/scl*col, h/scl*row);
+            translate(w/scl_x*col, h/scl_y*row);
             rotate(PI/4.0);
             translate(w/18, -h/10);
             stroke(colors[int(row*scl+col)%colors.length]);
             
-            let shift_upper = (row*scl + col + 1) * recent_window;
-            let shift_lower = (row*scl + col) * recent_window;
+            let shift_upper = (row*scl_x + col + 1) * recent_window;
+            let shift_lower = (row*scl_x + col) * recent_window;
             
             for (let i = 0; i < recents.length; i++) {
                 if (i >= 4 && i <= shift_upper && i >= shift_lower) {
@@ -101,8 +106,13 @@ function show_recents() {
             pop();
         }
     }   
-    if (recents.length >=recent_window*25) {
-        fill(blue);
-        text("PRESS SPACE FOR NEW OBJECTS", w/2.5 , h/20);
+    if (recents.length >=recent_window*scl_x*scl_y) {
+        setTimeout(show_recents, 100);
+        /*
+        fill(50);
+        textStyle(BOLD);
+        textSize(20 * h/800);
+        text("PRESS n FOR NEW OBJECTS, KEEP TAPPING n TO SEE PROCESS", w/18 , h/25);
+        */
     } 
 }
