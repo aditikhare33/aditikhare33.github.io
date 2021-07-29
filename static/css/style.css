@@ -28,7 +28,7 @@ body {
 }
 
 .aditikhare {
-    vertical-align: bottom; 
+    vertical-align: bottom;
     margin-bottom:1.0%;
 }
 
@@ -87,7 +87,9 @@ nav {
 }
 
 .browse-button {
-    font-size: 30px;
+    margin-left: 2.0%;
+    vertical-align: middle ;
+    font-size: 47px;
 }
 
 .about {
