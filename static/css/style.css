@@ -30,6 +30,7 @@ body {
 .aditikhare {
     vertical-align: bottom;
     margin-bottom:1.0%;
+    margin-left: 1.0%;
 }
 
 
@@ -69,9 +70,6 @@ body {
     flex: 1;
 }
 
-nav {
-    zoom: 0.7;
-}
 
 .nav-items {
     font-size: 50px;
@@ -82,14 +80,13 @@ nav {
 }
 
 .name {
-    font-size: 90px;
+    font-size: 100px;
     margin-left: 1%;
 }
 
 .browse-button {
-    margin-left: 2.0%;
     vertical-align: middle ;
-    font-size: 47px;
+    font-size: 60px;
 }
 
 .about {
@@ -110,8 +107,7 @@ nav {
 .proj-source {
   position: absolute;
   top: 18%;
-  left: 85%;
-  zoom: 0.9;
+  left: 80%;
   z-index: 9999;
   background-color: rgba(255, 255, 255, 0.76);
 }
