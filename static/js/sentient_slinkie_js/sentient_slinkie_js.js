@@ -26,6 +26,7 @@ function setup() {
 }
 
 function draw() { 
+  stroke(100);
   fill(color(t3, 255, 255));
   x = map(noise(t1), 0, 1, 0, w);
   y = map(noise(t2), 0, 1, 0, h);
