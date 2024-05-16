@@ -1,0 +1,9 @@
+#nav {
+  height: 100%;
+  top: 0;
+  background-color: white;
+  font-size: extra-large;
+  color:rgb(25, 39, 70);
+  padding: 1em 1em 1em;
+  margin: 1em 1em 1em;
+}
