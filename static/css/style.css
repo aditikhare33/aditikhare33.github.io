@@ -1,5 +1,3 @@
-@import url(//db.onlinewebfonts.com/c/4633d82b666bc288aaca2e58aeb89690?family=Helvetica+Rounded+LT);
-@font-face {font-family: "Helvetica Rounded LT"; src: url("//db.onlinewebfonts.com/t/4633d82b666bc288aaca2e58aeb89690.eot"); src: url("//db.onlinewebfonts.com/t/4633d82b666bc288aaca2e58aeb89690.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4633d82b666bc288aaca2e58aeb89690.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4633d82b666bc288aaca2e58aeb89690.woff") format("woff"), url("//db.onlinewebfonts.com/t/4633d82b666bc288aaca2e58aeb89690.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/4633d82b666bc288aaca2e58aeb89690.svg#Helvetica Rounded LT") format("svg"); }
 
 body {
     /*margin: 0 auto;*/
@@ -11,28 +9,12 @@ body {
     /*position: absolute;*/
     top: 0%; 
     width: 100%;
-    font-family: Helvetica Rounded LT;
+    font-family: Helvetica;
     zoom: 0.6;
     bottom: 10px;
     /*max-width: 100%;*/
     overflow-x: hidden; 
 }
-
-.coming-soon {
-    margin-right: 0%;
-    margin-top: 17%;
-    margin-bottom: 17%; 
-    text-align: center; 
-    border-radius: 5%;
-    text-decoration: underline rgb(116, 253, 116);
-}
-
-.aditikhare {
-    vertical-align: bottom;
-    margin-bottom:1.0%;
-    margin-left: 1.0%;
-}
-
 
 .center {
     text-align: center;
@@ -48,11 +30,6 @@ body {
     margin-left: 1.5%;
 }
 
-.more-left {
-    text-align: left;
-    margin-left: 2.5%;
-}
-
 .right {
     text-align: right;
     margin-right: 2.5%;
@@ -61,6 +38,7 @@ body {
 .bottom {
     margin-bottom: 1.5%;
 }
+
 .flex {
     display: flex;
     flex-wrap: wrap;
@@ -70,146 +48,12 @@ body {
     flex: 1;
 }
 
-
 .nav-items {
     font-size: 50px;
 }
 
 .nav-item {
     margin-left: 7.5%;
-}
-
-.name {
-    font-size: 100px;
-    margin-left: 1%;
-}
-
-.browse-button {
-    vertical-align: middle ;
-    font-size: 60px;
-}
-
-.about {
-    margin-bottom: 0%;
-}
-
-.browse-button:hover {
-    background-color: rgb(116, 253, 116);
-}
-
-.full-width {
-    padding-left: 0px;
-    margin-left: 0%;
-    width: 100%;
-    z-index: 0;
-}
-
-.proj-source {
-  position: absolute;
-  top: 18%;
-  left: 80%;
-  z-index: 9999;
-  background-color: rgba(255, 255, 255, 0.76);
-}
-
-.carousel-holder {
-    height: 100%;
-}
-
-.front-carousel-pic {
-    margin-top: 0px;
-    padding-top: 0px;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    vertical-align: top 100;
-}
-
-.carousel-control-next {
-    position: absolute;
-    top: 23%;
-    bottom: 0;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 45%;
-    padding: 0;
-    color: #fff;
-    text-align: center;
-    background: 0 0;
-    border: 0;
-    opacity: .5;
-    transition: opacity .15s ease;
-}
-
-.carousel-control-prev {
-    top: 23%;
-    width: 45%;
-}
-
-.carousel-control-next:hover {
-    background-color:rgba(255, 255, 255, 0);
-}
-
-.carousel-control-prev:hover {
-    background-color:rgba(255, 255, 255, 0);
-}
-
-.projects {
-    margin: 1.5%;
-}
-
-.project-overview-container {
-    display: block;
-    min-width: 90%;
-    max-width: 90%;
-    height: 800px;
-}
-
-
-.project-overview-title {
-    /* text-align: center; */
-    padding: 5%;
-    padding-bottom: 13px;
-    font-size: 50;
-}
-
-.project-overview-body {
-    padding: 5%;
-    padding-top: 0%;
-    padding-bottom: 15px;
-}
-
-.project-overview-description {
-    margin-bottom: 10px;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color:rgb(136, 136, 136);
-}
-
-@media only screen and (max-width: 800px) {
-    body {
-    }
-  }
-
-.project-overview-card a:hover {
-    color:rgb(42,45, 69);
-}
-
-.project-overview-card {
-    flex: 1 1 0px;
-    margin: 1.5%;
-    min-width: 30%;
-    max-width: 30%;
-    min-height: 40%;
-    border-radius: 18px;
-    background-color: white;
-    color: rgb(42,45, 69);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.116);
-}
-
-.about {
-    margin: 1.5%;
 }
 
 .no-hover:hover {
@@ -220,77 +64,25 @@ body {
     display: none;
 }
 
-.project-overview-img {
-    width: 100%;
-    height: 70%;
-    border-radius: 18px 18px 0px 0px;
-    height: auto;
-}
-
 .basic-margins {
     margin: 1.5%;
 }
 
-.project-overview-filter-tags {
-    margin: 0.5%;
-    font-size: 4vw;
-    text-align: center;
-}
 
-.project-overview-filter-tags button {
-    border: none;
-    margin-left: 1.8%;
-    margin-right: 1.8%;
-}
-
-.green {
-    background-color: rgb(116, 253, 116);
-}
-
-.project-overview-tags button {
-    margin: 0.5%;
-    padding: 5px;
-    font-size: 25px;
-    border: 3px solid rgb(116, 253, 116);
-}
-
-.project-overview-tags button:hover {
-    background: transparent;
-}
-
-.see-more {
-    text-align: right;
-}
-
-.see-more button {
-    border: none;
-    right: 20px;
-    bottom: 20px;
-
-
-    padding: 5px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    margin-top: 2%;
-}
-
-.resume {
-    margin: 2.0%;
-}
 
 button {
     background-color: rgb(255, 255, 255);
-    border: 6px solid rgb(116, 253, 116);
+    border: 6px solid rgb(53, 124, 39);
     padding: 6px 10px 6px 10px;
     border-radius: 15px;
-    font-family: Helvetica Rounded LT;
+    font-family: Helvetica;
     font-size: 30px;
-    color:rgb(42, 45, 69);
+    color: rgb(42, 45, 69);
     /*box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.19); */
 }
 
 button:hover {
-    background-color: rgb(116, 253, 116);
+    background-color:  rgb(53, 124, 39);
 }
 
 i {
