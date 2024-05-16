@@ -34,17 +34,17 @@ button:hover {
 }
 
 a:link {
-    color: rgb(25, 39, 70);
+    color: rgb(206, 237, 226);
     text-decoration: none;
 }
 
 a:visited {
-   color:rgb(25, 39, 70);
+   color:  rgb(206, 237, 226);
    text-decoration: none;
 }
 
 a:hover {
-    color:rgb(25, 39, 70);
+    color: rgb(101, 129, 119);
     text-decoration: bold;
 }
 
