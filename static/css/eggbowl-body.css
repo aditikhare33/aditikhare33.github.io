@@ -1,0 +1,60 @@
+body {
+    /*margin: 0 auto;*/
+    height: 100%;
+    margin: 1%;
+    padding: 2%;
+    background-color:rgb(243, 222, 156);
+    background-image: url(../img/Miss/hide.png), url(../img/hill3.png);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+    font-size: xx-large;
+    color: rgb(241, 241, 241);
+    /*position: absolute;*/
+    width: 100%;
+    font-family: Helvetica;
+    bottom: 10px;
+    /*max-width: 100%;*/
+    overflow-x: hidden; 
+    overflow-y: hidden;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 5fr 9fr;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0em 0.5em 2em;
+}
+
+/* Create 2 equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0em 0.5em 2em;
+}
+
+.column img {
+  margin-top: 1em;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a 1 column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
