@@ -7,6 +7,7 @@ body {
     background-image: url(../img/Miss/hide.png), url(../img/hill3.png);
     background-repeat: no-repeat;
     background-blend-mode: multiply;
+    background-attachment: fixed;
     background-size: cover;
     font-size: xx-large;
     color: rgb(241, 241, 241);
@@ -67,6 +68,8 @@ body {
     background-image: url(../img/Miss/hide.png), url(../img/hill3.png);
     background-repeat: no-repeat;
     background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-attachment: fixed;
     background-size: cover;
     font-size: xx-large;
     color: rgb(241, 241, 241);

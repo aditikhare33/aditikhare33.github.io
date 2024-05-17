@@ -1,5 +1,4 @@
 body {
-    /*margin: 0 auto;*/
     height: 100%;
     margin: 1%;
     padding: 2%;
@@ -10,12 +9,10 @@ body {
     background-size: cover;
     font-size: xx-large;
     color: rgb(241, 241, 241);
-    /*position: absolute;*/
     width: 100%;
     font-family: Helvetica;
     bottom: 10px;
     zoom: 1.2;
-    /*max-width: 100%;*/
     overflow-x: hidden; 
     overflow-y: hidden;
 }
