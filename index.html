@@ -29,19 +29,17 @@
     <div class="main-container">
         <div class="nav">
             <div class="mobile-nav-icon">
-                <a onclick="toggleNav()">&#9776;</a>
-            </div>
-            <div class="mobile-nav-icon-minus">
-                <a onclick="toggleNav()">-</a>
+                <a href="/mobile-nav/">&#9776;</a>
             </div>
             <div>
                 <div name="name">
                   <img src="static/img/p-fish-world-hc.png">
                </div> 
             </div>
+    
             <div class="nav-items">
                 <div>
-                    <a href="/eggbowl" > egg bowl</a>
+                    <a href="/egg-bowl" > egg bowl</a>
                     <br>
                     <a href="/hide-and-seek"> hide and seek</a>
                     <br>
@@ -72,18 +70,4 @@
     </div>
 
 </body>
-
-<script >
-  function toggleNav() {
-    if (document.getElementsByClassName("nav-items").length > 0) {
-        document.getElementsByClassName("nav-items")[0].className = "nav-items-responsive";
-        document.getElementsByClassName("mobile-nav-icon")[0].className = "mobile-nav-icon-responsive";
-        document.getElementsByClassName("mobile-nav-icon-minus")[0].className = "mobile-nav-icon-minus-responsive";
-    } else if (document.getElementsByClassName("nav-items-responsive")) {
-        document.getElementsByClassName("nav-items-responsive")[0].className = "nav-items";
-        document.getElementsByClassName("mobile-nav-icon-responsive")[0].className = "mobile-nav-icon";
-        document.getElementsByClassName("mobile-nav-icon-minus-responsive")[0].className = "mobile-nav-icon-minus";
-    }
-  }
-</script>
 </html>

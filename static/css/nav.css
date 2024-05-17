@@ -12,18 +12,7 @@
   visibility: hidden;
 }
 
-.mobile-nav-icon-minus {
-  display: none;
-  visibility: hidden;
-}
-
-
-.mobile-nav-icon-responsive {
-  display: none;
-  visibility: hidden;
-}
-
-.mobile-nav-icon-minus-responsive {
+.enter-world {
   display: none;
   visibility: hidden;
 }
@@ -37,30 +26,17 @@
   .mobile-nav-icon {
     display: block;
     visibility: visible;
-    position: sticky;
-    top: 5;
-    right: 2;
-  }
-  .mobile-nav-icon-minus {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .nav-items-responsive {
-    display: block;
-  }
-  
-  .mobile-nav-icon-responsive {
-    display: none;
-    visibility: invisible;
-    color: rgb(241, 241, 241);
+    position: absolute;
+    top: 0.6em;
+    right: 0.6em;
+    zoom: 1.3;
   }
 
-  .mobile-nav-icon-minus-responsive {
+  .enter-world {
     display: block;
     visibility: visible;
-    color: rgb(241, 241, 241);
+    position: absolute;
+    top: 10em;
+    right: 6em;
   }
 }

@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../static/css/style.css" />
     <link rel="stylesheet" href="../static/css/nav.css" />
-    <link rel="stylesheet" href="../static/css/eggbowl-body.css" />
+    <link rel="stylesheet" href="../static/css/egg-bowl-body.css" />
     <link rel="icon" href="../static/img/icon.png">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -29,10 +29,7 @@
     <div class="main-container">
         <div class="nav">
             <div class="mobile-nav-icon">
-                <a onclick="toggleNav()">&#9776;</a>
-            </div>
-            <div class="mobile-nav-icon-minus">
-                <a onclick="toggleNav()">-</a>
+                <a href="/mobile-nav/">&#9776;</a>
             </div>
             <div>
                 <div name="name">
@@ -72,18 +69,4 @@
     </div>
 
 </body>
-
-<script >
-  function toggleNav() {
-    if (document.getElementsByClassName("nav-items").length > 0) {
-        document.getElementsByClassName("nav-items")[0].className = "nav-items-responsive";
-        document.getElementsByClassName("mobile-nav-icon")[0].className = "mobile-nav-icon-responsive";
-        document.getElementsByClassName("mobile-nav-icon-minus")[0].className = "mobile-nav-icon-minus-responsive";
-    } else if (document.getElementsByClassName("nav-items-responsive")) {
-        document.getElementsByClassName("nav-items-responsive")[0].className = "nav-items";
-        document.getElementsByClassName("mobile-nav-icon-responsive")[0].className = "mobile-nav-icon";
-        document.getElementsByClassName("mobile-nav-icon-minus-responsive")[0].className = "mobile-nav-icon-minus";
-    }
-  }
-</script>
 </html>
