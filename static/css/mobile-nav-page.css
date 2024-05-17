@@ -1,0 +1,67 @@
+.main-container {
+  display: block;
+  grid-template-columns: 5fr 9fr;
+}
+
+body {
+  height: 100%;
+  margin: 1%;
+  padding: 2%;
+  background-color:rgb(97, 116, 223);
+  background-image: url(../img/Miss/hide.png), url(../img/hill3.png);
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-size: cover;
+  font-size: xx-large;
+  color: rgb(27, 27, 29);
+  width: 100%;
+  font-family: Helvetica;
+  bottom: 10px;
+  zoom: 1.2;
+  overflow-x: hidden; 
+}
+
+.nav {
+  height: 100%;
+  top: 0;
+  font-size: x-large;
+  color: rgb(27, 27, 29);
+  padding: 1em 1em 1em;
+  margin: 1em 1em 1em;
+}
+
+/* Responsive layout - makes a 1 column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: 4fr 9fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+ .main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+a:link {
+    color: rgb(206, 237, 226);
+    text-decoration: none;
+}
+
+a:visited {
+   color:  rgb(206, 237, 226);
+   text-decoration: none;
+}
+
+a:hover {
+    color: rgb(101, 129, 119);
+    text-decoration: bold;
+}
+
+img {
+  max-height:100%;
+  max-width:100%;
+}

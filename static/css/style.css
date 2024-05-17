@@ -17,20 +17,7 @@ footer {
 
 .hidden {
     display: none;
-}
-
-button {
-    background-color: rgb(255, 255, 255);
-    border: 6px solid rgb(53, 124, 39);
-    padding: 6px 10px 6px 10px;
-    border-radius: 15px;
-    font-family: Helvetica;
-    font-size: 30px;
-    color: rgb(42, 45, 69);
-}
-
-button:hover {
-    background-color:  rgb(53, 124, 39);
+    visibility: hidden;
 }
 
 a:link {

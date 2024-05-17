@@ -1,8 +1,66 @@
-#nav {
+.nav {
   height: 100%;
   top: 0;
-  font-size: extra-large;
-  color:rgb(25, 39, 70);
+  font-size: x-large;
+  color: rgb(206, 237, 226);
   padding: 1em 1em 1em;
   margin: 1em 1em 1em;
+}
+
+.mobile-nav-icon {
+  display: none;
+  visibility: hidden;
+}
+
+.mobile-nav-icon-minus {
+  display: none;
+  visibility: hidden;
+}
+
+
+.mobile-nav-icon-responsive {
+  display: none;
+  visibility: hidden;
+}
+
+.mobile-nav-icon-minus-responsive {
+  display: none;
+  visibility: hidden;
+}
+
+/* collapse nav into one icon, on click, make nav take up whole screen */
+@media screen and (max-width: 800px) {
+  .nav-items {
+    display: none;
+    visibility: hidden;
+  }
+  .mobile-nav-icon {
+    display: block;
+    visibility: visible;
+    position: sticky;
+    top: 5;
+    right: 2;
+  }
+  .mobile-nav-icon-minus {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-items-responsive {
+    display: block;
+  }
+  
+  .mobile-nav-icon-responsive {
+    display: none;
+    visibility: invisible;
+    color: rgb(241, 241, 241);
+  }
+
+  .mobile-nav-icon-minus-responsive {
+    display: block;
+    visibility: visible;
+    color: rgb(241, 241, 241);
+  }
 }

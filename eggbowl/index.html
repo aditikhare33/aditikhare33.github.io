@@ -6,6 +6,7 @@
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="robots" content="index,follow">
 
+    <script src="https://kit.fontawesome.com/f6bbad65d6.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../static/css/style.css" />
     <link rel="stylesheet" href="../static/css/nav.css" />
@@ -26,15 +27,19 @@
 
 <body>
     <div class="main-container">
-        <div id="nav">
-            <div>
-                <div name="name">
-                <a href="/">
-                  <img src="../static/img/p-fish-world-hc-light.png">
-                </a>
-               </div> 
+        <div class="nav">
+            <div class="mobile-nav-icon">
+                <a onclick="toggleNav()">&#9776;</a>
+            </div>
+            <div class="mobile-nav-icon-minus">
+                <a onclick="toggleNav()">-</a>
             </div>
             <div>
+                <div name="name">
+                  <a href="/"><img src="../static/img/p-fish-world-hc-light.png"></a>
+               </div> 
+            </div>
+            <div class="nav-items">
                 <div>
                     <a href="" style="font-style:italic"> egg bowl</a>
                     <br>
@@ -47,6 +52,9 @@
                 <div>
                     <a href="../sketchbook">sketchbook</a>
                 </div>
+                <div>
+                   <a href="../zines-and-other-published-works">zines</a>
+                </div>
                 <br>
                 <div>
                     <a href="../websites + applications">websites + applications</a>
@@ -58,10 +66,24 @@
                 <br>
             </div>
         </div>
-        <div style="position:fixed; left: 35%; top: 35%;">
+        <div class="egg">
             <img src="../static/img/egg.gif">
         </div>
     </div>
 
 </body>
+
+<script >
+  function toggleNav() {
+    if (document.getElementsByClassName("nav-items").length > 0) {
+        document.getElementsByClassName("nav-items")[0].className = "nav-items-responsive";
+        document.getElementsByClassName("mobile-nav-icon")[0].className = "mobile-nav-icon-responsive";
+        document.getElementsByClassName("mobile-nav-icon-minus")[0].className = "mobile-nav-icon-minus-responsive";
+    } else if (document.getElementsByClassName("nav-items-responsive")) {
+        document.getElementsByClassName("nav-items-responsive")[0].className = "nav-items";
+        document.getElementsByClassName("mobile-nav-icon-responsive")[0].className = "mobile-nav-icon";
+        document.getElementsByClassName("mobile-nav-icon-minus-responsive")[0].className = "mobile-nav-icon-minus";
+    }
+  }
+</script>
 </html>

@@ -14,6 +14,7 @@ body {
     width: 100%;
     font-family: Helvetica;
     bottom: 10px;
+    zoom: 1.2;
     /*max-width: 100%;*/
     overflow-x: hidden; 
     overflow-y: hidden;
@@ -49,6 +50,31 @@ body {
     flex: 100%;
     max-width: 100%;
   }
+  .main-container {
+    display: grid;
+    grid-template-columns: 7fr 9fr;
+  }
+
+  body {
+    /*margin: 0 auto;*/
+    height: 100%;
+    margin: 1%;
+    padding: 2%;
+    background-color:rgb(97, 116, 223);
+    background-image: url(../img/Miss/hide.png), url(../img/hill3.png);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+    font-size: xx-large;
+    color: rgb(241, 241, 241);
+    /*position: absolute;*/
+    width: 100%;
+    font-family: Helvetica;
+    bottom: 10px;
+    zoom: 1.2;
+
+    overflow-x: hidden; 
+  }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -56,5 +82,31 @@ body {
   .column {
     flex: 100%;
     max-width: 100%;
+  }
+
+  .main-container {
+    display: block;
+    grid-template-columns:  1fr;
+  }
+
+  body {
+    /*margin: 0 auto;*/
+    height: 100%;
+    margin: 1%;
+    padding: 2%;
+    background-color:rgb(97, 116, 223);
+    background-image: url(../img/Miss/hide.png), url(../img/hill3.png);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+    font-size: xx-large;
+    color: rgb(241, 241, 241);
+    /*position: absolute;*/
+    width: 100%;
+    font-family: Helvetica;
+    bottom: 10px;
+    zoom: 1.2;
+    /*max-width: 100%;*/
+    overflow-x: hidden; 
   }
 }
