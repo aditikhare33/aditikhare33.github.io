@@ -39,3 +39,56 @@ img {
   max-height:100%;
   max-width:100%;
 }
+
+.full-height{
+    height: 80vh;
+    justify-content: center;
+}
+.d-flex{
+    display: flex;
+    
+}
+
+@media screen and (max-width: 600px) {
+    .d-flex {
+        flex-direction: column;
+    }
+    .full-height{
+        height: unset;
+        justify-content: unset;
+    }
+}
+
+.d-flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.p-2{
+    padding: 2rem;
+}
+
+.gap-2{
+    gap: 2rem;
+}
+
+.center{
+    margin: auto;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.small{
+    font-size: medium;
+    mix-blend-mode: hard-light;
+}
+
+.center-text{
+    text-align: center;
+}
+
+.m-0{
+    margin: 0;
+}

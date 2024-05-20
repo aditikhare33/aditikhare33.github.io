@@ -16,9 +16,6 @@ body {
     font-family: Helvetica;
     bottom: 10px;
     zoom: 1.2;
-    /*max-width: 100%;*/
-    overflow-x: hidden; 
-    overflow-y: hidden;
 }
 
 .main-container {
