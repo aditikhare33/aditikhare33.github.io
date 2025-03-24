@@ -148,7 +148,7 @@ pufferfish's styling
   
   @media screen and (max-width: 850px) {
     .titleimg {
-       height: 10rem;
+       height: 7rem;
        padding: 1rem !important;
     }
   }
