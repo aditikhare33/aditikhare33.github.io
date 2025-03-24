@@ -43,7 +43,7 @@ for (const item of items) {
     }
 
     div += `
-    <div class="noise-item">
+    <div class="noise-item translucent">
         <h3>${item.name}</h3>
         <div class="noise-item-img">
           ${images}

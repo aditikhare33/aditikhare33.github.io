@@ -267,3 +267,8 @@ pufferfish's styling
     font-size: 1.3rem !important;
     text-align: left;
   } 
+
+  .translucent {
+    background-color: #0d1b3197;
+    border-radius: 1px;
+  }
