@@ -66,5 +66,13 @@ h3 {
         max-height: 50vh;
         max-width: 70vw;
     }
-    
+}
+
+.p5 {
+  text-align: center !important;
+  padding-top: 1rem;
+}
+
+#noiseContainer .translucent {
+  padding-left: 0.5rem;
 }

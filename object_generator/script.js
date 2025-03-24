@@ -27,7 +27,7 @@ function setup() {
     if (windowWidth < windowHeight) {
       useSide = windowWidth / 1.2;
     } else {
-      useSide = windowHeight / 1.7;
+      useSide = windowHeight / 1.5;
     }
 
     w = useSide;

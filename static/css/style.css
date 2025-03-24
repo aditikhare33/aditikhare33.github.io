@@ -150,6 +150,7 @@ pufferfish's styling
     .titleimg {
        height: 7rem;
        padding: 1rem !important;
+       margin-bottom: 1rem;
     }
   }
   
@@ -215,13 +216,13 @@ pufferfish's styling
   
   .dropDownItem {
     text-align: center;
-    font-size: 4vh;
+    font-size: 3.8vh;
     padding: 4vh 1.1rem 8vh;
     white-space: nowrap;
   }
   
   .dropDownItem a {
-    color: #0066ff;
+    color: #fc0;
     text-decoration: bold;
   }
   
@@ -269,6 +270,6 @@ pufferfish's styling
   } 
 
   .translucent {
-    background-color: #0d1b3197;
+    background-color: #0d1b316f;
     border-radius: 1px;
   }

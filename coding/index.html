@@ -23,7 +23,7 @@
          <script src="/coding.js" defer></script>
          
         <!-- Renders Object Generator -->
-        <script language="javascript" type="text/javascript" src="/coding/p5.min.js"></script>
+        <script language="javascript" type="text/javascript" src="/object_generator/libraries/p5.min.js"></script>
         
         <!-- Renders Draggable Spikes -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
@@ -33,7 +33,10 @@
 <body>
     <div class="home">
         <div id="navContainer"></div>
-        <div id="noiseContainer"></div>
+        <div id="noiseContainer">
+            <div name="main" class="p5Container codingItem" id="object-container">
+                <script language="javascript" type="text/javascript" src="/object_generator/script.js"></script>
+            </div> 
         </div>
     </div>
 </body>

@@ -5,10 +5,10 @@ const items = [
       imageStyling: 'short'
     },
     { name: 'object generator (2021)',
-      images: ['cup.png'],
+      images: [],
       description: `
-            <div>
-                <script language="javascript" type="text/javascript" src="/coding/object_generator.js"></script>
+            <div class="p5" id="object-container">
+                <script language="javascript" type="text/javascript" src="/object_generator/script.js"></script>
             </div> 
             <p>
             modern ai image generation relies on the following: 
@@ -43,12 +43,12 @@ for (const item of items) {
     }
 
     div += `
-    <div class="noise-item translucent">
+    <div class="noise-item">
         <h3>${item.name}</h3>
         <div class="noise-item-img">
           ${images}
         </div>
-        <div class="noise-item-description text">
+        <div class="noise-item-description translucent text">
             ${item.description}
         </div>
     </div>`;
