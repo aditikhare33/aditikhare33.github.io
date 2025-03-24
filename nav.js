@@ -3,7 +3,7 @@ const navItemsInfo = [
   { name: "about", link: "about/" }, 
   { name: "egg bowl", link: "egg-bowl/"},
   { name: "visual noise", link: "visual-noise/" },
-  { name: "sketchs", link: "sketchbook/" },
+  { name: "sketches", link: "sketchbook/" },
   { name: "websites and apps", link: "coding/" , isLast: true }
 ];
 
