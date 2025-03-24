@@ -3,8 +3,8 @@ const navItemsInfo = [
   { name: "about", link: "about/" }, 
   { name: "egg bowl", link: "egg-bowl/"},
   { name: "visual noise", link: "visual-noise/" },
-  { name: "sketches", link: "sketchbook/" },
-  { name: "websites and apps", link: "coding/" , isLast: true }
+  { name: "sketchbook", link: "sketchbook/" },
+  { name: "websites", link: "coding/" , isLast: true }
 ];
 
 const navItemsHTML = () => {

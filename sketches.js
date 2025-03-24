@@ -1,6 +1,7 @@
 const image_names = [
     'bus-comic.png',
     'handy.jpg',
+    'yearn.png',
     'sunshine.png',
     'wolfy.png',
     'dancing-monster.png',
@@ -17,7 +18,6 @@ const image_names = [
     'emo3.png',
     'flushing.png',
     'drool.png',
-    'yearn.png',
     'basketball.png'
 ]
 

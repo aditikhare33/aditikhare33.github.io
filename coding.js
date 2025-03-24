@@ -1,41 +1,45 @@
 const items = [
-    { name: "take back bikes 2024-",
-      images: [''], 
-      description: `digital work, <a href='https://www.ouch.studio/zine/luck'>featured in OUCH! magazine ed.10: Luck</a>`,
+    { name: "take back bikes (2024-2025)",
+      images: ['tbb-mobile-nav.png', 'tbb-mobile.png', 'tbb-desktop.png'], 
+      description: `<a href='https://www.takebackbikes.org'>takebackbikes.org</a> is a bike share project based in Washtenaw County, Michigan that is committed to fighting for Palestinian liberation.`,
       imageStyling: 'short'
     },
-    { name: 'cryptid (2023)',
-      images: ['/static/img/bg-cryptid.png'],
-      description: 'digital work',
+    { name: 'object generator (2021)',
+      images: ['cup.png'],
+      description: `
+            <div>
+                <script language="javascript" type="text/javascript" src="/coding/object_generator.js"></script>
+            </div> 
+            <p>
+            modern ai image generation relies on the following: 
+               <li> very large datasets (often <a href="https://www.universityofcalifornia.edu/news/how-ai-discriminates-and-what-means-your-google-habit-conversation-internet-studies-scholar">biased</a> and <a href="https://www.technologyreview.com/2023/05/02/1072556/we-need-to-bring-consent-to-ai/">taken without consent</a>) </li>
+              <li> <a href="https://www.washingtonpost.com/technology/2024/09/18/energy-ai-use-electricity-water-data-centers/">resource consuming</a> algorithms </li>
+            </p>
+            <p>
+              this generator has no dataset. it takes output from a <a href="https://p5js.org/reference/p5/noise/">perlin noise function</a>, 
+              adds horizontal symmetry, and then draws lines between the coordinates.
+            </p>
+            <p>
+              it's like digital cloud watching; i often find myself seeing vases, lamps, or UFOs.
+              i wonder what you will see
+            </p>`,
+      imageStyling: 'long'
+    },
+    {
+      name: 'coming soon: secret diary (2025)',
+      images: ['secret-diary.gif'],
+      description: 'dissapearing lemon diary...',
       imageStyling: 'short'
-    },
-    { name: 'my memories are overexposed and faraway (2021)',
-      images: ['/static/img/tree-headlight.png', '/static/img/rabbit.png'],
-      description: 'digital work: tree in headlights, a toy rabbit i left on a stool in 2007',
-      imageStyling: 'tall'
-    },
-    { name: 'hug (2020)',
-      images: ['/static/img/hug.png'],
-      description: 'digital work',
-      imageStyling: 'short'
-    },
-    { name: 'swimming lesson (2020)',
-      images: ['/static/img/swimming-lesson.png'],
-      description: 'digital work',
-      imageStyling: 'tall'
-    },
-    { name: 'pollen (2020)',
-      images: ['/static/img/Miss/pollen.png', '/static/img/Miss/pollen2.png', '/static/img/Miss/pollen3.png'],
-      description: 'digital work',
-      imageStyling: 'tall'
     }
 ]
 
 let div = ``;
 for (const item of items) {
     let images = ``;
-    for (const image of item.images) {
-        images +=`<img class="${item.imageStyling}" src=${image}>`;
+    if (item.images) {
+        for (const image of item.images) {
+            images +=`<img class="${item.imageStyling}" src="/static/coding/${image}">`;
+        }
     }
 
     div += `
@@ -44,7 +48,7 @@ for (const item of items) {
         <div class="noise-item-img">
           ${images}
         </div>
-        <div class="noise-item-description text-visual-noise">
+        <div class="noise-item-description text">
             ${item.description}
         </div>
     </div>`;
