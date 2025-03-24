@@ -1,0 +1,71 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://cdn.glitch.global/ffb4b41a-e20f-43bc-a02d-33c18fbf0db7/icon.png?v=173733">
+
+    <!--
+      This is the page head - it contains info the browser uses
+      Like the title, which appears on the browser tab but not inside the page
+      Further down you'll see the content that displays in the page
+    -->
+    <title>pufferfish's world</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="/static/css/about.css" />
+    
+    <!-- The website JavaScript file -->
+    <script src="/script.js" defer></script>
+    
+    <!-- Renders Navigation --> 
+    <script src="/nav.js" defer></script>
+    
+    <!-- Renders Draggable Spikes -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous"></script></script> 
+  </head>
+  <body>
+    <div class="home">
+      <div id="navContainer"></div>
+      <div class="aboutContainer">
+          <div class="aboutItem">
+            <img src="https://cdn.glitch.global/bb39c166-73aa-4eb6-91a2-37e86f975c6b/blood-boy.png?v=1738036191814" />
+          </div>
+          <div class="aboutItem text">
+            <p>
+              hello ‿( ́ ̵ _-`)‿  
+              my name is aditi and this is my digital space. feel free to mess around + play!
+            </p>
+
+            <br>
+            
+            <p>
+            i'm putting things here that i would like to display and have others interact with.
+            my interests lie at the intersection of visual art, digital interaction, and social justice.
+            </p>
+
+            <br>
+            <p>
+              i'm currently open for the following work:
+              <li> free websites for important things (ex: getting the word out for a mutual aid group) </li>
+              <li> websites for silly things </li>
+              <li> cool generative graphics </li>
+              <li> illustrations for a picture book </li>
+              <br>
+              feel free to contact me at aditikhare33@gmail.com
+            </p>
+            <br>
+          </div>
+      </div>
+      <img id="spike2" src="https://cdn.glitch.global/bb39c166-73aa-4eb6-91a2-37e86f975c6b/spikes2.png?v=1737441595047" />
+      <img id="spike1" src="https://cdn.glitch.global/bb39c166-73aa-4eb6-91a2-37e86f975c6b/spikes.png?v=1737441596419" />
+      <script>
+         $( function() {
+            $("#spike1").draggable();
+            $("#spike2").draggable();
+         });
+      </script>
+    </div>
+  </body>
+</html>
