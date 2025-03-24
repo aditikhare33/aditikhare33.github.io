@@ -30,7 +30,12 @@ const items = [
       images: ['secret-diary.gif'],
       description: 'dissapearing lemon diary...',
       imageStyling: 'short'
-    }
+    },
+    /* { name: 'pacziczi-strology',
+      images: [],
+      description: 'before entering into the world of pacziczi, read this <a href="https://www.pacziczi.glitch.me"> required reading</a>. Then, once finished delve into <a href="https://www.blueberry-rising.glitch.me">my website</a>',
+      imageStyling: 'short'
+    } */
 ]
 
 let div = ``;
