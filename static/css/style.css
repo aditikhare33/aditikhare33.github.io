@@ -161,11 +161,18 @@ pufferfish's styling
     margin-right: 0rem;
     margin-top: 1rem;
     padding: 1rem !important;
-    animation: gelatine 0.5s 1;
+    animation: gentle-gelatine 0.5s 1;
   }
 
   .titleimg:hover {
     animation: gelatine 0.5s 1;
+  }
+
+  @keyframes gentle-gelatine {
+    from, to { transform: scale(1, 1); }
+    25% { transform: scale(0.98, 1.02); }
+    50% { transform: scale(1.02, 0.98); }
+    75% { transform: scale(0.99, 1.01); }
   }
 
   @keyframes gelatine {
