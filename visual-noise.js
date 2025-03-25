@@ -51,6 +51,4 @@ for (const item of items) {
     </div>`;
 }
 
-div += `<div class="footer"><h3>-,.-~*´ designed and developed by aditi khare 2025 *·~-.¸ <h3></div>`;
-
 document.querySelector('#displayContainer').innerHTML = div;

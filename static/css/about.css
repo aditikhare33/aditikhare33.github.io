@@ -16,7 +16,7 @@
     border-radius: 3%;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 800px) {
   .aboutContainer img {
     max-width: 17rem;
     top: 30vh;
@@ -24,11 +24,9 @@
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 800px) {
   .aboutContainer {
-    display: block;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin: 2rem;
   }
   .aboutContainer img {
     max-width: 15rem;
@@ -39,6 +37,9 @@
   }
   .aboutItem {
     padding: 1rem 1rem 1rem 1rem;
+  }
+  .aboutContainer img {
+    zoom: 0.5;
   }
 }
 

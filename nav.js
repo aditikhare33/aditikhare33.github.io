@@ -67,14 +67,15 @@ const useDropDown = () => {
 
 const renderNav = () => {
   const div = window.innerWidth > 900 ? bigNav : dropDownOn ? dropDownNav : smallNav;
-  /* if (dropDownOn) {
+  if (dropDownOn) {
     document.querySelector('.home').style['overflow-y'] = "hidden";
   } else {
     if (document.querySelector('.home').style['overflow-y'] === "hidden") {
       document.querySelector('.home').style['overflow-y'] =  "auto";
     }
-  } */
+  }
   document.querySelector('#navContainer').innerHTML = div;
+  document.querySelector('footer').innerHTML = 'designed and developed by aditi khare 2025';
 };
 
 window.addEventListener("resize", renderNav);

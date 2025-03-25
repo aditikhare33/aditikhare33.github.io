@@ -10,7 +10,7 @@ const slinkie = function (p) {
 
     p.setup = function () {
         if (p.windowWidth < p.windowHeight) {
-            useSide = p.windowWidth / 1.2;
+            useSide = p.windowWidth / 2;
         } else {
             useSide = p.windowHeight / 1.7;
         }

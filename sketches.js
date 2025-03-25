@@ -24,7 +24,7 @@ const imageNames = [
 
 let images = ``;
 for (const image of imageNames) {
-    images +=`<img class="short" src="${rootFolder}${image}">`;
+    images +=`<img class="sketch-short" src="${rootFolder}${image}">`;
 }
 
 let div = `
@@ -33,7 +33,5 @@ let div = `
         ${images}
     </div>
 </div>`;
-
-div += `<div class="footer"><h3>-,.-~*´ designed and developed by aditi khare 2025 *·~-.¸ <h3></div>`;
 
 document.querySelector('#displayContainer').innerHTML = div;
