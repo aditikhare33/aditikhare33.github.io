@@ -105,7 +105,7 @@ pufferfish's styling
     height: 100vh !important;
     width: 100vw !important;
     background-image: url(/static/img/hide-smaller.png), url(/static/img/hill3.png);
-    background-color:rgb(243, 222, 156);
+    background-color:rgb(243, 229, 185);
     background-blend-mode: multiply;
     background-size: cover;
     background-repeat: no-repeat;
@@ -180,6 +180,10 @@ pufferfish's styling
        height: 7rem;
        padding: 1rem !important;
        margin-bottom: 1rem;
+    }
+
+    .home {
+      background-color:white;
     }
   }
   
