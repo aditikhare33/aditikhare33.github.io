@@ -59,7 +59,7 @@ for (const item of items) {
 
     let script = item.script ? item.script : '';
     div += `
-    <div class="display-item">
+    <div class="display-item hidden1">
         <h3>${item.name}</h3>
         <div class="display-item-img">
           ${images}

@@ -80,5 +80,26 @@ const renderNav = () => {
 
 window.addEventListener("resize", renderNav);
 
-
 renderNav();
+
+
+$(window).on('load', function(){
+  $('#loader').hide();
+  $('.home').removeClass('hide');
+});
+
+$(document).ready(function () {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show1");
+      } 
+    });
+  });
+  
+  const hiddenElements = document.querySelectorAll(".hidden1");
+  hiddenElements.forEach((el) => observer.observe(el));
+  
+  const hidden2Elements = document.querySelectorAll(".hidden2");
+  hidden2Elements.forEach((el) => observer.observe(el));
+});

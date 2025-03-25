@@ -24,7 +24,7 @@ const imageNames = [
 
 let images = ``;
 for (const image of imageNames) {
-    images +=`<img class="sketch-short" src="${rootFolder}${image}">`;
+    images +=`<img class="sketch-short hidden2" src="${rootFolder}${image}">`;
 }
 
 let div = `
