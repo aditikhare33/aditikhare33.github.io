@@ -13,15 +13,12 @@
   padding: 2rem 1rem 1rem 2rem;
 }
 
-.aboutContainer img {
-    border-radius: 3%;
-}
-
 @media screen and (min-width: 800px) {
   .aboutContainer img {
     max-width: 17rem;
     top: 30vh;
     left: 11vw;
+    border-radius: 3%;
   }
 }
 
@@ -32,15 +29,14 @@
   .aboutContainer img {
     max-width: 15rem;
     text-align: right;
+    zoom: 0.5;
+    border-radius: 3%;
   }
   #spike1, #spike2 {
     display: none !important;
   }
   .aboutItem {
     padding: 1rem 1rem 1rem 1rem;
-  }
-  .aboutContainer img {
-    zoom: 0.5;
   }
 }
 
