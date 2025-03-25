@@ -36,7 +36,7 @@ let div = ``;
 for (const item of items) {
     let images = ``;
     for (const image of item.images) {
-        images +=`<img class=${item.imageStyling}" src=${rootFolder}${image}>`;
+        images +=`<img class=${item.imageStyling} src=${rootFolder}${image}>`;
     }
 
     div += `

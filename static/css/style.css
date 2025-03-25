@@ -204,6 +204,19 @@ pufferfish's styling
     top: 5vh;
     right: 5vw;
   }
+
+  .dropDown .dropDownButton {
+    background: var(--transparent);
+    color: #fc0;
+    text-shadow: #fc0 1px 0 10px;
+    border: none;
+    font-size: 2.5rem;
+    position: absolute;
+    margin: 0 !important;
+    padding: 0 !important;
+    top: 5vh;
+    right: 5vw;
+  }
   
   .dropDown {
     margin: 0;
@@ -211,7 +224,7 @@ pufferfish's styling
     height: 100%;
     position: absolute;
     top: 0vh;
-    background-color: white;
+    /* background-color: rgb(38, 38, 126); */
     background-repeat: no-repeat;
     background-blend-mode: hard-light;
     background-size: contain, cover;
@@ -250,7 +263,7 @@ pufferfish's styling
   
   /* mouse over link */
   .dropDownItem a:hover {
-    color: darkblue;
+    color:lightblue;
   }
   
   #navContainer {
@@ -279,5 +292,10 @@ pufferfish's styling
 
   .translucent {
     background-color: #0d1b316f;
+    border-radius: 1px;
+  }
+
+  .dark-translucent {
+    background-color: #0d1b31dd;
     border-radius: 1px;
   }

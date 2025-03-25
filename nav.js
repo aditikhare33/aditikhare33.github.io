@@ -52,16 +52,16 @@ const dropDownNav =
     ${titleImgHTML()}
     <button onClick=useDropDown() class="dropDownButton"> ≡ </button>
   </div>
-  <div class="dropDown">
+  <div class="dropDown dark-translucent">
+    <button onClick=useDropDown() class="dropDownButton"> x </button>
     ${dropDownItemsHTML()}
   </div>`;
 
 let dropDownOn = false;
 
 const useDropDown = () => {
-  dropDownOn = true;
-  document.querySelector('html').style['overflow-y'] = 'hidden !important';
-  document.querySelector('#navContainer').innerHTML = dropDownNav;
+  dropDownOn = !dropDownOn;
+  renderNav();
 }
 
 const doBigNav= () => {
