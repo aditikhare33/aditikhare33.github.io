@@ -85,7 +85,6 @@ pufferfish's styling
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     opacity: 1;
-    animation: fadeInOpacity 1s 1 ease-in;
     line-height: 1.3; 
     color: white;
   }
@@ -103,7 +102,7 @@ pufferfish's styling
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    animation: fadeInOpacity 2s 1 ease-in;
+    animation: fadeInOpacity 1s 1 ease-in;
     overflow-y: auto;
   }
   
@@ -185,7 +184,7 @@ pufferfish's styling
   
   @keyframes fadeInOpacity {
       0% {
-          opacity: 0;
+          opacity: 0.6;
       }
       100% {
           opacity: 1;

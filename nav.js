@@ -64,26 +64,15 @@ const useDropDown = () => {
   renderNav();
 }
 
-const doBigNav= () => {
-  console.log('smg else');
-  document.querySelector('html').style['overflow-y'] = 'visible';
-  return bigNav;
-}
-
-const doSmallNav = () => {
-  console.log('smg else');
-  document.querySelector('html').style['overflow-y'] = 'visible';
-  return smallNav
-}
-
-const doDropDownNav = () => {
-  console.log('doing dropDown');
-  document.querySelector('html').style['overflow-y'] = 'hidden !important';
-  return dropDownNav;
-}
-
 const renderNav = () => {
-  const div = window.innerWidth > 900 ? doBigNav() : dropDownOn ? doDropDownNav() : doSmallNav();
+  const div = window.innerWidth > 900 ? bigNav : dropDownOn ? dropDownNav : smallNav;
+  if (dropDownOn) {
+    document.querySelector('html').style['overflow-y'] = "hidden";
+    document.querySelector('.home').style['overflow-y'] = "hidden";
+  } else {
+    document.querySelector('html').style['overflow-y'] = "scroll";
+    document.querySelector('.home').style['overflow-y'] = "scroll";
+  }
   document.querySelector('#navContainer').innerHTML = div;
 };
 

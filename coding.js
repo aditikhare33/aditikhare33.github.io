@@ -2,7 +2,7 @@ const items = [
     { name: "take back bikes (2024-2025)",
       images: ['tbb-mobile-nav.png', 'tbb-mobile.png', 'tbb-desktop-smaller.png'], 
       description: `<a href='https://www.takebackbikes.org'>takebackbikes.org</a> is a bike share project based in Washtenaw County, Michigan that is committed to fighting for Palestinian liberation.`,
-      imageStyling: 'short'
+      imageStyling: 'coding'
     },
     { name: 'object generator (2021)',
       images: [],
