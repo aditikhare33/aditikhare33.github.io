@@ -38,7 +38,8 @@ const bigNav =
       <div id="nav-items" class="links">
         ${navItemsHTML()}
       </div>
-    </div>`;
+    </div>
+`;
 
 const smallNav =  
   `<div>
@@ -58,6 +59,8 @@ const dropDownNav =
   </div>`;
 
 let dropDownOn = false;
+
+const footer = `<div class="footer"><h3>-,.-~*´ designed and developed by aditi khare 2025 *·~-.¸ <h3></div>`;
 
 const useDropDown = () => {
   dropDownOn = !dropDownOn;

@@ -27,11 +27,13 @@ for (const image of imageNames) {
     images +=`<img class="short" src="${rootFolder}${image}">`;
 }
 
-const div = `
+let div = `
 <div class="display-item">
     <div class="display-item-img">
         ${images}
     </div>
 </div>`;
+
+div += `<div class="footer"><h3>-,.-~*´ designed and developed by aditi khare 2025 *·~-.¸ <h3></div>`;
 
 document.querySelector('#displayContainer').innerHTML = div;

@@ -32,7 +32,15 @@ pufferfish's styling
   [hidden] {
     display: none !important;
   }
-  
+
+  div, #spike1, #spike2 {
+    animation: grow 1s 1 ease-in;
+  }
+
+  @keyframes grow {
+      from { transform: scale(0.998); }
+      to { transform: scale(1); }
+  }
   /* Navigation grid */
   .nav {
     top: 0;
@@ -153,6 +161,7 @@ pufferfish's styling
     margin-right: 0rem;
     margin-top: 1rem;
     padding: 1rem !important;
+    animation: gelatine 0.5s 1;
   }
 
   .titleimg:hover {
@@ -297,4 +306,20 @@ pufferfish's styling
   .dark-translucent {
     background-color: #0d1b31dd;
     border-radius: 1px;
+  }
+
+  .footer { 
+    color: rgb(255, 255, 255);
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    text-align: center;
+    width: 100vw;
+    margin: auto;
+    background-color: #0d1b316f;
+    text-shadow: rgba(12, 2, 72, 0.979) 1px 1px 4px;;
+  }
+
+  .bottom {
+    position: absolute;
+    bottom: 0;
   }
