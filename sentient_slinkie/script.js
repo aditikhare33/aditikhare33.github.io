@@ -4,8 +4,8 @@ const slinkie = function (p) {
     let t1 = 0;
     let t2 = 0;
     let t3 = 0;
-    let size_slider;
-    let speed_slider;
+    //let size_slider;
+    //let speed_slider;
     let useSide;
 
     p.setup = function () {
@@ -27,21 +27,21 @@ const slinkie = function (p) {
         t1 = p.random(0, 10);
         t2 = p.random(0, 10);
 
-        size_slider = p.createSlider(0.5, 5, 1.5, 0.01);
-        size_slider.position(700, 310);
+        //size_slider = p.createSlider(0.5, 5, 1.5, 0.01);
+        //size_slider.position(700, 310);
 
-        speed_slider = p.createSlider(0.5, 3, 1, 0.01);
-        speed_slider.position(700, 350);
+        //speed_slider = p.createSlider(0.5, 3, 1, 0.01);
+        //speed_slider.position(700, 350);
     }
 
     p.draw = function () { 
         p.fill(p.color(t3, 30, 100));
         x = p.map(p.noise(t1), 0, 1, 0, slinkie_w);
         y = p.map(p.noise(t2), 0, 1, 0, slinkie_h);
-        c = size_slider.value() * slinkie_w/15;
+        c = /* size_slider.value() slinkie_w/15 */ slinkie_w/10;
         p.ellipse(x, y, c, c,  50);
                 
-        speed = 0.008 * speed_slider.value();
+        speed = 0.008; //* 1; speed_slider.value();
         t1 += speed;
         t2 += speed;
         if (t3 > 359) {

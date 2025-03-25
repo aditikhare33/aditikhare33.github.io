@@ -60,8 +60,6 @@ const dropDownNav =
 
 let dropDownOn = false;
 
-const footer = `<div class="footer"><h3>-,.-~*´ designed and developed by aditi khare 2025 *·~-.¸ <h3></div>`;
-
 const useDropDown = () => {
   dropDownOn = !dropDownOn;
   renderNav();
@@ -69,13 +67,13 @@ const useDropDown = () => {
 
 const renderNav = () => {
   const div = window.innerWidth > 900 ? bigNav : dropDownOn ? dropDownNav : smallNav;
-  if (dropDownOn) {
-    document.querySelector('html').style['overflow-y'] = "hidden";
+  /* if (dropDownOn) {
     document.querySelector('.home').style['overflow-y'] = "hidden";
   } else {
-    document.querySelector('html').style['overflow-y'] = "scroll";
-    document.querySelector('.home').style['overflow-y'] = "scroll";
-  }
+    if (document.querySelector('.home').style['overflow-y'] === "hidden") {
+      document.querySelector('.home').style['overflow-y'] =  "auto";
+    }
+  } */
   document.querySelector('#navContainer').innerHTML = div;
 };
 

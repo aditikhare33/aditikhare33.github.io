@@ -1,6 +1,7 @@
 #displayContainer {
     margin: 0.6rem;
     text-align: center;
+    overflow-x: hidden;
 }
 
 #displayContainer a {
@@ -47,7 +48,7 @@ hr {
 } 
 
 @media screen and (min-width: 800px) {
-    .coding {
+    .codingImg {
         max-height: 40vh;
     }
 
@@ -61,9 +62,10 @@ hr {
 }
 
 @media screen and (max-width: 800px) {
-    .coding {
-        max-height: 40vh;
+    .codingImg {
+        max-height: 20vh;
         border-radius: 4px;
+        max-width: 90vw;
     }
 
     .tall {
