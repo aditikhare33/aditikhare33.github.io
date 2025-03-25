@@ -40,13 +40,6 @@ hr {
     text-align: left;
 }
 
-.text-visual-display {
-    text-shadow: rgba(12, 2, 72, 0.979) 1px 1px 4px;
-    font-size: 1.3rem !important;
-    text-align: center;
-    padding: 0.3rem;
-} 
-
 @media screen and (min-width: 900px) {
     .codingImg {
         max-height: 40vh;
@@ -63,6 +56,12 @@ hr {
     .sketch-short {
         max-height: 40vh;
     }
+
+    .text-visual-display {
+        font-size: 1.3rem !important;
+        text-align: center;
+        padding: 0.3rem;
+    } 
 }
 
 @media screen and (max-width: 900px) {
@@ -95,6 +94,8 @@ hr {
     }
 
     .text-visual-display {
+        text-align: center;
+        padding: 0.3rem;
         font-size: 0.8rem;
     } 
 }
