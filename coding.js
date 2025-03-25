@@ -1,22 +1,23 @@
 const items = [
     { name: "take back bikes (2024-2025)",
-      images: ['tbb-mobile-nav.png', 'tbb-mobile.png', 'tbb-desktop.png'], 
+      images: ['tbb-mobile-nav.png', 'tbb-mobile.png', 'tbb-desktop-smaller.png'], 
       description: `<a href='https://www.takebackbikes.org'>takebackbikes.org</a> is a bike share project based in Washtenaw County, Michigan that is committed to fighting for Palestinian liberation.`,
       imageStyling: 'short'
     },
     { name: 'object generator (2021)',
       images: [],
-      description: `
-            <div class="p5" id="object-container">
+      script: `
+            <div class="p5 long" id="object-container">
                 <script language="javascript" type="text/javascript" src="/object_generator/script.js"></script>
-            </div> 
+            </div> `,
+      description:`
             <p>
             modern ai image generation relies on the following: 
                <li> very large datasets (often <a href="https://www.universityofcalifornia.edu/news/how-ai-discriminates-and-what-means-your-google-habit-conversation-internet-studies-scholar">biased</a> and <a href="https://www.technologyreview.com/2023/05/02/1072556/we-need-to-bring-consent-to-ai/">taken without consent</a>) </li>
               <li> <a href="https://www.washingtonpost.com/technology/2024/09/18/energy-ai-use-electricity-water-data-centers/">resource consuming</a> algorithms </li>
             </p>
             <p>
-              this generator has no dataset. it takes output from a <a href="https://p5js.org/reference/p5/noise/">perlin noise function</a>, 
+              this generator has no dataset. it takes output from a <a href="https://p5js.org/reference/p5/display/">perlin display function</a>, 
               adds horizontal symmetry, and then draws lines between the coordinates.
             </p>
             <p>
@@ -24,6 +25,15 @@ const items = [
               i wonder what you will see
             </p>`,
       imageStyling: 'long'
+    },
+    { name: 'sentient slinkie (2021)',
+      images: [],
+      script: `
+            <div class="p5 long" id="slinkie-container">
+                <script language="javascript" type="text/javascript" src="/object_generator/sentient_slinkie.js"></script>
+            </div> `,
+      description:`A rainbow line that draws itself.`,
+      imageStyling: 'short'
     },
     {
       name: 'coming soon: secret diary (2025)',
@@ -47,16 +57,32 @@ for (const item of items) {
         }
     }
 
+    let script = item.script ? item.script : '';
     div += `
-    <div class="noise-item">
+    <div class="display-item">
         <h3>${item.name}</h3>
-        <div class="noise-item-img">
+        <div class="display-item-img">
           ${images}
         </div>
-        <div class="noise-item-description translucent text">
+        ${script}
+        <div class="display-item-description translucent text">
             ${item.description}
         </div>
     </div>`;
 }
 
-document.querySelector('#noiseContainer').innerHTML = div;
+document.querySelector('#displayContainer').innerHTML = div;
+
+
+$(function () {
+  const { top, left } = $('#slinkie-container').offset();
+  console.log(top, left);
+  setTimeout(() => {
+    const inputs = $("input");
+    console.log(inputs[0]);
+    inputs[0].style.top = top;
+    inputs[0].style.left = left;
+  }, 2000);
+  //document.querySelector('input').style.top = top;
+  //document.querySelector('input').style.left = left;
+});

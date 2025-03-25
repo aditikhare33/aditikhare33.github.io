@@ -1,10 +1,10 @@
 const titleimg = "/static/img/p-fish-world-hc-light.png";
 const navItemsInfo = [ 
   { name: "about", link: "about/" }, 
+  { name: "websites + coding", link: "coding/" },
   { name: "egg bowl", link: "egg-bowl/"},
   { name: "visual noise", link: "visual-noise/" },
-  { name: "sketchbook", link: "sketchbook/" },
-  { name: "websites", link: "coding/" , isLast: true }
+  { name: "sketchbook", link: "sketchbook/", isLast: true }
 ];
 
 const navItemsHTML = () => {
@@ -47,7 +47,12 @@ const smallNav =
   </div>`;
 
 const dropDownNav = 
-  `<div class="dropDown">
+  `
+  <div>
+    ${titleImgHTML()}
+    <button onClick=useDropDown() class="dropDownButton"> ≡ </button>
+  </div>
+  <div class="dropDown">
     ${dropDownItemsHTML()}
   </div>`;
 
@@ -55,21 +60,25 @@ let dropDownOn = false;
 
 const useDropDown = () => {
   dropDownOn = true;
+  document.querySelector('html').style['overflow-y'] = 'hidden !important';
   document.querySelector('#navContainer').innerHTML = dropDownNav;
 }
 
 const doBigNav= () => {
+  console.log('smg else');
   document.querySelector('html').style['overflow-y'] = 'visible';
   return bigNav;
 }
 
 const doSmallNav = () => {
+  console.log('smg else');
   document.querySelector('html').style['overflow-y'] = 'visible';
   return smallNav
 }
 
 const doDropDownNav = () => {
-  document.querySelector('html').style['overflow-y'] = 'hidden';
+  console.log('doing dropDown');
+  document.querySelector('html').style['overflow-y'] = 'hidden !important';
   return dropDownNav;
 }
 

@@ -14,7 +14,7 @@
     
         <!-- The website stylesheet -->
         <link rel="stylesheet" href="/static/css/style.css" />
-        <link rel="stylesheet" href="/static/css/noise.css" />
+        <link rel="stylesheet" href="/static/css/display.css" />
         
         <!-- Renders Navigation --> 
         <script src="/nav.js" defer></script>
@@ -33,9 +33,12 @@
 <body>
     <div class="home">
         <div id="navContainer"></div>
-        <div id="noiseContainer">
+        <div id="displayContainer" class="coding">
             <div name="main" class="p5Container codingItem" id="object-container">
                 <script language="javascript" type="text/javascript" src="/object_generator/script.js"></script>
+            </div>
+            <div name="main" class="p5Container codingItem" id="slinkie-container">
+                <script language="javascript" type="text/javascript" src="/sentient_slinkie/script.js"></script>
             </div> 
         </div>
     </div>

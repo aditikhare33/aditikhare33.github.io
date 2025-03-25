@@ -3,8 +3,13 @@ pufferfish's styling
 ******************************************************************************/
 
 @font-face {
-    src: url('/static/Loki.otf');
+    src: url('/static/fonts/Px437_Cordata_PPC-400.ttf') format('woff2');
     font-family: 'Px';
+  }
+
+  @font-face {
+    src: url('/static/fonts/Loki.otf');
+    font-family: 'Loki';
   }
   
   :root {
@@ -47,6 +52,11 @@ pufferfish's styling
     text-align: center;
     font-size: 1.6rem;
     padding: 1.5rem 2rem 1.5rem;
+    font-family: Loki;
+  }
+
+  a:hover {
+    animation: gelatine 0.5s 1;
   }
 
   .active {
@@ -87,7 +97,7 @@ pufferfish's styling
     right: 0;
     height: 100vh !important;
     width: 100vw !important;
-    background-image: url(/static/img/hide.png), url(/static/img/hill3.png);
+    background-image: url(/static/img/hide-smaller.png), url(/static/img/hill3.png);
     background-color:rgb(243, 222, 156);
     background-blend-mode: multiply;
     background-size: cover;
@@ -145,6 +155,17 @@ pufferfish's styling
     margin-top: 1rem;
     padding: 1rem !important;
   }
+
+  .titleimg:hover {
+    animation: gelatine 0.5s 1;
+  }
+
+  @keyframes gelatine {
+    from, to { transform: scale(1, 1); }
+    25% { transform: scale(0.9, 1.1); }
+    50% { transform: scale(1.1, 0.9); }
+    75% { transform: scale(0.95, 1.05); }
+  }
   
   @media screen and (max-width: 850px) {
     .titleimg {
@@ -184,23 +205,12 @@ pufferfish's styling
     right: 5vw;
   }
   
-  @keyframes dropIn {
-      0% {
-      top: 0vh;
-      left: 100vw;
-      }
-      100% {
-      top: 0vh;
-      left: 0vw;
-      }
-  }
-  
   .dropDown {
     margin: 0;
     width: 100vw;
     height: 100%;
     position: absolute;
-    /* background-image: url("https://cdn.glitch.global/bb39c166-73aa-4eb6-91a2-37e86f975c6b/grass-patch.gif?v=1738086542732"); */
+    top: 0vh;
     background-color: white;
     background-repeat: no-repeat;
     background-blend-mode: hard-light;
@@ -210,9 +220,21 @@ pufferfish's styling
     justify-content: space-between;
     margin: 0rem auto 0;
     padding: 3rem 1rem 0.75rem 1rem;
-    /*animation: dropIn 0.5s 1 ease-in; */
-    overflow-y: hidden !important; 
+    animation: bounce-in-top 1s ease 1;
   }
+
+  @keyframes bounce-in-top {
+    0% {
+      opacity: 0;
+      transform: translateY(-2000px);
+    }
+    60% {
+      opacity: 1;
+      transform: translateY(30px);
+    }
+    80% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }  
   
   .dropDownItem {
     text-align: center;
@@ -233,20 +255,6 @@ pufferfish's styling
   
   #navContainer {
     z-index: 99;
-  }
-  
-  marquee {
-    color: #ddddff;
-  }
-  
-  @keyframes GFG { 
-      0% { 
-          transform: rotate(0deg) translateY(100px) rotate(0deg); 
-      } 
-  
-      100% { 
-          transform: rotate(360deg) translateY(100px) rotate(-360deg); 
-      } 
   }
 
   @media screen and (min-width: 800px) {

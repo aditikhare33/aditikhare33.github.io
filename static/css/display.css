@@ -1,20 +1,18 @@
-#noiseContainer {
-    margin-left: 3vw;
-    margin-right: 3vw;
-    margin-top: 0rem;
-    margin-bottom: 1.5rem;
+#displayContainer {
+    margin: 0.6rem;
     text-align: center;
 }
 
-#noiseContainer a {
+#displayContainer a {
     text-decoration: underline;
 }
 
-.noise-item {
+.display-item {
     padding: 3rem;
 }
 
-.noise-item-img {
+.display-item-img {
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     margin: 0rem auto 0;
@@ -24,7 +22,7 @@
     padding: 0.5rem;
 }
 
-#noiseContainer img {
+#displayContainer img {
     padding: 0.5rem;
 }
 
@@ -40,7 +38,7 @@ h3 {
     text-align: left;
 }
 
-.text-visual-noise {
+.text-visual-display {
     text-shadow: rgba(12, 2, 72, 0.979) 1px 1px 4px;
     font-size: 1.3rem !important;
     text-align: center;
@@ -49,15 +47,19 @@ h3 {
 
 @media screen and (min-width: 800px) {
     .tall {
-        max-width: 25vw;
+        max-width: 30vw;
     }
     
     .short {
-        max-height: 50vh;
+        max-height: 60vh;
     }
 }
 
 @media screen and (max-width: 800px) {
+    .coding .short {
+        max-height: 30vh;
+    }
+
     .tall {
         max-width: 70vw;
     }
@@ -66,6 +68,10 @@ h3 {
         max-height: 50vh;
         max-width: 70vw;
     }
+
+    .display-item {
+        padding: 1rem;
+    }
 }
 
 .p5 {
@@ -73,6 +79,7 @@ h3 {
   padding-top: 1rem;
 }
 
-#noiseContainer .translucent {
+#displayContainer .translucent {
   padding-left: 0.5rem;
 }
+

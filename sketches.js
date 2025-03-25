@@ -1,9 +1,10 @@
-const image_names = [
-    'bus-comic.png',
-    'handy.jpg',
+const rootFolder = '/static/sketches-smaller/';
+const imageNames = [
     'yearn.png',
+    'handy.jpg',
     'sunshine.png',
     'wolfy.png',
+    'bus-comic.png',
     'dancing-monster.png',
     'home.png',
     'dance.png',
@@ -22,15 +23,15 @@ const image_names = [
 ]
 
 let images = ``;
-for (const image of image_names) {
-    images +=`<img class="short" src="/static/sketches/${image}">`;
+for (const image of imageNames) {
+    images +=`<img class="short" src="${rootFolder}${image}">`;
 }
 
 const div = `
-<div class="noise-item">
-    <div class="noise-item-img">
+<div class="display-item">
+    <div class="display-item-img">
         ${images}
     </div>
 </div>`;
 
-document.querySelector('#noiseContainer').innerHTML = div;
+document.querySelector('#displayContainer').innerHTML = div;
