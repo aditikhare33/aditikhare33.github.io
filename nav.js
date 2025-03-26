@@ -84,7 +84,8 @@ renderNav();
 
 
 $(window).on('load', function(){
-  $('#loader').hide();
+  $('.loader').addClass('hide');
+  $('.home').css('background-image', 'url(/static/img/hide-smaller.png), url(/static/img/hill3.png)');
   $('.home').removeClass('hide');
 });
 

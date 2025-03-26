@@ -40,7 +40,7 @@ for (const item of items) {
     }
 
     div += `
-    <div class="display-item hidden1">
+    <div class="display-item hidden2">
         <h3>${item.name}</h3>
         <div class="display-item-img">
           ${images}

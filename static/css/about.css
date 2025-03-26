@@ -1,12 +1,13 @@
 .aboutContainer {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
+  justify-content: center;
   margin-left: 2rem;
   margin-right: 2rem;
   margin-top: 0rem;
   margin-bottom: 1.5rem;
   border-radius: 4px;
-  overflow-x: hidden;
+  max-width: 90vw;
+  margin: auto;
 }
 
 .aboutItem {
@@ -19,13 +20,16 @@
     top: 30vh;
     left: 11vw;
     border-radius: 3%;
+    margin-right: 5rem;
   }
 }
 
 @media screen and (max-width: 800px) {
   .aboutContainer {
     margin: 2rem;
+    font-size: 1rem;
   }
+
   .aboutContainer img {
     max-width: 15rem;
     text-align: right;
@@ -40,11 +44,33 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .aboutContainer {
+    margin: 2rem;
+    font-size: 0.7rem;
+  }
+
+  .aboutContainer {
+    margin: 1rem;
+  }
+  .aboutContainer img {
+    max-width: 15rem;
+    text-align: right;
+    border-radius: 3%;
+  }
+  #spike1, #spike2 {
+    display: none !important;
+  }
+  .aboutItem {
+    padding: 1rem 1rem 1rem 1rem;
+  }
+}
+
 #spike1 {
   height: 20vh;
   position: absolute;
   top: 70vh;
-  left: 23vw;
+  left: 22vw;
   z-index:3;
   filter: brightness(1.85);
 }
@@ -53,7 +79,7 @@
   height: 10vh;
   position: absolute;
   top: 49.5vh;
-  left: 10.5vw;
+  left: 8.5vw;
   z-index:3;
   filter: brightness(1.85);
 }

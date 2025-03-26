@@ -59,7 +59,7 @@ for (const item of items) {
 
     let script = item.script ? item.script : '';
     div += `
-    <div class="display-item hidden1">
+    <div class="display-item hidden2">
         <h3>${item.name}</h3>
         <div class="display-item-img">
           ${images}
@@ -73,16 +73,15 @@ for (const item of items) {
 
 document.querySelector('#displayContainer').innerHTML = div;
 
-
+/*
 $(function () {
   const { top, left } = $('#slinkie-container').offset();
   console.log(top, left);
   setTimeout(() => {
     const inputs = $("input");
-    console.log(inputs[0]);
     inputs[0].style.top = top;
     inputs[0].style.left = left;
   }, 2000);
   //document.querySelector('input').style.top = top;
   //document.querySelector('input').style.left = left;
-});
+}); */
