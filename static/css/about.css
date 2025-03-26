@@ -8,6 +8,7 @@
   border-radius: 4px;
   max-width: 90vw;
   margin: auto;
+  overflow-x: hidden;
 }
 
 .aboutItem {
@@ -28,6 +29,7 @@
   .aboutContainer {
     margin: 2rem;
     font-size: 1rem;
+    max-width: 95vw;
   }
 
   .aboutContainer img {
@@ -54,7 +56,7 @@
     margin: 1rem;
   }
   .aboutContainer img {
-    max-width: 15rem;
+    max-width: 30vw;
     text-align: right;
     border-radius: 3%;
   }
