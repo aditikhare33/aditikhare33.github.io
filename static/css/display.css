@@ -65,13 +65,6 @@ hr {
 }
 
 @media screen and (max-width: 900px) {
-    .codingImg {
-        max-height: 42vh;
-        border-radius: 4px;
-        max-width: 80vw;
-        zoom: 0.5;
-    }
-
     .tall {
         max-width: 80vw;
     }
@@ -98,6 +91,24 @@ hr {
         padding: 0.3rem;
         font-size: 0.8rem;
     } 
+}
+
+@media screen and (min-width: 495px) and (max-width: 900px) {
+    .codingImg {
+        max-height: 40vh;
+        border-radius: 4px;
+        max-width: 80vw;
+        zoom: 0.5;
+    }
+}
+
+@media screen and (max-width: 495px){
+    .codingImg {
+        max-height: 25vh;
+        border-radius: 4px;
+        max-width: 80vw;
+        zoom: 0.5;
+    }
 }
 
 .p5 {

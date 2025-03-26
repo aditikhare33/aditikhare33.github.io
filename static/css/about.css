@@ -24,7 +24,7 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 500px) and (max-width: 800px) {
   .aboutContainer {
     margin: 2rem;
     font-size: 1rem;
@@ -58,7 +58,7 @@
   }
 
   .aboutContainer img {
-    max-width: 10rem;
+    width: 40vw;
     text-align: right;
     border-radius: 3%;
   }
