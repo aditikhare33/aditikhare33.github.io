@@ -55,15 +55,17 @@
   .aboutContainer {
     margin: 1rem;
   }
+
   .aboutContainer img {
-    max-width: 30vw;
     text-align: right;
     border-radius: 3%;
   }
+
   #spike1, #spike2 {
     display: none !important;
   }
   .aboutItem {
+    min-width: 35vw;
     padding: 1rem 1rem 1rem 1rem;
   }
 }
