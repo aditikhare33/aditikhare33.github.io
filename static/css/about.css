@@ -8,7 +8,6 @@
   border-radius: 4px;
   max-width: 90vw;
   margin: auto;
-  overflow-x: hidden;
 }
 
 .aboutItem {
@@ -38,6 +37,7 @@
     zoom: 0.5;
     border-radius: 3%;
   }
+
   #spike1, #spike2 {
     display: none !important;
   }
@@ -57,6 +57,7 @@
   }
 
   .aboutContainer img {
+    max-width: 10rem;
     text-align: right;
     border-radius: 3%;
   }
