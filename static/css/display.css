@@ -28,7 +28,7 @@
 }
 
 .text-visual-display {
-    font-size: calc(1rem + 1vw);
+    font-size: calc(1rem + 0.5vw);
     text-align: center;
     padding: 0.3rem;
 } 

@@ -3,7 +3,7 @@ function displayCoding() {
   const items = [
     { name: "take back bikes (2024-2025)",
       images: ['tbb-mobile-how.png', 'tbb-desktop-smaller.png'], 
-      description: `<a href='https://www.takebackbikes.org'>takebackbikes.org</a> is a bike share project based in Washtenaw County, Michigan that is committed to free bikes for all.`,
+      description: `<span class="hidden1"> <a href='https://www.takebackbikes.org'>takebackbikes.org</a> is a bike share project based in Washtenaw County, Michigan that is committed to free bikes for all. </span>`,
       imageStyling: 'codingImg'
     },
     { name: 'object generator (2021)',
@@ -13,11 +13,11 @@ function displayCoding() {
                 <script language="javascript" type="text/javascript" src="/object_generator/script.js"></script>
             </div> `,
       description:`
-            <p>
+            <p class="hidden1">
               this generator has no dataset. it takes output from a <a href="https://p5js.org/reference/p5/display/">perlin display function</a>, 
               adds horizontal symmetry, and then draws lines between the coordinates.
             </p>
-            <p>
+            <p class="hidden1">
               it's like digital cloud watching; i often find myself seeing vases, lamps, or UFOs.
               i wonder what you will see.
             </p>`,
@@ -29,13 +29,13 @@ function displayCoding() {
             <div class="p5 long" id="slinkie-container">
                 <script language="javascript" type="text/javascript" src="/object_generator/sentient_slinkie.js"></script>
             </div> `,
-      description:`A rainbow line that draws itself.`,
+      description:`<span class="hidden1"> A rainbow line that draws itself. </span>`,
       imageStyling: 'short'
     },
     {
       name: 'coming soon: secret diary',
       images: ['secret-diary.gif'],
-      description: `this project is inspired by using lemon juice to write a diary entry! i'm working on optimizing it for web.`,
+      description: `<span class="hidden1"> this project is inspired by using lemon juice to write a diary entry! i'm working on optimizing it for web. </span>`,
       imageStyling: 'short'
     },
     /* { name: 'pacziczi-strology',
