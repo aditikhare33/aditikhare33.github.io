@@ -1,7 +1,7 @@
 const items = [
     { name: "take back bikes (2024-2025)",
-      images: ['tbb-mobile-nav.png', 'tbb-mobile.png', 'tbb-desktop-smaller.png'], 
-      description: `<a href='https://www.takebackbikes.org'>takebackbikes.org</a> is a bike share project based in Washtenaw County, Michigan that is committed to fighting for Palestinian liberation.`,
+      images: ['tbb-mobile-how.png', 'tbb-desktop-smaller.png'], 
+      description: `<a href='https://www.takebackbikes.org'>takebackbikes.org</a> is a bike share project based in Washtenaw County, Michigan that is committed to free bikes for all.`,
       imageStyling: 'codingImg'
     },
     { name: 'object generator (2021)',
@@ -11,11 +11,6 @@ const items = [
                 <script language="javascript" type="text/javascript" src="/object_generator/script.js"></script>
             </div> `,
       description:`
-            <p>
-            modern ai image generation relies on the following: 
-               <li> very large datasets (often <a href="https://www.universityofcalifornia.edu/news/how-ai-discriminates-and-what-means-your-google-habit-conversation-internet-studies-scholar">biased</a> and <a href="https://www.technologyreview.com/2023/05/02/1072556/we-need-to-bring-consent-to-ai/">taken without consent</a>) </li>
-              <li> <a href="https://www.washingtonpost.com/technology/2024/09/18/energy-ai-use-electricity-water-data-centers/">resource consuming</a> algorithms </li>
-            </p>
             <p>
               this generator has no dataset. it takes output from a <a href="https://p5js.org/reference/p5/display/">perlin display function</a>, 
               adds horizontal symmetry, and then draws lines between the coordinates.
