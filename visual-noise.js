@@ -15,6 +15,7 @@ const items = [
       description: 'digital work: tree in headlights, a toy rabbit i left on a stool in 2007',
       imageStyling: 'tall'
     },
+    /*
     { name: 'untitled (2021)',
       images: ['hug.png'],
       description: 'digital work',
@@ -29,7 +30,7 @@ const items = [
       images: ['pollen.png', 'pollen2.png', 'pollen3.png'],
       description: 'digital work',
       imageStyling: 'tall'
-    }
+    } */
 ]
 
 let div = ``;
