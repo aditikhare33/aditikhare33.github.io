@@ -15,17 +15,17 @@ const items = [
       description: 'digital work: tree in headlights, a toy rabbit i left on a stool in 2007',
       imageStyling: 'tall'
     },
-    { name: 'hug (2020)',
+    { name: 'untitled (2021)',
       images: ['hug.png'],
       description: 'digital work',
       imageStyling: 'short'
     },
-    { name: 'swimming lesson (2020)',
+    { name: 'swimming lesson (2022)',
       images: ['swimming-lesson.png'],
       description: 'digital work',
       imageStyling: 'tall'
     },
-    { name: 'pollen (2020)',
+    { name: 'untitled (2021)',
       images: ['pollen.png', 'pollen2.png', 'pollen3.png'],
       description: 'digital work',
       imageStyling: 'tall'

@@ -1,10 +1,10 @@
 const rootFolder = '/static/sketches-smaller/';
 const imageNames = [
-    'yearn.png',
+    'bus-comic.png',
     'handy.jpg',
     'sunshine.png',
+    'yearn.png',
     'wolfy.png',
-    'bus-comic.png',
     'dancing-monster.png',
     'home.png',
     'dance.png',
