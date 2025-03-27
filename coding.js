@@ -33,7 +33,7 @@ const items = [
     {
       name: 'coming soon: secret diary (2025)',
       images: ['secret-diary.gif'],
-      description: 'dissapearing lemon diary...',
+      description: `this project is inspired by using lemon juice to write a diary entry! i'm working on optimizing it for web.`,
       imageStyling: 'short'
     },
     /* { name: 'pacziczi-strology',
