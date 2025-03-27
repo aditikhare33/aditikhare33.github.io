@@ -60,7 +60,7 @@ pufferfish's styling
     text-align: center;
     font-size: 1.6rem;
     padding: 1.5rem 2rem 1.5rem;
-    font-family: Loki;
+    font-family: Px;
   }
 
   a:hover {
@@ -158,11 +158,8 @@ pufferfish's styling
   
   .titleimg {
     height: 10rem;
-    margin-left: 0rem;
-    margin-bottom: 0rem;
-    margin-right: 0rem;
-    margin-top: 1rem;
-    padding: 1rem !important;
+    margin: 0;
+    padding: 0.5rem !important;
   }
 
   .titleimg:hover {

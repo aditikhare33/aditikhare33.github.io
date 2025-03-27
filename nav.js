@@ -13,7 +13,7 @@ const navItemsHTML = () => {
     const isActive = window.location.href.endsWith(navItem.link) ? 'active' : '';
     navItemsStr += `
     <a class="${isActive}" href="/${navItem.link}">${navItem.name}</a>`;
-    navItemsStr += navItem.isLast ? `` : `<span class="divider">|</span>`;
+    navItemsStr += navItem.isLast ? `` : `<span class="divider">‧</span>`;
   }
   return navItemsStr;
 };
@@ -33,12 +33,12 @@ const dropDownItemsHTML = () => {
 const bigNav =
 
     `
-    ${titleImgHTML()}
     <div class="nav">
       <div id="nav-items" class="links">
         ${navItemsHTML()}
       </div>
     </div>
+    ${titleImgHTML()}
 `;
 
 const smallNav =  
