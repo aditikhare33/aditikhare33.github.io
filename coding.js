@@ -17,7 +17,7 @@ const items = [
             </p>
             <p>
               it's like digital cloud watching; i often find myself seeing vases, lamps, or UFOs.
-              i wonder what you will see
+              i wonder what you will see.
             </p>`,
       imageStyling: 'long'
     },
@@ -31,7 +31,7 @@ const items = [
       imageStyling: 'short'
     },
     {
-      name: 'coming soon: secret diary (2025)',
+      name: 'coming soon: secret diary',
       images: ['secret-diary.gif'],
       description: `this project is inspired by using lemon juice to write a diary entry! i'm working on optimizing it for web.`,
       imageStyling: 'short'
