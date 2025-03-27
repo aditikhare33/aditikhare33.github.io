@@ -287,9 +287,9 @@ pufferfish's styling
 
     .text {
       /*text-shadow: rgba(12, 2, 72, 0.979) 1px 1px 4px; */
-      font-size: 1.2rem !important;
+      font-size: calc(1rem + .3vw);
       text-align: left;
-    } 
+    }
   }
 
   @media screen and (max-width: 800px) {
@@ -299,7 +299,7 @@ pufferfish's styling
     }
 
     .text {
-      font-size: 0.8rem;
+      font-size: calc(0.8rem + 1vw);
       text-align: left;
     } 
 

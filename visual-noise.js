@@ -12,7 +12,7 @@ const items = [
     },
     { name: 'my memories are overexposed and faraway (2021)',
       images: ['tree-headlight.png', 'rabbit.png'],
-      description: 'digital work: tree in headlights, a toy rabbit i left on a stool in 2007',
+      description: 'digital work <br> a winter tree in headlights <br> a toy rabbit i left on a stool in 2007',
       imageStyling: 'tall'
     },
     /*

@@ -24,7 +24,7 @@ const imageNames = [
 
 let images = ``;
 for (const image of imageNames) {
-    images +=`<img class="sketch-short hidden2" src="${rootFolder}${image}">`;
+    images +=`<span class="img-container"><img class="sketch-short hidden2" src="${rootFolder}${image}"></span>`;
 }
 
 let div = `
@@ -35,3 +35,7 @@ let div = `
 </div>`;
 
 document.querySelector('#displayContainer').innerHTML = div;
+
+$('.img-container').on( "click", function() { 
+    $(this).add('.full-screen-container');
+});
