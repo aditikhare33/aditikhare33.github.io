@@ -13,10 +13,10 @@ const imageNames = [
     'egg-sperm.png',
     'pinkjob3.png',
     'chai-spot.png',
-    // 'emo1.png',
+    'emo1.png',
     'emo2.png',			
     'sleepy-shirt.png',
-    'emo3.png',
+    // 'emo3.png',
     'flushing.png',
     'drool.png',
     'basketball.png'
