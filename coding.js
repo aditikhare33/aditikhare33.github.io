@@ -1,29 +1,28 @@
 
 function displayCoding() {
   const items = [
-    { name: "take back bikes (2024-2025)",
-      images: ['tbb-mobile-how.png', 'tbb-desktop-smaller.png'], 
+    { name: "take back bikes",
+      images: ['tbb-mobile-how2.png', 'tbb-desktop-smaller-pro.png'], 
       description: `<span class="hidden1"> <a href='https://www.takebackbikes.org'>Take Back Bikes</a> is a bike share project based in Washtenaw County, Michigan that is committed to free bikes for all. </span>`,
       imageStyling: 'codingImg'
     },
-    { name: 'object generator (2021)',
+    { name: 'object generator',
       images: [],
       script: `
             <div class="p5 long" id="object-container">
                 <script language="javascript" type="text/javascript" src="/object_generator/script.js"></script>
             </div> `,
       description:`
-            <p class="hidden1">
-              this generator has no dataset. it takes output from a <a href="https://p5js.org/reference/p5/display/">perlin display function</a>, 
+            <span class="hidden1">
+              This generator has no dataset. It takes output from a <a href="https://p5js.org/reference/p5/display/">perlin display function</a>, 
               adds horizontal symmetry, and then draws lines between the coordinates.
-            </p>
-            <p class="hidden1">
-              it's like digital cloud watching; i often find myself seeing vases, lamps, or UFOs.
-              i wonder what you will see.
-            </p>`,
+              <br>
+              It's like digital cloud watching; I often find myself seeing vases, lamps, or UFOs.
+              I wonder what you will see.
+            </span>`,
       imageStyling: 'long'
     },
-    { name: 'sentient slinkie (2021)',
+    { name: 'sentient slinkie',
       images: [],
       script: `
             <div class="p5 long" id="slinkie-container">
@@ -32,16 +31,15 @@ function displayCoding() {
       description:`<span class="hidden1"> A rainbow line that draws itself. </span>`,
       imageStyling: 'short'
     },
-    /*
-    { name: "conversations for every dinner table (2025)",
-      images: ['repro-convos.png'], 
-      description: `<span class="hidden1"> <a href='https://reproconvos.glitch.me'>Conversations for Every Dinner Table</a> is a card game centered around reproductive health. My friend <a href="https://julielam.glitch.me/">Julie</a> is the lead web developer on this site; I implemented the mobile responsiveness. </span>`,
+    { name: "conversations for every dinner table",
+      images: ['repro-convos.png', 'manifesto.png'], 
+      description: `<span class="hidden1"> <a href='https://reproconvos.glitch.me'>Conversations for Every Dinner Table</a> is a card game centered around reproductive health. This is a collaborative project: I implemented the mobile responsiveness. </span> </span>`,
       imageStyling: 'codingImg'
-    }, */
+    },
     {
       name: 'coming soon: secret diary',
       images: ['secret-diary.gif'],
-      description: `<span class="hidden1"> this project is inspired by using lemon juice to write a diary entry! i'm working on optimizing it for web. </span>`,
+      description: `<span class="hidden1"> This project is inspired by using lemon juice to write a diary entry! I'm working on optimizing it for web. </span>`,
       imageStyling: 'short'
     },
     /* { name: 'pacziczi-strology',
@@ -67,7 +65,8 @@ function displayCoding() {
           ${script}
           <div class="display-item-img">
             ${images}
-            <div class="display-item-description translucent text">
+          </div>
+          <div class="display-item-img display-item-description translucent text">
                 ${item.description}
             </div>
           </div>

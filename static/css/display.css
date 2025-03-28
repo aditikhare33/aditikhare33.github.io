@@ -45,7 +45,8 @@ hr {
 
 .display-item h3 {
     font-size: 2rem;
-    text-align: left;
+    text-align:justify;
+    text-transform: uppercase;
 }
 
 @media screen and (min-width: 900px) {
@@ -96,23 +97,20 @@ hr {
 
     .display-item h3 {
         font-size: 2rem;
-        text-align: left;
     }
 }
 
-@media screen and (min-width: 495px) and (max-width: 900px) {
+@media screen and (min-width: 700px) and (max-width: 900px) {
     .codingImg {
-        max-height: 40vh;
+        height: 50vh;
         border-radius: 4px;
-        zoom: 0.5;
     }
 }
 
-@media screen and (max-width: 495px){
+@media screen and (max-width: 699px){
     .codingImg {
-        max-height: 35vh;
+        height: 40vh;
         border-radius: 4px;
-        zoom: 0.5;
     }
 }
 

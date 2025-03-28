@@ -1,0 +1,104 @@
+.coding-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    background-color: rgba(0, 0, 255, 0.326);
+    height: 70vh;
+    margin: 1rem;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+.card:hover {
+    box-shadow: #fc0 2px 0 10px;
+}
+
+.card-img-top {
+    object-fit: cover;
+    position: anchor;
+    height: 100%;
+    width: 100%;
+}
+
+.card-title {
+    text-transform: uppercase;
+    font-size: calc(1rem + (0.4vw));
+
+}
+
+.card-body {
+  margin: 0.4rem;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .card:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text-coding {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  /* unvisited link */
+  a:link, a:visited {
+    color: white;
+    text-shadow: #fc0 1px 0 10px;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #fc0;
+    text-shadow: #fc0 1px 0 10px;
+  }
+
+.card-description {
+    font-size: calc(0.6rem + (0.5vw));
+    text-align: left;
+    font-weight: normal;
+}
+
+@media screen and (min-width: 901px) {
+    .card {
+        flex-basis: 45%;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 950px) {
+    .card {
+        flex-basis: 45%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        flex-basis: 90%;
+    }
+}

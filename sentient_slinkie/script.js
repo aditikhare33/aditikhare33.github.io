@@ -38,7 +38,7 @@ const slinkie = function (p) {
         p.fill(p.color(t3, 30, 100));
         x = p.map(p.noise(t1), 0, 1, 0, slinkie_w);
         y = p.map(p.noise(t2), 0, 1, 0, slinkie_h);
-        c = /* size_slider.value() slinkie_w/15 */ slinkie_w/10;
+        c = /* size_slider.value() slinkie_w/15 */ slinkie_h/8;
         p.ellipse(x, y, c, c,  50);
                 
         speed = 0.008; //* 1; speed_slider.value();

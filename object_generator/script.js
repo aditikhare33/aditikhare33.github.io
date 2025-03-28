@@ -36,7 +36,7 @@ const object_generator = function (p) {
         cnv = p.createCanvas(w , h * 1.1);
         cnv.parent("object-container");
         cnv.style("border-radius", "5px");
-        p.background(bgColor);
+        // p.background(bgColor);
     }
 
     let recents = [];
@@ -51,10 +51,7 @@ const object_generator = function (p) {
 
         recents.push({'x': x, 'y':y, 'th': thickness, 'col': curr_color})
 
-        if (recents.length == 1){
-            p.point(x, y);
-            p.point(y, x);
-        } else {
+        if (recents.length !== 1) {
             if (recents.length > recent_window*scl_x*scl_y) {
                 recents.shift();
             }
@@ -82,7 +79,7 @@ const object_generator = function (p) {
     }
 
     function show_recents() {
-        p.background(bgColor);
+        p.background(0);
         let scl = scl_x;
         for(let row = 0; row < p.int(scl_y); row++) {
             for(let col = 0; col < p.int(scl_x); col++) {

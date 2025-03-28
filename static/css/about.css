@@ -50,7 +50,7 @@
   .aboutContainer {
     margin: 2rem;
     font-size: 0.8rem;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .aboutContainer {
