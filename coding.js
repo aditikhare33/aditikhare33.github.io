@@ -3,7 +3,7 @@ function displayCoding() {
   const items = [
     { name: "take back bikes (2024-2025)",
       images: ['tbb-mobile-how.png', 'tbb-desktop-smaller.png'], 
-      description: `<span class="hidden1"> <a href='https://www.takebackbikes.org'>takebackbikes.org</a> is a bike share project based in Washtenaw County, Michigan that is committed to free bikes for all. </span>`,
+      description: `<span class="hidden1"> <a href='https://www.takebackbikes.org'>Take Back Bikes</a> is a bike share project based in Washtenaw County, Michigan that is committed to free bikes for all. </span>`,
       imageStyling: 'codingImg'
     },
     { name: 'object generator (2021)',
@@ -32,6 +32,12 @@ function displayCoding() {
       description:`<span class="hidden1"> A rainbow line that draws itself. </span>`,
       imageStyling: 'short'
     },
+    /*
+    { name: "conversations for every dinner table (2025)",
+      images: ['repro-convos.png'], 
+      description: `<span class="hidden1"> <a href='https://reproconvos.glitch.me'>Conversations for Every Dinner Table</a> is a card game centered around reproductive health. My friend <a href="https://julielam.glitch.me/">Julie</a> is the lead web developer on this site; I implemented the mobile responsiveness. </span>`,
+      imageStyling: 'codingImg'
+    }, */
     {
       name: 'coming soon: secret diary',
       images: ['secret-diary.gif'],
@@ -58,12 +64,12 @@ function displayCoding() {
       div += `
       <div class="display-item hidden2">
           <h3>${item.name}</h3>
+          ${script}
           <div class="display-item-img">
             ${images}
-          </div>
-          ${script}
-          <div class="display-item-description translucent text">
-              ${item.description}
+            <div class="display-item-description translucent text">
+                ${item.description}
+            </div>
           </div>
       </div>`;
   }

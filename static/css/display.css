@@ -8,6 +8,10 @@
     text-decoration: underline;
 }
 
+.display-item-description {
+    margin: 0 !important;
+}
+
 .display-item {
     padding: 0.5rem;
     padding-top: 0.5rem;
@@ -28,9 +32,8 @@
 }
 
 .text-visual-display {
-    font-size: calc(1rem + 0.5vw);
+    font-size: calc(1rem + 0.3vw);
     text-align: center;
-    padding: 0.3rem;
 } 
 
 hr {
@@ -58,7 +61,7 @@ hr {
     }
 
     .codingImg {
-        max-height: 40vh;
+        max-height: 60vh;
     }
 
     .tall {
