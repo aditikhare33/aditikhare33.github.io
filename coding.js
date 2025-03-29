@@ -3,7 +3,7 @@ function displayCoding() {
   const items = [
     { name: "take back bikes",
       images: ['tbb-mobile-how2.png', 'tbb-desktop-smaller-pro.png'], 
-      description: `<span class="hidden1"> <a href='https://www.takebackbikes.org'>Take Back Bikes</a> is a bike share project based in Washtenaw County, Michigan that is committed to free bikes for all. </span>`,
+      description: `<span class="hidden1">A website for <a href='https://www.takebackbikes.org'>Take Back Bikes</a>, a bike share project based in Washtenaw County, Michigan that is committed to free bikes for all. </span>`,
       imageStyling: 'codingImg'
     },
     { name: 'object generator',
