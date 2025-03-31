@@ -69,7 +69,7 @@ function displayCoding() {
           </div>
           <div class="display-item-img display-item-description translucent text">
                 ${item.description}
-            </div>
+          </div>
           </div>
       </div>`;
   }

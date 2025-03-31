@@ -2,17 +2,17 @@ const rootFolder = '/static/visual-noise-smaller/';
 const items = [
     { name: "hide and seek near a blue window (2022)",
       images: ['hide.png', 'seek.png'], 
-      description: `digital work, <a href='https://www.ouch.studio/zine/luck'>featured in OUCH! magazine ed.10: Luck</a>`,
+      description: `<span class="hidden1"> digital work, <a href='https://www.ouch.studio/zine/luck'>featured in OUCH! magazine ed.10: Luck</a> </span>`,
       imageStyling: 'short'
     },
     { name: 'cryptid (2023)',
       images: ['bg-cryptid.png'],
-      description: 'digital work',
+      description: '<span class="hidden1"> digital work </span>',
       imageStyling: 'short'
     },
     { name: 'my memories are overexposed and faraway (2021)',
       images: ['tree-headlight.png', 'rabbit.png'],
-      description: 'digital work <br> a winter tree in headlights <br> a toy rabbit i left on a stool in 2007',
+      description: '<span class="hidden1"> digital work <br> a winter tree in headlights <br> a toy rabbit i left on a stool in 2007 </span>',
       imageStyling: 'tall'
     },
     /*

@@ -387,3 +387,10 @@ pufferfish's styling
   /* animation: fadeInOpacity 1s 1 ease-in; */
   overflow-y: auto;
 }
+
+@media screen and (min-width: 900px) {
+  .desktop-bottom {
+    position: absolute;
+    bottom: 0; 
+  }
+}
