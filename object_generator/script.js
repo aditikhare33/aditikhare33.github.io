@@ -43,7 +43,7 @@ const object_generator = function (p) {
 
     p.draw = function () {
         if (!paused) {
-        let thickness = p.map(p.noise(t_x, t_y), 0, 1, 10, 10);
+        let thickness = 4; // p.map(p.noise(t_x, t_y), 0, 1, 10, 10);
         p.strokeWeight(thickness);
 
         let x = p.map(p.noise(t_x), 0, 1, 0, w);
