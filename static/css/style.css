@@ -394,3 +394,7 @@ pufferfish's styling
     bottom: 0; 
   }
 }
+
+.base-margin {
+  margin: calc(0.5rem + 0.5vw);
+}
