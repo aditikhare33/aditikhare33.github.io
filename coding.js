@@ -33,7 +33,7 @@ function displayCoding() {
     },
     { name: "conversations for every dinner table",
       images: ['repro-convos.png', 'manifesto.png'], 
-      description: `<span class="hidden1">Conversations for Every Dinner Table is a card game centered around reproductive health. This is a collaborative project: I implemented the mobile responsiveness. </span> </span>`,
+      description: `<span class="hidden1"><a href="reproconvos.glitch.me">Conversations for Every Dinner Table</a> is a card game centered around reproductive health. This is a collaborative project: I implemented the mobile responsiveness. </span> </span>`,
       imageStyling: 'codingImg'
     },
     {
