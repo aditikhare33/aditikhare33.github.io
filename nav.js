@@ -1,9 +1,9 @@
 const titleimg = "/static/img/p-fish-world-hc-light.png";
 const navItemsInfo = [ 
   { name: "about", link: "about/" },
+  { name: "egg bowl", link: "egg-bowl/"},
   { name: "websites", link: "websites/" },
   { name: "computer graphics", link: "computer-graphics/" },
-  { name: "egg bowl", link: "egg-bowl/"},
   { name: "visual noise", link: "visual-noise/" },
   { name: "sketchbook", link: "sketchbook/", isLast: true }
 ];
