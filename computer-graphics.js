@@ -9,7 +9,7 @@ function displayCoding() {
             </div> `,
       description:`
             <span class="hidden1">
-              This generator has no dataset. It takes output from a <a href="https://p5js.org/reference/p5/display/">perlin display function</a>, 
+              This generator has no dataset. It takes output from a <a href="https://p5js.org/reference/p5/noise/">perlin display function</a>, 
               adds horizontal symmetry, and then draws lines between the coordinates.
               <br>
               It's like digital cloud watching; I often find myself seeing vases, lamps, or UFOs.
