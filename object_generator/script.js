@@ -26,7 +26,7 @@ const object_generator = function (p) {
         t_y = p.random(0, 100);
         let useSide;
         if (p.windowWidth < p.windowHeight) {
-          useSide = p.windowWidth / 1.7;
+          useSide = p.windowWidth / 1.1;
         } else {
           useSide = p.windowHeight / 1.7;
         }

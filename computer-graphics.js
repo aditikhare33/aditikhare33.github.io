@@ -20,9 +20,17 @@ function displayCoding() {
     { name: 'sentient slinkie',
       images: [],
       script: `
-            <div class="p5 long" id="slinkie-container">
+            <div class="p5" id="slinkie-container">
                 <script language="javascript" type="text/javascript" src="/object_generator/sentient_slinkie.js"></script>
-            </div> `,
+            </div>
+              <div class="sliders">
+                <div class="slider" id="slinkie-container-size-slider">
+                  <label for="size-slider"> Adjust Size</label>
+                </div>
+                <div class="slider" id="slinkie-container-speed-slider">
+                  <label for="speed-slider"> Adjust Speed</label>
+                </div>
+            </div>`,
       description:`<span class="hidden1"> A rainbow line that draws itself. </span>`,
       imageStyling: 'short'
     },
@@ -44,7 +52,7 @@ function displayCoding() {
       let images = ``;
       if (item.images) {
           for (const image of item.images) {
-              images +=`<img class=${item.imageStyling} src="/static/coding/${image}">`;
+              images +=`<img class="${item.imageStyling}" src="/static/coding/${image}">`;
           }
       }
 
