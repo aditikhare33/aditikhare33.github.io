@@ -45,8 +45,10 @@ hr {
 
 .display-item h3 {
     font-size: 2rem;
-    text-align:justify;
+    padding-top: calc(0.9rem + 0.2vw);
+    text-align: justify;
     text-transform: uppercase;
+    font-family: Loki;
 }
 
 @media screen and (min-width: 900px) {

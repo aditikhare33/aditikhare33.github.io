@@ -11,7 +11,6 @@
 
 .card {
     background-color: rgba(0, 0, 255, 0.326);
-    height: 70vh;
     margin: 1rem;
     border: 1px solid white;
     border-radius: 4px;
@@ -31,7 +30,6 @@
 .card-title {
     text-transform: uppercase;
     font-size: calc(1rem + (0.4vw));
-
 }
 
 .card-body {
@@ -48,7 +46,7 @@
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #008CBA;
+    background-color: #0f00ba;
   }
   
   .card:hover .overlay {
@@ -87,18 +85,21 @@
 
 @media screen and (min-width: 901px) {
     .card {
-        flex-basis: 45%;
+        flex-basis: 35%;
+        height: 60vh;
     }
 }
 
 @media screen and (min-width: 601px) and (max-width: 950px) {
     .card {
         flex-basis: 45%;
+        height: 65vh;
     }
 }
 
 @media screen and (max-width: 600px) {
     .card {
         flex-basis: 90%;
+        height: 70vh;
     }
 }

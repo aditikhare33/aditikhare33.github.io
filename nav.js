@@ -5,7 +5,7 @@ const navItemsInfo = [
   { name: "websites", link: "websites/" },
   { name: "computer graphics", link: "computer-graphics/" },
   { name: "visual noise", link: "visual-noise/" },
-  { name: "sketchbook", link: "sketchbook/", isLast: true }
+  { name: "sketchbook", link: "sketchbook/" }
 ];
 
 const navItemsHTML = () => {
@@ -14,7 +14,6 @@ const navItemsHTML = () => {
     const isActive = window.location.href.endsWith(navItem.link) ? 'active' : '';
     navItemsStr += `
     <a class="${isActive}" href="/${navItem.link}">${navItem.name}</a>`;
-    navItemsStr += navItem.isLast ? `` : `<span class="divider">‧</span>`;
   }
   return navItemsStr;
 };

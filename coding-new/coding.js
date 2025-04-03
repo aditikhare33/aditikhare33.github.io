@@ -15,10 +15,10 @@ function display(title, items) {
     div += `
     <div href="${link}" class="card hidden1">
         ${images}
+        <div class="card-title">${item.name}</div>
         <a href="${link}">
           <div class="overlay">
             <div class="text-coding">
-              <div class="card-title">${item.name}</div>
               <div class="card-description">
                   <p class="hidden1">${item.description}</p>
               </div>
@@ -46,7 +46,8 @@ function displayCoding() {
         imageStyling: 'sketch-short',
         description: `A website for a card game centered around reproductive health. <a href="https://reproconvos.glitch.me/manifesto">A collaborative project:</a> I implemented the mobile responsiveness. </span>`,
         link: 'https://reproconvos.glitch.me/manifesto'
-      },
+      }
+      /*
       {
         name: 'Lemon Swirl',
         images: ['secret-diary.gif'],
@@ -57,8 +58,9 @@ function displayCoding() {
         images: ['pacziczi.png'],
         imageStyling: 'sketch-short',
         description: `Unlock your secret powers...`
-      }
+      } */
     ];
+
     const gen_art = [
       { name: 'object generator',
         images: ['obj.png'],
@@ -74,13 +76,12 @@ function displayCoding() {
         description:`<span class="hidden1"> A rainbow line that draws itself. </span>`,
       }
     ];
-  
 
-    const div1 = display(`websites`, websites);
-    const div2 = display(`generative art`, gen_art);
+    const div1 = display(``, websites);
+    //const div2 = display(`generative art`, gen_art);
     
   
-    document.querySelector('#codingContainer').innerHTML = div1 + div2;
+    document.querySelector('#codingContainer').innerHTML = div1; // + div2;
   }
   
 displayCoding();
