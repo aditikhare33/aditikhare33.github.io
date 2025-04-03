@@ -9,14 +9,12 @@ function displayCoding() {
             </div> `,
       description:`
             <span class="hidden1">
-              modern image generation relies on the following: 
-               <li> very large datasets (often <a href="https://www.universityofcalifornia.edu/news/how-ai-discriminates-and-what-means-your-google-habit-conversation-internet-studies-scholar">biased</a> and <a href="https://www.technologyreview.com/2023/05/02/1072556/we-need-to-bring-consent-to-ai/">taken without consent</a>) </li>
-              <li> <a href="https://www.washingtonpost.com/technology/2024/09/18/energy-ai-use-electricity-water-data-centers/">resource consuming</a> algorithms </li>
+              Modern image generation relies on the following: 
+               <li> Very large datasets (often <a href="https://www.universityofcalifornia.edu/news/how-ai-discriminates-and-what-means-your-google-habit-conversation-internet-studies-scholar">biased</a> and <a href="https://www.technologyreview.com/2023/05/02/1072556/we-need-to-bring-consent-to-ai/">taken without consent</a>) </li>
+               <li> <a href="https://www.washingtonpost.com/technology/2024/09/18/energy-ai-use-electricity-water-data-centers/">Resource consuming</a> algorithms </li>
               <br>
-              This generator has no dataset. It takes output from a <a href="https://p5js.org/reference/p5/noise/">perlin display function</a>, 
-              adds horizontal symmetry, and then draws lines between the coordinates.
-              <br>
-              It's like digital cloud watching; I often find myself seeing vases, lamps, or UFOs.
+              This generator has no dataset. It's just a <a href="https://p5js.org/reference/p5/noise/"> random</a> scribble with symmetry added in.
+              My intention was to make something like digital cloud watching; I often find myself seeing vases or lamps.
               I wonder what you will see.
             </span>`,
       imageStyling: 'long'
