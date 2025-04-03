@@ -1,7 +1,7 @@
 #displayContainer {
     margin: 0.6rem;
     text-align: center;
-    overflow-x: hidden;
+    /*overflow-x: hidden; */
 }
 
 #displayContainer a {
@@ -46,7 +46,7 @@ hr {
 .display-item h3 {
     font-size: 2rem;
     padding-top: calc(0.9rem + 0.2vw);
-    text-align: justify;
+    text-align: left;
     text-transform: uppercase;
     font-family: Loki;
 }
@@ -99,6 +99,7 @@ hr {
 
     .display-item h3 {
         font-size: 2rem;
+        letter-spacing: 2px;
     }
 }
 
