@@ -32,3 +32,17 @@
     75% { transform: translate(-5px, 5px) rotate(-5deg); }
     100% { transform: translate(0, 0) rotate(0deg); }
 }
+
+@media (prefers-reduced-motion: no-preference) {
+    .hidden3 {
+        transform: translate(0, -50%);
+        opacity: 0;
+        transform-origin: top;
+        transition: transform .5s, opacity .5s;
+    } 
+
+    .show1 {
+        opacity: 100;
+        transform: translate(0);
+    }
+}
