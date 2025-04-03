@@ -66,7 +66,7 @@ const useDropDown = () => {
 }
 
 const renderNav = () => {
-  const div = window.innerWidth > 900 ? bigNav : dropDownOn ? dropDownNav : smallNav;
+  const div = window.innerWidth > 950 ? bigNav : dropDownOn ? dropDownNav : smallNav;
   if (dropDownOn) {
     document.querySelector('.home').style['overflow-y'] = "hidden";
   } else {
