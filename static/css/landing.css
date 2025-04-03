@@ -5,6 +5,8 @@
     top: 35.5vh;
     left: 50.5vw;
     filter: brightness(1.8);
+    animation: tilt-n-move-shaking 0.25s 5;
+    animation-delay: 6s;
   }
   
 
@@ -15,6 +17,8 @@
     left: 60vw;
     z-index:3;
     filter: brightness(1.8);
+    animation: tilt-n-move-shaking 0.25s 5;
+    animation-delay: 2s;
 }
 
 #spike1:hover, #spike2:hover{
