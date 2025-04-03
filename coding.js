@@ -3,12 +3,12 @@ function displayCoding() {
   const items = [
     { name: "take back bikes",
       images: ['tbb-mobile-how2.png', 'tbb-desktop-smaller-pro.png'], 
-      description: `<span class="hidden1">A website for a bike share project based in Washtenaw County, Michigan that is committed to free bikes for all. </span>`,
+      description: `<span class="">A website for a bike share project based in Washtenaw County, Michigan that is committed to free bikes for all. </span>`,
       imageStyling: 'codingImg'
     },
     { name: "conversations for every dinner table",
       images: ['repro-convos.png', 'manifesto.png'], 
-      description: `<span class="hidden1"><a href="https://reproconvos.glitch.me">Conversations for Every Dinner Table</a> is a card game centered around reproductive health. This is a collaborative project: I implemented the mobile responsiveness. </span>`,
+      description: `<span class=""><a href="https://reproconvos.glitch.me">Conversations for Every Dinner Table</a> is a card game centered around reproductive health. This is a collaborative project: I implemented the mobile responsiveness. </span>`,
       imageStyling: 'codingImg'
     }
     /* { name: 'pacziczi-strology',

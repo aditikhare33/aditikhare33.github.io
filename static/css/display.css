@@ -1,7 +1,7 @@
 #displayContainer {
     margin: 0.6rem;
     text-align: center;
-    /*overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 #displayContainer a {
