@@ -179,10 +179,10 @@ pufferfish's styling
     75% { transform: scale(0.95, 1.05); }
   }
   
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 850px) {
     .titleimg {
        height: 7.5rem;
-       padding: 1rem !important;
+       padding: 1.2rem !important;
        margin-bottom: 1rem;
     }
   }
