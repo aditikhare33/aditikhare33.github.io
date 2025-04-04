@@ -3,7 +3,7 @@ function displayCoding() {
   const items = [
     { name: "take back bikes",
       images: ['tbb-mobile-how2.png', 'tbb-desktop-smaller-pro.png'], 
-      description: `<span class=""><a href="https://takebackbikes.org">Take Back Bikes </a> is a bike share project based in Washtenaw County, Michigan that is committed to Palestinian liberation. </span>`,
+      description: `<span class=""><a href="https://takebackbikes.org">Take Back Bikes</a> is a bike share project based in Washtenaw County, Michigan that is committed to Palestinian liberation. </span>`,
       imageStyling: 'codingImg'
     },
     { name: "conversations for every dinner table",
@@ -29,7 +29,7 @@ function displayCoding() {
 
       let script = item.script ? item.script : '';
       div += `
-      <div class="display-item hidden2">
+      <div class="display-item hidden1">
           <h3>${item.name}</h3>
           ${script}
           <div class="display-item-img">

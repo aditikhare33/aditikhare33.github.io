@@ -61,6 +61,7 @@
     width: 40vw;
     text-align: right;
     border-radius: 3%;
+    display: none;
   }
 
   #spike1, #spike2 {
