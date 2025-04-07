@@ -3,13 +3,13 @@ const rootFolder = '/static/coding/';
 function displayCoding() {
   const items = [
     { name: "take back bikes",
-      images: ['tbb-mockup.png'], 
-      description: `<span class="hidden1"><a href="/websites/">Take Back Bikes</a> is a bike share project based in Washtenaw County, Michigan that is committed to Palestinian liberation. </span>`,
+      images: ['tbb-desktop-actual.png'], 
+      description: `<span class="hidden1"><a href="https://takebackbikes.org">Take Back Bikes</a> is a bike share project based in Washtenaw County, Michigan that is committed to free bikes for all. </span>`,
       imageStyling: 'codingImg glow'
     },
     { name: "conversations for every dinner table",
-      images: ['repro-mockup.png'], 
-      description: `<span class="hidden1"><a href="https://reproconvos.glitch.me">Conversations for Every Dinner Table</a> is a card game centered around reproductive health. This is a collaborative project: I implemented the mobile responsiveness. </span>`,
+      images: ['repro-convos.png'], 
+      description: `<span class="hidden1"><a href="https://reproconvos.glitch.me">Conversations for Every Dinner Table</a> is a card game centered around reproductive health. This is a collaborative project, my role was making sure you can play on your phone. </span>`,
       imageStyling: 'codingImg2 glow'
     }
     /* { name: 'pacziczi-strology',
@@ -30,16 +30,19 @@ function displayCoding() {
       const imageDiv = `<div class="display-item-img">
                   ${images}
                 </div>`
-      const descriptionDiv = `<div class="display-item-description translucent text-visual-display">
-                      ${item.description}
-                    </div>`
+      const descriptionDiv = `
+      <div>
+        <div class="display-item-description translucent text">
+          ${item.description}
+        </div>
+      </div>`;
       const displayBody = imgFirst ? `${imageDiv}${descriptionDiv}` : `${descriptionDiv}${imageDiv}`;
       div += `
       <div class="display-item hidden2">
-          <h3>${item.name}</h3>
-          <div class="flex-container">
-            ${displayBody}
-          </div>
+        <h3>${item.name}</h3>
+        <div class="flex-container">
+          ${displayBody}
+        </div>
       </div>`;
 
       imgFirst = !imgFirst;
