@@ -1,15 +1,16 @@
+const rootFolder = '/static/coding/';
 
 function displayCoding() {
   const items = [
     { name: "take back bikes",
-      images: ['tbb-mobile-how2.png', 'tbb-desktop-smaller-pro.png'], 
-      description: `<span class=""><a href="/websites/">Take Back Bikes</a> is a bike share project based in Washtenaw County, Michigan that is committed to Palestinian liberation. </span>`,
-      imageStyling: 'codingImg'
+      images: ['tbb-mockup.png'], 
+      description: `<span class="hidden1"><a href="/websites/">Take Back Bikes</a> is a bike share project based in Washtenaw County, Michigan that is committed to Palestinian liberation. </span>`,
+      imageStyling: 'codingImg glow'
     },
     { name: "conversations for every dinner table",
-      images: ['repro-convos.png', 'manifesto.png'], 
-      description: `<span class=""><a href="https://reproconvos.glitch.me">Conversations for Every Dinner Table</a> is a card game centered around reproductive health. This is a collaborative project: I implemented the mobile responsiveness. </span>`,
-      imageStyling: 'codingImg'
+      images: ['repro-mockup.png'], 
+      description: `<span class="hidden1"><a href="https://reproconvos.glitch.me">Conversations for Every Dinner Table</a> is a card game centered around reproductive health. This is a collaborative project: I implemented the mobile responsiveness. </span>`,
+      imageStyling: 'codingImg2 glow'
     }
     /* { name: 'pacziczi-strology',
       images: [],
@@ -19,30 +20,32 @@ function displayCoding() {
   ]
 
   let div = ``;
+  let imgFirst = false;
   for (const item of items) {
       let images = ``;
-      if (item.images) {
-          for (const image of item.images) {
-              images +=`<img class=${item.imageStyling} src="/static/coding/${image}">`;
-          }
+      for (const image of item.images) {
+          images +=`<img class="${item.imageStyling}" src=${rootFolder}${image}>`;
       }
-
-      let script = item.script ? item.script : '';
+  
+      const imageDiv = `<div class="display-item-img">
+                  ${images}
+                </div>`
+      const descriptionDiv = `<div class="display-item-description translucent text-visual-display">
+                      ${item.description}
+                    </div>`
+      const displayBody = imgFirst ? `${imageDiv}${descriptionDiv}` : `${descriptionDiv}${imageDiv}`;
       div += `
       <div class="display-item hidden2">
           <h3>${item.name}</h3>
-          ${script}
-          <div class="display-item-img">
-            ${images}
-          </div>
-          <div class="display-item-img display-item-description translucent text">
-                ${item.description}
-          </div>
+          <div class="flex-container">
+            ${displayBody}
           </div>
       </div>`;
-  }
 
-  document.querySelector('#displayContainer').innerHTML = div;
+      imgFirst = !imgFirst;
+  }
+  
+  document.querySelector('#displayContainer').innerHTML = div;  
 }
 
 displayCoding();

@@ -1,5 +1,6 @@
 #displayContainer {
-    margin: 0.6rem;
+    margin: auto;
+    padding: 0.6rem;
     text-align: center;
     overflow-x: hidden;
 }
@@ -29,6 +30,12 @@
 
 #displayContainer img {
     padding: 0.5rem;
+    transition: transform 1s;
+}
+
+#displayContainer img:hover {
+    transform: scale(1.03);
+    transition-timing-function: ease-in-out;
 }
 
 .text-visual-display {
@@ -48,10 +55,15 @@ hr {
     padding-top: calc(0.9rem + 0.2vw);
     text-align: left;
     text-transform: uppercase;
-    font-family: Loki;
+    letter-spacing: 3px;
 }
 
 @media screen and (min-width: 900px) {
+    #displayContainer {
+        padding: 1rem;
+        width: 93vw;
+    }
+
     .full-screen-container {
         height: 100vh;
         width: 100vw;
@@ -65,6 +77,10 @@ hr {
 
     .codingImg {
         max-height: 60vh;
+    }
+
+    .codingImg2 {
+        max-height: 70vh;
     }
 
     .tall {
@@ -105,7 +121,12 @@ hr {
 
 @media screen and (min-width: 700px) and (max-width: 900px) {
     .codingImg {
-        height: 50vh;
+        height: 40vh;
+        border-radius: 4px;
+    }
+
+    .codingImg2 {
+        height: 60vh;
         border-radius: 4px;
     }
 }
@@ -113,6 +134,11 @@ hr {
 @media screen and (max-width: 699px){
     .codingImg {
         height: 40vh;
+        border-radius: 4px;
+    }
+
+    .codingImg2 {
+        height: 60vh;
         border-radius: 4px;
     }
 }
@@ -129,4 +155,8 @@ hr {
 .sliders {
     margin: 1rem;
     text-transform: uppercase;
+}
+
+.glow {
+    filter: drop-shadow(0 0 0.75rem rgb(60, 66, 240));
 }

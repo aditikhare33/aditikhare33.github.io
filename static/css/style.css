@@ -413,3 +413,19 @@ pufferfish's styling
 .base-margin {
   margin: calc(0.5rem + 0.5vw);
 }
+
+@media screen and (max-width: 950px) {
+  .flex-container {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+  }
+}
