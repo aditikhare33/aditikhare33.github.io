@@ -105,7 +105,7 @@ pufferfish's styling
     height: 100vh !important;
     width: 100vw !important;
     /* background-color:rgb(243, 229, 185); */
-    background-color:rgb(33, 54, 189);
+    background-color:rgba(17, 40, 188, 0.774);
     /* rgb(97, 116, 223) */
     background-blend-mode: multiply;
     background-size: cover;
@@ -206,7 +206,7 @@ pufferfish's styling
   }
   
   .dropDownButton {
-    background: rgba(0, 0, 255, 0.326);
+    background: none;
     color: #ffffff;
     text-shadow: #fc0 1px 0 10px;
     border: none;

@@ -3,12 +3,12 @@ const rootFolder = '/static/coding/';
 function displayCoding() {
   const items = [
     { name: "take back bikes",
-      images: ['tbb-desktop-actual.png'], 
+      images: ['tbb-mockup.png'], 
       description: `<span class="hidden1"><a href="https://takebackbikes.org">Take Back Bikes</a> is a bike share project based in Washtenaw County, Michigan that is committed to free bikes for all. </span>`,
       imageStyling: 'codingImg glow'
     },
     { name: "conversations for every dinner table",
-      images: ['repro-convos.png'], 
+      images: ['repro-mockup.png'], 
       description: `<span class="hidden1"><a href="https://reproconvos.glitch.me">Conversations for Every Dinner Table</a> is a card game centered around reproductive health. This is a collaborative project, my role was making sure you can play on your phone. </span>`,
       imageStyling: 'codingImg2 glow'
     }
@@ -32,7 +32,7 @@ function displayCoding() {
                 </div>`
       const descriptionDiv = `
       <div>
-        <div class="display-item-description translucent text">
+        <div class="display-item-description translucent text-visual-display">
           ${item.description}
         </div>
       </div>`;
