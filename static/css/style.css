@@ -47,7 +47,7 @@ pufferfish's styling
     margin: 0rem auto 0;
     padding: 0rem;
     background: var(--transparent);
-    color: white !important;
+    color: var(--color-text) !important;
     font-family: Px;
   }
   
@@ -58,7 +58,7 @@ pufferfish's styling
     justify-content: space-between;
     flex-wrap: wrap;
     text-align: center;
-    font-size: calc(1rem + 0.7vw);
+    font-size: calc(0.7rem + 0.7vw);
     padding: calc(1rem + 0.3rem);
   }
 
@@ -94,7 +94,7 @@ pufferfish's styling
     -moz-osx-font-smoothing: grayscale;
     opacity: 1;
     line-height: 1.2; 
-    color: white;
+    color: var(--color-text);
   }
   
   .home {
@@ -105,7 +105,7 @@ pufferfish's styling
     height: 100vh !important;
     width: 100vw !important;
     /* background-color:rgb(243, 229, 185); */
-    background-color:rgba(17, 40, 188, 0.774);
+    background-color: rgba(17, 40, 188, 0.64); /*rgba(17, 40, 188, 0.774); */
     /* rgb(97, 116, 223) */
     background-blend-mode: multiply;
     background-size: cover;
@@ -129,7 +129,7 @@ pufferfish's styling
   
   /* unvisited link */
   a:link, a:visited {
-    color: white;
+    color: var(--color-text);
     text-shadow: #fc0 1px 0 10px;
   }
   
@@ -146,17 +146,8 @@ pufferfish's styling
   }
   
   /* Page titles */
-  h1 {
-    color: var(--color-text-header);
-    font-family: var(--font-family);
-    font-style: normal;
-    font-weight: bold;
-    font-size: 100px;
-    line-height: 105%;
-  }
-  
   .titleimg {
-    height: 10rem;
+    height: calc(7.5rem + 1vw);
     margin: 0;
     padding: 0.5rem !important;
   }
@@ -207,7 +198,7 @@ pufferfish's styling
   
   .dropDownButton {
     background: none;
-    color: #ffffff;
+    color: var(--color-text);
     text-shadow: #fc0 1px 0 10px;
     border: none;
     font-size: 2.5rem;
@@ -221,7 +212,7 @@ pufferfish's styling
 
   .dropDown .dropDownButton {
     background: var(--transparent);
-    color: white;
+    color: var(--color-text);
     text-shadow: #fc0 1px 0 10px;
     border: none;
     font-size: 2.5rem;
@@ -266,7 +257,7 @@ pufferfish's styling
   }
   
   .dropDownItem a {
-    color: white;
+    color: var(--color-text);
     text-decoration: bold;
   }
   
@@ -303,7 +294,7 @@ pufferfish's styling
     }
 
     .text {
-      font-size: calc(1.05rem + 0.4vw);
+      font-size: calc(1rem + 0.1vw);
       text-align: left;
     } 
 
@@ -323,7 +314,7 @@ pufferfish's styling
   }
 
   footer { 
-    color: rgb(255, 255, 255);
+    color: var(--color-text);
     padding-top: 0.6rem;
     padding-bottom: 2rem;
     text-align: center;
@@ -423,9 +414,6 @@ pufferfish's styling
 @media screen and (min-width: 950px) {
   .flex-container {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-self: center;
-    justify-content: center;
+    justify-content: space-between;
   }
 }

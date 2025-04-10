@@ -17,7 +17,7 @@ const imageNames = [
     'emo2.png',			
     'sleepy-shirt.png',
     // 'emo3.png',
-    'flushing.png',
+    //'flushing.png',
     'drool.png',
     'basketball.png'
 ]

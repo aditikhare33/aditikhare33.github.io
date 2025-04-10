@@ -30,12 +30,6 @@
 
 #displayContainer img {
     padding: 0.5rem;
-    transition: transform 1s;
-}
-
-#displayContainer img:hover {
-    transform: scale(1.03);
-    transition-timing-function: ease-in-out;
 }
 
 .text-visual-display {
@@ -76,11 +70,11 @@ hr {
     }
 
     .codingImg {
-        max-height: 60vh;
+        max-height: 90%;
     }
 
     .codingImg2 {
-        max-height: 70vh;
+        max-width: 45%;
     }
 
     .tall {
@@ -121,27 +115,28 @@ hr {
 
 @media screen and (min-width: 700px) and (max-width: 900px) {
     .codingImg {
-        height: 40vh;
+        height: 90%;
     }
 
     .codingImg2 {
-        height: 60vh;
+        width: 45%;
     }
 }
 
 @media screen and (max-width: 699px){
     .codingImg {
-        height: 40vh;
+        height: 90%;
     }
 
     .codingImg2 {
-        height: 60vh;
+        width: 45%;
     }
 }
 
 .p5 {
   text-align: center !important;
-  padding-top: 1rem;
+  padding: 0rem !important;
+  margin: 0 !important;
 }
 
 #displayContainer .translucent {
@@ -155,4 +150,8 @@ hr {
 
 .glow {
     filter: drop-shadow(0 0 0.75rem rgb(60, 66, 240));
+}
+
+.websites div, .websites h3 {
+    padding: 0.6rem;
 }

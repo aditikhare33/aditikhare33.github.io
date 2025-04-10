@@ -1,18 +1,21 @@
 const rootFolder = '/static/visual-noise-smaller/';
 const items = [
-    { name: "hide and seek near a blue window (2022)",
+    { name: "hide and seek; near a blue window",
       images: ['hide.png', 'seek.png'], 
       description: `<span class="hidden1"> digital work, <a href='https://www.ouch.studio/zine/luck'>featured in OUCH! magazine ed.10: Luck</a> </span>`,
       imageStyling: 'short'
     },
-    { name: 'cryptid (2023)',
+    { name: 'cryptid',
       images: ['bg-cryptid.png'],
-      description: '<span class="hidden1"> digital work </span>',
       imageStyling: 'short'
     },
-    { name: 'my memories are overexposed and faraway (2021)',
+    { name: 'a winter tree in headlights; a toy rabbit i left on a stool in 2007',
       images: ['tree-headlight.png', 'rabbit.png'],
-      description: '<span class="hidden1"> digital work <br> a winter tree in headlights <br> a toy rabbit i left on a stool in 2007 </span>',
+      imageStyling: 'tall'
+    },
+    /*
+    { name: 'a winter tree in headlights',
+      images: ['tree-headlight.png'],
       imageStyling: 'tall'
     },
     /*
@@ -34,22 +37,29 @@ const items = [
 ]
 
 let div = ``;
+
 for (const item of items) {
     let images = ``;
     for (const image of item.images) {
         images +=`<img class=${item.imageStyling} src=${rootFolder}${image}>`;
     }
 
+    const description = item.description ?? '';
     div += `
-    <div class="display-item hidden2">
-        <h3>${item.name}</h3>
+    <div class="display-item">
+        <h3 style="text-transform: none !important;">${item.name}</h3>
         <div class="display-item-img">
           ${images}
         </div>
         <div class="display-item-description translucent text-visual-display">
-            ${item.description}
+            ${description}
         </div>
     </div>`;
 }
 
+div += `
+  <div class="text base-margin">
+      <h3 style="text-align: left;">about this series</h3>
+      “my memories are overexposed and faraway” is a series of digital works on the dream-state - like photographs washed in light.
+  </div>`
 document.querySelector('#displayContainer').innerHTML = div;

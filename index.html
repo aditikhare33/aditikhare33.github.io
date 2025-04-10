@@ -37,8 +37,8 @@
     
     <!-- CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous"></script> 
-    <script src="/board.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sketch.js/1.0/sketch.min.js" integrity="sha512-kSEyW+qGJr8nB9W0xap8JTmchLnDdjAh5OBrjWQmWbfjRKRNb1goxSWmJbwFN6Gnf+ruF1fmvQhVwYPt/0hKqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
       <script>
         if (window.innerWidth < 700) {
           window.location.href = '/about';
@@ -49,7 +49,7 @@
     <div class="loader">
       loading...
     </div>
-    <div class="home hide">
+    <div id="container" class="home hide sketch-container">
       <div id="navContainer"></div>
       <img id="spike2" src="/static/img/spike2.png" />
       <img id="spike1" src="/static/img/spike1.png" />
@@ -59,6 +59,90 @@
             $("#spike2").draggable();
          });
       </script>
+      <!--<div class="sketch-js w-embed w-script">
+        <script>
+            console.log('who else drawing but us...');
+            let newColour, from, to, levels, maxColours;
+            let colours = [];
+            var drawActive = false;
+            var canvasActive = true;
+            var canvasCleared = false;
+
+            let amt = 0;
+            var index = 0;
+
+            function setup() {
+                noLoop();
+                colours = [color(242, 242, 232), color(176, 183, 167), color(167, 154, 155), color(219, 102, 89), color(85, 99, 92), color(232, 163, 207), color(28, 148, 105), color(237, 185, 185), color(0, 74, 204), color(230, 207, 207)];
+
+                numberOfColours = colours.length - 1;
+                drawActive = true;
+            }
+
+            function draw() {
+                from = colours[index];
+                to = colours[index + 1];
+                newColour = lerpColor(from, to, amt);
+
+                amt += 0.025;
+                if (amt > 0.99) {
+                    amt = 0;
+                    if (index == numberOfColours - 1) {
+                        index = 0;
+                    } else {
+                        index += 1;
+                    }
+                }
+                levels = newColour.levels;
+            }
+
+            var colour;
+
+            Sketch.create({
+
+                container: document.getElementById('container'),
+                autoclear: false,
+                retina: 'auto',
+
+                update: function() {
+                    radius = 100;
+
+                    if (canvasActive == false && canvasCleared == false) {
+                        this.clear();
+                        canvasCleared = true;
+                    }
+                },
+
+                touchmove: function() {
+                    var scrollPosition = $(window).scrollTop();
+
+                    if (scrollPosition == 0 && drawActive == true) {
+                        draw();
+                        colour = 'rgb(' + levels[0] + ',' + levels[1] + ',' + levels[2] + ')'
+
+                        for (var i = this.touches.length - 1, touch; i >= 0; i--) {
+
+                            touch = this.touches[i];
+
+                            this.lineCap = 'round';
+                            this.lineJoin = 'round';
+
+                            this.fillStyle = this.strokeStyle = this.shadowColor = colour;
+                            this.lineWidth = radius;
+
+                            this.shadowBlur = 100;
+                            this.shadowOffsetX = 0;
+                            this.shadowOffsetY = 0;
+
+                            this.beginPath();
+                            this.moveTo(touch.ox, touch.oy);
+                            this.lineTo(touch.x, touch.y);
+                            this.stroke();
+                        }
+                    }
+                }
+            });
+        </script> !-->
       <footer class=" footer bottom"></footer>
    </div>
   </body>

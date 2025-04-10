@@ -35,10 +35,11 @@ const bigNav =
     `
     <div class="nav">
       <div id="nav-items" class="links">
+        ${titleImgHTML()}
+        <div></div>
         ${navItemsHTML()}
       </div>
     </div>
-    ${titleImgHTML()}
 `;
 
 const smallNav =  

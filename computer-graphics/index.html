@@ -26,7 +26,6 @@
         <script src="/nav.js" defer></script>
 
         <!-- Renders Images -->
-         <script src="/computer-graphics.js" defer></script>
          
         <!-- Renders Object Generator -->
         <script language="javascript" type="text/javascript" src="/object_generator/libraries/p5.min.js"></script>
@@ -36,21 +35,108 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous"></script></script> 
     </head> 
 
-<body>
-    <div class="loader">
-        loading....
-      </div>
-    <div class="home hide">
-        <div id="navContainer"></div>
-        <div id="displayContainer" class="coding">
-            <div name="main" class="p5Container codingItem" id="object-container">
-                <script language="javascript" type="text/javascript" src="/object_generator/script.js"></script>
+    <body>
+        <div class="home">
+            <div id="navContainer"></div>
+            <div id="">
+                <div class="obj-words-far">
+                </div>
+                <div class="obj-words">
+                    <h3 id="spin" class="circle">
+                        <a href="/object-generator-page/">object generator</a>
+                    </h3>
+                    <h3 id="spin3" class="circle">
+                        <a href="/sentient-slinkie-page/">sentient slinkie</a>
+                    </h3>
+                </div> 
             </div>
-            <div name="main" class="p5Container codingItem" id="slinkie-container">
-                <script language="javascript" type="text/javascript" src="/sentient_slinkie/script.js"></script>
-            </div>
+            <footer class="mobile-bottom desktop-bottom"></footer>
         </div>
-        <footer class="hidden1"></footer>
-    </div>
-</body>
-</html>
+        <style>
+            .circle {
+                font-size: calc(1.5rem + 0.8vw);
+                border: 1px solid rgb(255, 255, 255);
+                border-radius: 50%;
+                padding: 1rem;
+                font-family: Px;
+                background-color: transparent;
+                margin: 2rem;
+            }
+
+            .circle a {
+                text-shadow: none;
+                font-weight: normal;
+                text-decoration: underline;
+            }
+
+            .circle:hover {
+                background-color: blue;
+            }
+
+            .circle a:hover {
+                text-decoration: none;
+                color: white;
+            }
+
+            @media screen and (min-width: 950px) {
+                #spin {
+                animation: orbit 10s forwards infinite;
+                animation-timing-function: ease-in-out;
+                }
+
+                @-webkit-keyframes orbit {
+                    from {  -webkit-transform: rotate(90deg) translateX(15vw) rotate(-90deg); }
+                    to   {  -webkit-transform: rotate(450deg) translateX(15vw) rotate(-450deg); }
+                }
+
+                #spin2 {
+                    animation: orbit-staggered 10s forwards infinite;
+                    animation-timing-function: ease-in-out;
+                }
+
+                @-webkit-keyframes orbit-staggered {
+                    from {  -webkit-transform: rotate(45deg) translateX(15vw) rotate(-45deg); }
+                    to   {  -webkit-transform: rotate(405deg) translateX(15vw) rotate(-405deg); }
+                }
+
+                #spin3 {
+                    animation: orbit-staggered 10s forwards infinite;
+                    animation-timing-function: ease-in-out;
+                }
+
+                @-webkit-keyframes orbit-staggered {
+                    from {  -webkit-transform: rotate(0deg) translateX(15vw) rotate(0deg); }
+                    to   {  -webkit-transform: rotate(360deg) translateX(15vw) rotate(-360deg); }
+                }
+
+                .obj-words {
+                display: flex;
+                justify-content: center;
+                padding-top:2rem;
+                padding: 0.6rem;
+                margin: 0 auto;
+                height: 100%;
+            }
+            }
+    
+
+            .obj-words-far {
+                display: flex;
+                justify-content:  space-between;
+                padding: 0.6rem;
+                margin: 0 auto;
+                height: 100%;
+            }
+            
+            .obj-title {
+                font-size: calc(2rem + 1.5vw);
+            }
+        
+            .obj-subtitle {
+                font-size: calc(1.5rem + 0.5vw);
+                text-align: center;
+                padding-bottom: 2rem;
+            }
+        </style>
+    </body>
+    </html>

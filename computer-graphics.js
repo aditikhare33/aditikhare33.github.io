@@ -1,4 +1,5 @@
 
+/*
 function displayCoding() {
   const items = [
     { name: 'object generator',
@@ -42,11 +43,6 @@ function displayCoding() {
       description: `<span class="hidden1"> This project is inspired by using lemon juice to write a diary entry! I'm working on optimizing it for web. </span>`,
       imageStyling: 'short'
     }
-    /* { name: 'pacziczi-strology',
-      images: [],
-      description: 'before entering into the world of pacziczi, read this <a href="https://www.pacziczi.glitch.me"> required reading</a>. Then, once finished delve into <a href="https://www.blueberry-rising.glitch.me">my website</a>',
-      imageStyling: 'short'
-    } */
   ]
 
   let div = ``;
@@ -72,8 +68,7 @@ function displayCoding() {
           </div>
       </div>`;
   }
-
+*/
   document.querySelector('#displayContainer').innerHTML = div;
-}
 
 displayCoding();
