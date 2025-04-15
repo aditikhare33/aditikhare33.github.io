@@ -2,9 +2,9 @@ const rootFolder = '/static/coding/';
 
 function displayCoding() {
   const items = [
-    { name: "take back bikes",
-      images: ['tbb-desktop-actual.png'], 
-      description: `<span class="hidden1"><a href="https://takebackbikes.org">Take Back Bikes</a> is a bike share project based in Washtenaw County, Michigan that is committed to free bikes for all. </span>`,
+    { name: "bike share",
+      images: [], 
+      description: `A website for bike share project based in Michigan that is committed to free bikes for all. </span>`,
       imageStyling: 'codingImg glow'
     },
     { name: "conversations for every dinner table",
