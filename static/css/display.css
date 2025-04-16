@@ -143,6 +143,13 @@ hr {
   padding-left: 0.5rem;
 }
 
+
+.dark-translucent {
+    padding: 1rem;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.594);
+}
+
 .sliders {
     margin: 1rem;
     text-transform: uppercase;
