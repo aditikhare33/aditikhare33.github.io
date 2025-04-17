@@ -3,7 +3,7 @@ const rootFolder = '/static/coding/';
 function displayCoding() {
   const items = [
     { name: "bike share",
-      images: [], 
+      images: ['tbb-less-png.png'], 
       description: `A website for bike share project based in Michigan that is committed to free bikes for all. </span>`,
       imageStyling: 'codingImg glow'
     },
