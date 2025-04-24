@@ -57,10 +57,4 @@ for (const item of items) {
     </div>`;
 }
 
-div += `
-  <div class="text base-margin dark-translucent">
-      <h3 style="text-align: left;">about this series</h3>
-      “my memories are overexposed and monochrome” is a series of digital works that explore the nature of recalling my memories — how they seem like photographs washed in light. Queer memory is nonlinear, often fragmented by silence, shame, or survival.
-       Through this series, I’m interested in the tension between what is remembered and what is imagined, what is preserved and what slips away. An attempt to make sense of a personal archive that feels both intimate and out of reach.
-  </div>`
 document.querySelector('#displayContainer').innerHTML = div;
