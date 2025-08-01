@@ -228,7 +228,7 @@ pufferfish's styling
     width: 100vw;
     position: absolute;
     top: 0vh;
-    /* background-color: rgb(38, 38, 126); */
+    background-color: rgb(38, 38, 126);
     background-repeat: no-repeat;
     background-blend-mode: hard-light;
     background-size: contain, cover;
@@ -282,7 +282,7 @@ pufferfish's styling
 
     .text {
       /*text-shadow: rgba(12, 2, 72, 0.979) 1px 1px 4px; */
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       text-align: left;
     }
   }

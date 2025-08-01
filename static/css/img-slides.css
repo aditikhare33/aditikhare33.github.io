@@ -1,0 +1,17 @@
+.full-screen {
+    z-index: 99;
+    height: 100vh;
+    width: 100vw;
+}
+
+.carousel .active {
+
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.carousel {
+    display:none;
+}

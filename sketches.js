@@ -21,7 +21,6 @@ const imageNames = [
     'drool.png',
     'basketball.png'
 ]
-
 let images = ``;
 for (const image of imageNames) {
     images +=`<span class="img-container"><img class="sketch-short hidden2" src="${rootFolder}${image}"></span>`;

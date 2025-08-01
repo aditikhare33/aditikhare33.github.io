@@ -80,6 +80,10 @@ hr {
     .tall {
         max-width: 45vw;
     }
+
+    .super-short {
+        max-height: 40vh;
+    }
     
     .short {
         max-height: 60vh;
@@ -99,7 +103,7 @@ hr {
         max-width: 80vw;
     }
     
-    .short {
+    .super-short, .short {
         max-width: 80vw;
     }
 
