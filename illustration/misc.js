@@ -4,7 +4,7 @@ const items = [
       name: 'animal ABCs (2022)',
       images: ['A-for-Apple-Project.jpg'],
       imageStyling: 'short',
-      description: 'A vector-based alphabet graphic designed to engage young learners through friendly, expressive animal characters. All illustrations were built in Adobe Illustrator with clean layers and simple geometry.
+      description: 'A vector-based alphabet graphic designed to engage young learners through friendly, expressive animal characters. All illustrations were built in Adobe Illustrator with clean layers and simple geometry'
     },
     { name: 'the michigan daily (2022 - 2023)',
       images: ['mic1.png', 'mic2.png', 'mic3.png', 'mic4.png'],
