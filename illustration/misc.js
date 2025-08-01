@@ -31,6 +31,23 @@ const items = [
       images: ['uaao-zine1.png', 'uaao-zine2.png'],
       description: `Designed zine covers for United Asian American Organizations, a racial advocacy collective.`,
       imageStyling: 'short'
+    }, 
+    { name: 'doodles',
+      images: [
+        'sketch/dancing-monster.png',
+        'sketch/yearn.png',
+        'sketch/handy.jpg',
+        'sketch/sunshine.png',
+        'sketch/home.png',
+        'sketch/pinkjob.png',
+        'sketch/egg-sperm.png',
+        'sketch/pinkjob3.png',
+        'sketch/sleepy-shirt.png',
+        'sketch/drool.png',
+        'sketch/basketball.png'
+      ],
+      description: '',
+      imageStyling: 'super-short'
     }
 ]
 
