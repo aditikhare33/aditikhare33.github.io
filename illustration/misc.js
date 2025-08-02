@@ -6,6 +6,31 @@ const items = [
       imageStyling: 'short',
       description: 'A vector-based alphabet graphic designed to engage young learners through friendly, expressive animal characters. All illustrations were built in Adobe Illustrator with clean layers and simple geometry'
     },
+        {
+      name: 'pixel gif series (2024 - present)', 
+      images: [
+        'pixel-gif/frame_00_delay-0.17s.gif',
+        'pixel-gif/frame_02_delay-0.17s.gif',
+        'pixel-gif/frame_03_delay-0.17s.gif',
+
+        'pixel-gif/frame_04_delay-0.17s.gif',
+        'pixel-gif/frame_05_delay-0.17s.gif',
+
+        'pixel-gif/frame_06_delay-0.17s.gif',
+        'pixel-gif/frame_17_delay-0.17s.gif',
+
+        'pixel-gif/frame_08_delay-0.17s.gif',
+        'pixel-gif/frame_09_delay-0.17s.gif',
+
+        'pixel-gif/frame_10_delay-0.17s.gif',
+        'pixel-gif/frame_11_delay-0.17s.gif',
+
+        'pixel-gif/frame_12_delay-0.17s.gif',
+        'pixel-gif/frame_13_delay-0.17s.gif',
+      ],
+      imageStyling: 'super-short',
+      description: `A series of animated 128 x 128 gifs to feature in a game I'm making`
+    },
     { name: 'the michigan daily (2022 - 2023)',
       images: ['mic1.png', 'mic2.png', 'mic3.png', 'mic4.png'],
       imageStyling: 'super-short',
