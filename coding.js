@@ -2,6 +2,11 @@ const rootFolder = '/static/coding/';
 
 function displayCoding() {
   const items = [
+    { name: "ealopia",
+      images: ['ealopia.png'],
+      description: `<a href="ealopia.com">Ealopia</a> is a portfolio website for a protest photographer based in NYC. Made in collaboration with <a href="https://julz.mmm.page/">Julie Lam</a>.`,
+      imageStyling: 'codingImg glow'
+    },
     { name: "bike share",
       images: ['tbb-less-png.png'], 
       description: `A website for bike share project based in Michigan that is committed to free bikes for all. </span>`,
