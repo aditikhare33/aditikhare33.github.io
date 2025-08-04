@@ -4,7 +4,7 @@ function displayCoding() {
   const items = [
     { name: "ealopia",
       images: ['ealopia.png'],
-      description: `<a href="ealopia.com">Ealopia</a> is a portfolio website for a protest photographer based in NYC. Made in collaboration with <a href="https://julz.mmm.page/">Julie Lam</a>.`,
+      description: `<a href="https://www.ealopia.com">Ealopia</a> is a portfolio website for a protest photographer based in NYC. Made in collaboration with <a href="https://julz.mmm.page/">Julie Lam</a>.`,
       imageStyling: 'codingImg glow'
     },
     { name: "bike share",
