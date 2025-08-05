@@ -9,7 +9,7 @@ function displayCoding() {
     },
     { name: "bike share",
       images: ['tbb-less-png.png'], 
-      description: `A website for bike share project based in Michigan that is committed to free bikes for all. </span>`,
+      description: `A website for bike share organization based in Michigan that is committed to free bikes for all. </span>`,
       imageStyling: 'codingImg glow'
     },
     { name: "conversations for every dinner table",
