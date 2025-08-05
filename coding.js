@@ -7,7 +7,7 @@ function displayCoding() {
       description: `<a href="https://www.ealopia.com">Ealopia</a> is a portfolio website for a protest photographer based in NYC. Made in collaboration with <a href="https://julz.mmm.page/">Julie Lam</a>.`,
       imageStyling: 'codingImg glow'
     },
-    { name: "bike share",
+    { name: "Take Back Bikes",
       images: ['tbb-less-png.png'], 
       description: `A website for bike share organization based in Michigan that is committed to free bikes for all. </span>`,
       imageStyling: 'codingImg glow'
