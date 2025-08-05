@@ -14,7 +14,7 @@ function displayCoding() {
     },
     { name: "conversations for every dinner table",
       images: ['repro-convos.png', 'manifesto.png'], 
-      description: `<span class="hidden1"><a href="https://reproconvos.glitch.me">Conversations for Every Dinner Table</a> is a card game centered around reproductive health. This is a collaborative project; my role was making sure you can play on your phone. </span>`,
+      description: `<span class="hidden1"><a href="https://reproconvos.glitch.me">Conversations for Every Dinner Table</a> is a card game centered around reproductive justice. This is a collaborative project; my role was making sure you can play on your phone. </span>`,
       imageStyling: 'codingImg2 glow'
     }
     /* { name: 'pacziczi-strology',
